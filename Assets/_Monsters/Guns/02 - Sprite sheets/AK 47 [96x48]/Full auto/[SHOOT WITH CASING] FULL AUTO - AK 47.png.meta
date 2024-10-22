@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: f3cba9a38d885994eae10ac03a0f4b27
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4949063486732897069
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_0'
+  - first:
+      213: 880007320411190095
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_1'
+  - first:
+      213: -6149787064168550119
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_2'
+  - first:
+      213: -7575410099136844694
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_3'
+  - first:
+      213: -2402292839466345285
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_4'
+  - first:
+      213: 8175580823813070618
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_5'
+  - first:
+      213: 4516252077768088680
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_6'
+  - first:
+      213: -9158742259007738500
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_7'
+  - first:
+      213: 6807799697505767607
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_8'
+  - first:
+      213: 938593810577297592
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_9'
+  - first:
+      213: 2390456877216761360
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_10'
+  - first:
+      213: 2328724329991939371
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_11'
+  - first:
+      213: -9016837881067249748
+    second: '[SHOOT WITH CASING] FULL AUTO - AK 47_12'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_0'
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b0299150b9ea440800000000000000
+      internalID: 4949063486732897069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_1'
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f433ad4def9663c00800000000000000
+      internalID: 880007320411190095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_2'
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911f0f38f3197aaa0800000000000000
+      internalID: -6149787064168550119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_3'
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6caa0da6acbed690800000000000000
+      internalID: -7575410099136844694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_4'
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 20
+        width: 78
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcd421f36759aed0800000000000000
+      internalID: -2402292839466345285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_5'
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 20
+        width: 78
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f9fd3717f757170800000000000000
+      internalID: 8175580823813070618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_6'
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c9c7b2653fcae30800000000000000
+      internalID: 4516252077768088680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_7'
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d2c76c07c95e080800000000000000
+      internalID: -9158742259007738500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_8'
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0d7df61c92a7e50800000000000000
+      internalID: 6807799697505767607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_9'
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b017db091e860d00800000000000000
+      internalID: 938593810577297592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_10'
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 19
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01605695ddb9c2120800000000000000
+      internalID: 2390456877216761360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_11'
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 15
+        width: 78
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b25aaf4a07a415020800000000000000
+      internalID: 2328724329991939371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING] FULL AUTO - AK 47_12'
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf53bd68b1cdd280800000000000000
+      internalID: -9016837881067249748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_0': 4949063486732897069
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_1': 880007320411190095
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_10': 2390456877216761360
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_11': 2328724329991939371
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_12': -9016837881067249748
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_2': -6149787064168550119
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_3': -7575410099136844694
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_4': -2402292839466345285
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_5': 8175580823813070618
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_6': 4516252077768088680
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_7': -9158742259007738500
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_8': 6807799697505767607
+      '[SHOOT WITH CASING] FULL AUTO - AK 47_9': 938593810577297592
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

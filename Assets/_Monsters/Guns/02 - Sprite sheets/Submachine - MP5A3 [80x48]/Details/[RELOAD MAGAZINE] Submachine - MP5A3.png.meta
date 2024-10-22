@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 6d04656d1f849e44fa3cd80fc81c4e61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1207313835138521788
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_0'
+  - first:
+      213: 2208003387615187019
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_1'
+  - first:
+      213: -4586735556711921507
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_2'
+  - first:
+      213: 1193840528476670812
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_3'
+  - first:
+      213: 2122140398403304859
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_4'
+  - first:
+      213: -125749931558435247
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_5'
+  - first:
+      213: 3184144939700397246
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_6'
+  - first:
+      213: -8278514064569503323
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_7'
+  - first:
+      213: 3317861543380514071
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_8'
+  - first:
+      213: -8099208798050347526
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_9'
+  - first:
+      213: -5512507035621374728
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_10'
+  - first:
+      213: -8854047314714364285
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_11'
+  - first:
+      213: -5711274184843157700
+    second: '[RELOAD MAGAZINE] Submachine - MP5A3_12'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_0'
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 4
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445672ca672ce3fe0800000000000000
+      internalID: -1207313835138521788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_1'
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 3
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4099ade16764ae10800000000000000
+      internalID: 2208003387615187019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_2'
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 2
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98488f0054a850c0800000000000000
+      internalID: -4586735556711921507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_3'
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 3
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b015aa2af519010800000000000000
+      internalID: 1193840528476670812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_4'
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 9
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9db552e27b537d10800000000000000
+      internalID: 2122140398403304859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_5'
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 18
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1560eee7a1f314ef0800000000000000
+      internalID: -125749931558435247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_6'
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 19
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4233cc3fa503c20800000000000000
+      internalID: 3184144939700397246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_7'
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 20
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a17249d15fcc1d80800000000000000
+      internalID: -8278514064569503323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_8'
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 19
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715ff13be796b0e20800000000000000
+      internalID: 3317861543380514071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_9'
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 18
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af59d767284d99f80800000000000000
+      internalID: -8099208798050347526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_10'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 5
+        width: 86
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f442ffbe04af73b0800000000000000
+      internalID: -5512507035621374728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_11'
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386f2f5c0ea102580800000000000000
+      internalID: -8854047314714364285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[RELOAD MAGAZINE] Submachine - MP5A3_12'
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f9095736a7db0b0800000000000000
+      internalID: -5711274184843157700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '[RELOAD MAGAZINE] Submachine - MP5A3_0': -1207313835138521788
+      '[RELOAD MAGAZINE] Submachine - MP5A3_1': 2208003387615187019
+      '[RELOAD MAGAZINE] Submachine - MP5A3_10': -5512507035621374728
+      '[RELOAD MAGAZINE] Submachine - MP5A3_11': -8854047314714364285
+      '[RELOAD MAGAZINE] Submachine - MP5A3_12': -5711274184843157700
+      '[RELOAD MAGAZINE] Submachine - MP5A3_2': -4586735556711921507
+      '[RELOAD MAGAZINE] Submachine - MP5A3_3': 1193840528476670812
+      '[RELOAD MAGAZINE] Submachine - MP5A3_4': 2122140398403304859
+      '[RELOAD MAGAZINE] Submachine - MP5A3_5': -125749931558435247
+      '[RELOAD MAGAZINE] Submachine - MP5A3_6': 3184144939700397246
+      '[RELOAD MAGAZINE] Submachine - MP5A3_7': -8278514064569503323
+      '[RELOAD MAGAZINE] Submachine - MP5A3_8': 3317861543380514071
+      '[RELOAD MAGAZINE] Submachine - MP5A3_9': -8099208798050347526
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

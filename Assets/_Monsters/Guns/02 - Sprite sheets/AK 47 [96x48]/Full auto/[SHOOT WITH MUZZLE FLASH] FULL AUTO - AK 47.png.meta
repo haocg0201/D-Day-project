@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 4a53fa3cc0acdcb45ad3bf1e196509f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7938764895984206421
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_0'
+  - first:
+      213: 5295449375602717641
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_1'
+  - first:
+      213: 7603557070804188666
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_2'
+  - first:
+      213: 2745908026610136268
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_3'
+  - first:
+      213: 4608344406556926479
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_4'
+  - first:
+      213: 3876192661388127699
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_5'
+  - first:
+      213: -548187631061388555
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_6'
+  - first:
+      213: -6691162625346504183
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_7'
+  - first:
+      213: 8883843531480599540
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_8'
+  - first:
+      213: 3205812230926000054
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_9'
+  - first:
+      213: 1901768133305224223
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_10'
+  - first:
+      213: -6096441121956986349
+    second: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_11'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_0'
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad35837367d3d190800000000000000
+      internalID: -7938764895984206421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_1'
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c33dde86273d7940800000000000000
+      internalID: 5295449375602717641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_2'
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 20
+        width: 92
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd71baded2458960800000000000000
+      internalID: 7603557070804188666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_3'
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 20
+        width: 95
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4bdff3dcc6b1620800000000000000
+      internalID: 2745908026610136268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_4'
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 20
+        width: 84
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02eb7b52d024ff30800000000000000
+      internalID: 4608344406556926479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_5'
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dde30740b00bc530800000000000000
+      internalID: 3876192661388127699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_6'
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2b25401427468f0800000000000000
+      internalID: -548187631061388555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_7'
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90af9d52b073423a0800000000000000
+      internalID: -6691162625346504183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_8'
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb8d0e8f90c94b70800000000000000
+      internalID: 8883843531480599540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_9'
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf52f82d355d7c20800000000000000
+      internalID: 3205812230926000054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_10'
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1cc0de8a00746a10800000000000000
+      internalID: 1901768133305224223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_11'
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 20
+        width: 78
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3128ba39917156ba0800000000000000
+      internalID: -6096441121956986349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_0': -7938764895984206421
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_1': 5295449375602717641
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_10': 1901768133305224223
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_11': -6096441121956986349
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_2': 7603557070804188666
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_3': 2745908026610136268
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_4': 4608344406556926479
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_5': 3876192661388127699
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_6': -548187631061388555
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_7': -6691162625346504183
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_8': 8883843531480599540
+      '[SHOOT WITH MUZZLE FLASH] FULL AUTO - AK 47_9': 3205812230926000054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -784,7 +784,34 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Item-Sprites_0: 6593740755048633565
+      Item-Sprites_1: 7665259030361781738
+      Item-Sprites_10: 8922300419600094782
+      Item-Sprites_11: 5284887883034847404
+      Item-Sprites_12: -6844784073804782489
+      Item-Sprites_13: 1534379619798975890
+      Item-Sprites_14: 1400764907557849606
+      Item-Sprites_15: 9094368968348596682
+      Item-Sprites_16: -4046054365071826607
+      Item-Sprites_17: 8912497162929334045
+      Item-Sprites_18: -8540713214972700014
+      Item-Sprites_19: 2858630185716083802
+      Item-Sprites_2: 4464028078853483218
+      Item-Sprites_20: 6015132740668434602
+      Item-Sprites_21: 2853249887122825253
+      Item-Sprites_22: 682628944850820070
+      Item-Sprites_23: 7087267997672736118
+      Item-Sprites_24: 2207249397445490106
+      Item-Sprites_25: 9085583198591359975
+      Item-Sprites_26: 2590510830843998274
+      Item-Sprites_3: -6448666406006676286
+      Item-Sprites_4: -8950363432543126421
+      Item-Sprites_5: -2096905196224777210
+      Item-Sprites_6: 3475998019919889575
+      Item-Sprites_7: 5456357765242670097
+      Item-Sprites_8: -3728094336070191734
+      Item-Sprites_9: -5397148152211054456
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

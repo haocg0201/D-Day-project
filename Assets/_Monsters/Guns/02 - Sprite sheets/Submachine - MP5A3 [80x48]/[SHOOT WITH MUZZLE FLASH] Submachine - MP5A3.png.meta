@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 03806288b9ddead49852f3431ffa7d19
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5971602702493330840
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_0'
+  - first:
+      213: -3678349480402464100
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_1'
+  - first:
+      213: 8599400546032068888
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_2'
+  - first:
+      213: 1429262486455452129
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_3'
+  - first:
+      213: -372909925239144479
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_4'
+  - first:
+      213: -7601442142890323640
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_5'
+  - first:
+      213: 2374302108028126420
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_6'
+  - first:
+      213: 9064639591221485047
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_7'
+  - first:
+      213: 802306063635277195
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_8'
+  - first:
+      213: 5016859915745543646
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_9'
+  - first:
+      213: -2693881849797567069
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_10'
+  - first:
+      213: -6220881534314624784
+    second: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_11'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_0'
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 17
+        width: 59
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89da0edd4056fd250800000000000000
+      internalID: 5971602702493330840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_1'
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 17
+        width: 59
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c925ed4e2a0e3fcc0800000000000000
+      internalID: -3678349480402464100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_2'
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 17
+        width: 65
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819aa8b2c35375770800000000000000
+      internalID: 8599400546032068888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_3'
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 17
+        width: 69
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e108fba8a2c5d310800000000000000
+      internalID: 1429262486455452129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_4'
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 17
+        width: 68
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef37e4166823daf0800000000000000
+      internalID: -372909925239144479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_5'
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 17
+        width: 59
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841965c25a0428690800000000000000
+      internalID: -7601442142890323640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_6'
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 17
+        width: 59
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d44a7a003733f020800000000000000
+      internalID: 2374302108028126420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_7'
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 17
+        width: 59
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fdd2b38ea11ccd70800000000000000
+      internalID: 9064639591221485047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_8'
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 17
+        width: 59
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b856f143d1d522b00800000000000000
+      internalID: 802306063635277195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_9'
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 17
+        width: 59
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5c8ed43877f9540800000000000000
+      internalID: 5016859915745543646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_10'
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 17
+        width: 59
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad91fbfab86d9ad0800000000000000
+      internalID: -2693881849797567069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_11'
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 17
+        width: 59
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8c365443dfaa9a0800000000000000
+      internalID: -6220881534314624784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_0': 5971602702493330840
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_1': -3678349480402464100
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_10': -2693881849797567069
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_11': -6220881534314624784
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_2': 8599400546032068888
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_3': 1429262486455452129
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_4': -372909925239144479
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_5': -7601442142890323640
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_6': 2374302108028126420
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_7': 9064639591221485047
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_8': 802306063635277195
+      '[SHOOT WITH MUZZLE FLASH] Submachine - MP5A3_9': 5016859915745543646
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
