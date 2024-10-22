@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 03da5910eb6eff74eb855c6b6b7e73f5
+guid: c068c14c00d741c4fba425c419d4d321
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1515603127067585740
-    second: Skeleton React_0
+      213: -2048800907179887802
+    second: Hurt_0
   - first:
-      213: -974260186754260340
-    second: Skeleton React_1
-  - first:
-      213: 6619721271862762800
-    second: Skeleton React_2
-  - first:
-      213: 436870274612170266
-    second: Skeleton React_3
+      213: 490842205202310979
+    second: Hurt_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeleton React_0
+      name: Hurt_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 22
         y: 0
-        width: 23
-        height: 32
+        width: 85
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4335aa66cfe77fae0800000000000000
-      internalID: -1515603127067585740
+      spriteID: 6437b001e623193e0800000000000000
+      internalID: -2048800907179887802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton React_1
+      name: Hurt_1
       rect:
         serializedVersion: 2
-        x: 21
+        x: 151
         y: 0
-        width: 24
-        height: 32
+        width: 84
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,52 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c82e4b1a58bba72f0800000000000000
-      internalID: -974260186754260340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton React_2
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 0
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03d1a798c69fddb50800000000000000
-      internalID: 6619721271862762800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton React_3
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 0
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a1e8f2b3333101600800000000000000
-      internalID: 436870274612170266
+      spriteID: 3476ad19262dfc600800000000000000
+      internalID: 490842205202310979
       vertices: []
       indices: 
       edges: []
@@ -209,11 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Skeleton React_0: -1515603127067585740
-      Skeleton React_1: -974260186754260340
-      Skeleton React_2: 6619721271862762800
-      Skeleton React_3: 436870274612170266
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
