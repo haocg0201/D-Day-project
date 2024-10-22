@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: cf911b4230808f3478872f971d9d19cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6213660955128888494
+    second: '[ROCKET LOAD] Bazooka - M20_0'
+  - first:
+      213: 939062138433679479
+    second: '[ROCKET LOAD] Bazooka - M20_1'
+  - first:
+      213: 8353183344725188503
+    second: '[ROCKET LOAD] Bazooka - M20_2'
+  - first:
+      213: -3622970785654394516
+    second: '[ROCKET LOAD] Bazooka - M20_3'
+  - first:
+      213: 955215246605614707
+    second: '[ROCKET LOAD] Bazooka - M20_4'
+  - first:
+      213: -154236833531443813
+    second: '[ROCKET LOAD] Bazooka - M20_5'
+  - first:
+      213: -4961773630316336996
+    second: '[ROCKET LOAD] Bazooka - M20_6'
+  - first:
+      213: 3032962524002319956
+    second: '[ROCKET LOAD] Bazooka - M20_7'
+  - first:
+      213: -906119119259368832
+    second: '[ROCKET LOAD] Bazooka - M20_8'
+  - first:
+      213: -8348546333505699591
+    second: '[ROCKET LOAD] Bazooka - M20_9'
+  - first:
+      213: 9121855648525299687
+    second: '[ROCKET LOAD] Bazooka - M20_10'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_0'
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 15
+        width: 413
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eacfb21a7bb5b3650800000000000000
+      internalID: 6213660955128888494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_1'
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 16
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770bb5f1a08380d00800000000000000
+      internalID: 939062138433679479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_2'
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 16
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fdd06bef77ce370800000000000000
+      internalID: 8353183344725188503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_3'
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 16
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61b379044f98bdc0800000000000000
+      internalID: -3622970785654394516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_4'
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 16
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ef6f1b43b914d00800000000000000
+      internalID: 955215246605614707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_5'
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 16
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95c316ca6a0cddf0800000000000000
+      internalID: -154236833531443813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_6'
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 16
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98281dfb2d342bb0800000000000000
+      internalID: -4961773630316336996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_7'
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 16
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45efa34a85f371a20800000000000000
+      internalID: 3032962524002319956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_8'
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 16
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0820b5c3671dc63f0800000000000000
+      internalID: -906119119259368832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_9'
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 16
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0c0889751042c80800000000000000
+      internalID: -8348546333505699591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[ROCKET LOAD] Bazooka - M20_10'
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 16
+        width: 201
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7efadb6f167579e70800000000000000
+      internalID: 9121855648525299687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
