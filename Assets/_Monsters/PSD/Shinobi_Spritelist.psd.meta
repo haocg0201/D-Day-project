@@ -1,0 +1,1642 @@
+fileFormatVersion: 2
+guid: 6600f3752d7af46fd8d88ef5046bc8b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 875974437788206116
+    second: Shinobi_Spritelist_0
+  - first:
+      213: 6667457948757533040
+    second: Shinobi_Spritelist_1
+  - first:
+      213: -597141423931316726
+    second: Shinobi_Spritelist_2
+  - first:
+      213: 2155909926923438270
+    second: Shinobi_Spritelist_3
+  - first:
+      213: -8715281055603781042
+    second: Shinobi_Spritelist_4
+  - first:
+      213: -6316691914683403604
+    second: Shinobi_Spritelist_5
+  - first:
+      213: -1723413608978368844
+    second: Shinobi_Spritelist_6
+  - first:
+      213: 8354709464502394426
+    second: Shinobi_Spritelist_7
+  - first:
+      213: 6466343381698087774
+    second: Shinobi_Spritelist_8
+  - first:
+      213: 8172704343664956452
+    second: Shinobi_Spritelist_9
+  - first:
+      213: 64059188611573035
+    second: Shinobi_Spritelist_10
+  - first:
+      213: 8310324786522187372
+    second: Shinobi_Spritelist_11
+  - first:
+      213: -3932932912532957775
+    second: Shinobi_Spritelist_12
+  - first:
+      213: 3051315773281530946
+    second: Shinobi_Spritelist_13
+  - first:
+      213: -507999937446790761
+    second: Shinobi_Spritelist_14
+  - first:
+      213: -189331688299458617
+    second: Shinobi_Spritelist_15
+  - first:
+      213: 8032409338149875300
+    second: Shinobi_Spritelist_16
+  - first:
+      213: 9191547635711972149
+    second: Shinobi_Spritelist_17
+  - first:
+      213: -3931344779223143395
+    second: Shinobi_Spritelist_18
+  - first:
+      213: -131437672033858242
+    second: Shinobi_Spritelist_19
+  - first:
+      213: 5851765741094371358
+    second: Shinobi_Spritelist_20
+  - first:
+      213: 5114738379638548022
+    second: Shinobi_Spritelist_21
+  - first:
+      213: -7089582330826627335
+    second: Shinobi_Spritelist_22
+  - first:
+      213: 1727655697760183286
+    second: Shinobi_Spritelist_23
+  - first:
+      213: 2224715631165523887
+    second: Shinobi_Spritelist_24
+  - first:
+      213: -8705850245659727543
+    second: Shinobi_Spritelist_25
+  - first:
+      213: -3654072762595524066
+    second: Shinobi_Spritelist_26
+  - first:
+      213: 4358827021830536428
+    second: Shinobi_Spritelist_27
+  - first:
+      213: 6617003966765068732
+    second: Shinobi_Spritelist_28
+  - first:
+      213: 8323813504296539101
+    second: Shinobi_Spritelist_29
+  - first:
+      213: -7033614953754347304
+    second: Shinobi_Spritelist_30
+  - first:
+      213: -5426057846740811153
+    second: Shinobi_Spritelist_31
+  - first:
+      213: 2747788016375006906
+    second: Shinobi_Spritelist_32
+  - first:
+      213: 3232213760335080049
+    second: Shinobi_Spritelist_33
+  - first:
+      213: 583094237831707403
+    second: Shinobi_Spritelist_34
+  - first:
+      213: -4749150274688760713
+    second: Shinobi_Spritelist_35
+  - first:
+      213: -6738992846314659397
+    second: Shinobi_Spritelist_36
+  - first:
+      213: 1805528552223593720
+    second: Shinobi_Spritelist_37
+  - first:
+      213: 1837053755745858764
+    second: Shinobi_Spritelist_38
+  - first:
+      213: 1060415496414716309
+    second: Shinobi_Spritelist_39
+  - first:
+      213: -1259538237266010771
+    second: Shinobi_Spritelist_40
+  - first:
+      213: 5694060188226374353
+    second: Shinobi_Spritelist_41
+  - first:
+      213: -4626886210072076148
+    second: Shinobi_Spritelist_42
+  - first:
+      213: -463651379892061725
+    second: Shinobi_Spritelist_43
+  - first:
+      213: -5288330394259893389
+    second: Shinobi_Spritelist_44
+  - first:
+      213: -1239348045325506253
+    second: Shinobi_Spritelist_45
+  - first:
+      213: 2687740479783281092
+    second: Shinobi_Spritelist_46
+  - first:
+      213: 4161110196689111804
+    second: Shinobi_Spritelist_47
+  - first:
+      213: 7739385469028897220
+    second: Shinobi_Spritelist_48
+  - first:
+      213: -1579709443703328365
+    second: Shinobi_Spritelist_49
+  - first:
+      213: -2406623603119132178
+    second: Shinobi_Spritelist_50
+  - first:
+      213: -3768532521344654559
+    second: Shinobi_Spritelist_51
+  - first:
+      213: -2229475638828623027
+    second: Shinobi_Spritelist_52
+  - first:
+      213: -5765156292530096257
+    second: Shinobi_Spritelist_53
+  - first:
+      213: -6807989327273255472
+    second: Shinobi_Spritelist_54
+  - first:
+      213: 3730389830779843578
+    second: Shinobi_Spritelist_55
+  - first:
+      213: 1254084997233391725
+    second: Shinobi_Spritelist_56
+  - first:
+      213: -8961132373396577752
+    second: Shinobi_Spritelist_57
+  - first:
+      213: -9061724897124683295
+    second: Shinobi_Spritelist_58
+  - first:
+      213: -3418424840326063601
+    second: Shinobi_Spritelist_59
+  - first:
+      213: 3482687117486962058
+    second: Shinobi_Spritelist_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1153
+        width: 38
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42440bc2c16182c00800000000000000
+      internalID: 875974437788206116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1153
+        width: 38
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0712c8ebda1978c50800000000000000
+      internalID: 6667457948757533040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1153
+        width: 39
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0627e9e90786b7f0800000000000000
+      internalID: -597141423931316726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_3
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1153
+        width: 38
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb88202f7a45bed10800000000000000
+      internalID: 2155909926923438270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_4
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1153
+        width: 38
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e429b033e0a1d0780800000000000000
+      internalID: -8715281055603781042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_5
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1153
+        width: 38
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2b6bdbb2a9658a0800000000000000
+      internalID: -6316691914683403604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_6
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1023
+        width: 30
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b635c324743518e0800000000000000
+      internalID: -1723413608978368844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_7
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1023
+        width: 37
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e52492ef3e1f370800000000000000
+      internalID: 8354709464502394426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1023
+        width: 36
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b00d5ab011db950800000000000000
+      internalID: 6466343381698087774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_9
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1023
+        width: 27
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424117abc474b6170800000000000000
+      internalID: 8172704343664956452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_10
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1023
+        width: 29
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b25eacd1e7593e000800000000000000
+      internalID: 64059188611573035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_11
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1023
+        width: 37
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6667c40d54345370800000000000000
+      internalID: 8310324786522187372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_12
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1023
+        width: 37
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5d7078a5a6b69c0800000000000000
+      internalID: -3932932912532957775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_13
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1023
+        width: 30
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244fdfb7783785a20800000000000000
+      internalID: 3051315773281530946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_14
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 895
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79930969fb833f8f0800000000000000
+      internalID: -507999937446790761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_15
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 895
+        width: 62
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf8f2625db5f5df0800000000000000
+      internalID: -189331688299458617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_16
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 895
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e24fa4cb9d87f60800000000000000
+      internalID: 8032409338149875300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_17
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 895
+        width: 62
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53391b230efee8f70800000000000000
+      internalID: 9191547635711972149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_18
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 895
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c61d0a0ce0179c0800000000000000
+      internalID: -3931344779223143395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_19
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 895
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d4158322a0d2ef0800000000000000
+      internalID: -131437672033858242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_20
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 895
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e100bb200f5a53150800000000000000
+      internalID: 5851765741094371358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_21
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 895
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636a96d05733bf640800000000000000
+      internalID: 5114738379638548022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 767
+        width: 45
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f6613dae6ebc9d90800000000000000
+      internalID: -7089582330826627335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_23
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 767
+        width: 54
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3ec2f14bdd9f710800000000000000
+      internalID: 1727655697760183286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 767
+        width: 53
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa741e95417cfde10800000000000000
+      internalID: 2224715631165523887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_25
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 767
+        width: 47
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94964bfb35b9e2780800000000000000
+      internalID: -8705850245659727543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_26
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 769
+        width: 30
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12401abe202a4dc0800000000000000
+      internalID: -3654072762595524066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_27
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 769
+        width: 27
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec3591151aad7c30800000000000000
+      internalID: 4358827021830536428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_28
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 769
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1f164ac0254db50800000000000000
+      internalID: 6617003966765068732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_29
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 770
+        width: 36
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3d13cd740248370800000000000000
+      internalID: 8323813504296539101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_30
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 767
+        width: 33
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8b89a1774936e90800000000000000
+      internalID: -7033614953754347304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_31
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 767
+        width: 52
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f620b4a0325c2b4b0800000000000000
+      internalID: -5426057846740811153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_32
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 767
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab68b1a74aa122620800000000000000
+      internalID: 2747788016375006906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_33
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 767
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ae6ee3a412bdc20800000000000000
+      internalID: 3232213760335080049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_34
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 639
+        width: 38
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b3984be11971800800000000000000
+      internalID: 583094237831707403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_35
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 639
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7744a3cbcf0a71eb0800000000000000
+      internalID: -4749150274688760713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_36
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 639
+        width: 49
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1248306b94a72a0800000000000000
+      internalID: -6738992846314659397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_37
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 639
+        width: 61
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4dc13f6a68e0910800000000000000
+      internalID: 1805528552223593720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_38
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 670
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4778068a68e7910800000000000000
+      internalID: 1837053755745858764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_39
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 667
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5916e12964a57be00800000000000000
+      internalID: 1060415496414716309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_40
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 678
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ddcb285a8358ee0800000000000000
+      internalID: -1259538237266010771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_41
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 639
+        width: 51
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da4de0a29d550f40800000000000000
+      internalID: 5694060188226374353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_42
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 511
+        width: 49
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c802088918ff9cfb0800000000000000
+      internalID: -4626886210072076148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_43
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 511
+        width: 62
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9f9e9c687c099f0800000000000000
+      internalID: -463651379892061725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_44
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 544
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373dc3376831c96b0800000000000000
+      internalID: -5288330394259893389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_45
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 511
+        width: 67
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3396c45e483fccee0800000000000000
+      internalID: -1239348045325506253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_46
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 383
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1abe1e9b5cc4520800000000000000
+      internalID: 2687740479783281092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_47
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 383
+        width: 45
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa09e86dab3fb930800000000000000
+      internalID: 4161110196689111804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_48
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 383
+        width: 57
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1994d3412d76b60800000000000000
+      internalID: 7739385469028897220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_49
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 419
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391bbbf61aeb31ae0800000000000000
+      internalID: -1579709443703328365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_50
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 383
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee173047594f99ed0800000000000000
+      internalID: -2406623603119132178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_51
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 255
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123aebc63ab73bbc0800000000000000
+      internalID: -3768532521344654559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_52
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 255
+        width: 71
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b9b3008bf4f01e0800000000000000
+      internalID: -2229475638828623027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_53
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 255
+        width: 69
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77b225a5ec0effa0800000000000000
+      internalID: -5765156292530096257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_54
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 255
+        width: 55
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd1a31f6c92581a0800000000000000
+      internalID: -6807989327273255472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_55
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 127
+        width: 38
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3bc5169c105c330800000000000000
+      internalID: 3730389830779843578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_56
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 127
+        width: 37
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d683e3a19a7676110800000000000000
+      internalID: 1254084997233391725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_57
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 37
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822a172a599a3a380800000000000000
+      internalID: -8961132373396577752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_58
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1f19697394e3280800000000000000
+      internalID: -9061724897124683295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_59
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a5ef428b05f80d0800000000000000
+      internalID: -3418424840326063601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shinobi_Spritelist_60
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 0
+        width: 83
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a85b3a53b7df45030800000000000000
+      internalID: 3482687117486962058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
