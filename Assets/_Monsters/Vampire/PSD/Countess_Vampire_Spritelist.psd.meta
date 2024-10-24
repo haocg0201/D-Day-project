@@ -1,0 +1,1992 @@
+fileFormatVersion: 2
+guid: f158aee687333b245abda46f68ba4d2f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 788769753751512119
+    second: Countess_Vampire_Spritelist_0
+  - first:
+      213: -1272081975363321565
+    second: Countess_Vampire_Spritelist_1
+  - first:
+      213: 8016323189901821987
+    second: Countess_Vampire_Spritelist_2
+  - first:
+      213: -8300474133497720925
+    second: Countess_Vampire_Spritelist_3
+  - first:
+      213: 5331654585773444640
+    second: Countess_Vampire_Spritelist_4
+  - first:
+      213: 7207391958410234491
+    second: Countess_Vampire_Spritelist_5
+  - first:
+      213: 4669698994109151096
+    second: Countess_Vampire_Spritelist_6
+  - first:
+      213: -8005403528932637447
+    second: Countess_Vampire_Spritelist_7
+  - first:
+      213: -2691186823104992066
+    second: Countess_Vampire_Spritelist_8
+  - first:
+      213: -3004175139668987586
+    second: Countess_Vampire_Spritelist_9
+  - first:
+      213: -7396892661066111884
+    second: Countess_Vampire_Spritelist_10
+  - first:
+      213: -136660817606190237
+    second: Countess_Vampire_Spritelist_11
+  - first:
+      213: -899236170196521350
+    second: Countess_Vampire_Spritelist_12
+  - first:
+      213: -2490150168347160969
+    second: Countess_Vampire_Spritelist_13
+  - first:
+      213: -228772214100419236
+    second: Countess_Vampire_Spritelist_14
+  - first:
+      213: 4798006127204777641
+    second: Countess_Vampire_Spritelist_15
+  - first:
+      213: 915853089300232202
+    second: Countess_Vampire_Spritelist_16
+  - first:
+      213: 5332068146455067622
+    second: Countess_Vampire_Spritelist_17
+  - first:
+      213: -2085555144804205960
+    second: Countess_Vampire_Spritelist_18
+  - first:
+      213: 8069900585483214386
+    second: Countess_Vampire_Spritelist_19
+  - first:
+      213: 1217768925700216133
+    second: Countess_Vampire_Spritelist_20
+  - first:
+      213: 1828342474325230780
+    second: Countess_Vampire_Spritelist_21
+  - first:
+      213: -8681364408887636967
+    second: Countess_Vampire_Spritelist_22
+  - first:
+      213: 6286861705613015839
+    second: Countess_Vampire_Spritelist_23
+  - first:
+      213: 3503177859828554377
+    second: Countess_Vampire_Spritelist_24
+  - first:
+      213: 6836239382689900010
+    second: Countess_Vampire_Spritelist_25
+  - first:
+      213: -7685451243426633821
+    second: Countess_Vampire_Spritelist_26
+  - first:
+      213: -7088516898406529213
+    second: Countess_Vampire_Spritelist_27
+  - first:
+      213: 1082217383669270194
+    second: Countess_Vampire_Spritelist_28
+  - first:
+      213: -2948131026885466512
+    second: Countess_Vampire_Spritelist_29
+  - first:
+      213: 6796598825416040974
+    second: Countess_Vampire_Spritelist_30
+  - first:
+      213: -8463682407338565903
+    second: Countess_Vampire_Spritelist_31
+  - first:
+      213: 4961741253642230126
+    second: Countess_Vampire_Spritelist_32
+  - first:
+      213: 2205687780837963723
+    second: Countess_Vampire_Spritelist_33
+  - first:
+      213: 3747256400633501157
+    second: Countess_Vampire_Spritelist_34
+  - first:
+      213: 6909663025078343509
+    second: Countess_Vampire_Spritelist_35
+  - first:
+      213: -1935174407770280391
+    second: Countess_Vampire_Spritelist_36
+  - first:
+      213: 172000584522125443
+    second: Countess_Vampire_Spritelist_37
+  - first:
+      213: 613637046821481641
+    second: Countess_Vampire_Spritelist_38
+  - first:
+      213: 8729399200958548887
+    second: Countess_Vampire_Spritelist_39
+  - first:
+      213: 1938786863427837903
+    second: Countess_Vampire_Spritelist_40
+  - first:
+      213: 2630165718619118717
+    second: Countess_Vampire_Spritelist_41
+  - first:
+      213: 8980290837537829053
+    second: Countess_Vampire_Spritelist_42
+  - first:
+      213: -3345227251243068562
+    second: Countess_Vampire_Spritelist_43
+  - first:
+      213: 2086397893864554238
+    second: Countess_Vampire_Spritelist_44
+  - first:
+      213: -3773681145554973340
+    second: Countess_Vampire_Spritelist_45
+  - first:
+      213: -3613890754191470055
+    second: Countess_Vampire_Spritelist_46
+  - first:
+      213: -6064521186696557637
+    second: Countess_Vampire_Spritelist_47
+  - first:
+      213: -3945364165158740735
+    second: Countess_Vampire_Spritelist_48
+  - first:
+      213: 6310595390647044556
+    second: Countess_Vampire_Spritelist_49
+  - first:
+      213: 8478898556363120825
+    second: Countess_Vampire_Spritelist_50
+  - first:
+      213: -3075538556967539825
+    second: Countess_Vampire_Spritelist_51
+  - first:
+      213: -1705668698491975307
+    second: Countess_Vampire_Spritelist_52
+  - first:
+      213: 7897707948800289239
+    second: Countess_Vampire_Spritelist_53
+  - first:
+      213: -2951539929276908782
+    second: Countess_Vampire_Spritelist_54
+  - first:
+      213: 2001342627401089926
+    second: Countess_Vampire_Spritelist_55
+  - first:
+      213: 9036525044000864252
+    second: Countess_Vampire_Spritelist_56
+  - first:
+      213: 242068648276082138
+    second: Countess_Vampire_Spritelist_57
+  - first:
+      213: 5020263693275084807
+    second: Countess_Vampire_Spritelist_58
+  - first:
+      213: 5579782964211690206
+    second: Countess_Vampire_Spritelist_59
+  - first:
+      213: -7580968948226953631
+    second: Countess_Vampire_Spritelist_60
+  - first:
+      213: 2237098098225759605
+    second: Countess_Vampire_Spritelist_61
+  - first:
+      213: -457107692623462828
+    second: Countess_Vampire_Spritelist_62
+  - first:
+      213: -4469704382768718929
+    second: Countess_Vampire_Spritelist_63
+  - first:
+      213: -761919878828339926
+    second: Countess_Vampire_Spritelist_64
+  - first:
+      213: -2503646538310368792
+    second: Countess_Vampire_Spritelist_65
+  - first:
+      213: 8656896807395406829
+    second: Countess_Vampire_Spritelist_66
+  - first:
+      213: 2087144676490252568
+    second: Countess_Vampire_Spritelist_67
+  - first:
+      213: -286259523919622298
+    second: Countess_Vampire_Spritelist_68
+  - first:
+      213: -1265843281243456869
+    second: Countess_Vampire_Spritelist_69
+  - first:
+      213: 6725947137492103999
+    second: Countess_Vampire_Spritelist_70
+  - first:
+      213: 2383750501806169042
+    second: Countess_Vampire_Spritelist_71
+  - first:
+      213: 5835636799006025124
+    second: Countess_Vampire_Spritelist_72
+  - first:
+      213: -4162902883213108894
+    second: Countess_Vampire_Spritelist_73
+  - first:
+      213: -857504030617605719
+    second: Countess_Vampire_Spritelist_74
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1153
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7346ee579e542fa00800000000000000
+      internalID: 788769753751512119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1153
+        width: 54
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321ca45ee28a85ee0800000000000000
+      internalID: -1272081975363321565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1153
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32803da0873bf3f60800000000000000
+      internalID: 8016323189901821987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1153
+        width: 54
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3afcc8dd0cacecc80800000000000000
+      internalID: -8300474133497720925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_4
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1153
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ecb12f897ddf940800000000000000
+      internalID: 5331654585773444640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_5
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1023
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a8c0ebcccc50460800000000000000
+      internalID: 7207391958410234491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_6
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1023
+        width: 45
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877ffd77e7a1ec040800000000000000
+      internalID: 4669698994109151096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_7
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1023
+        width: 45
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4cf46a7e717e090800000000000000
+      internalID: -8005403528932637447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_8
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1023
+        width: 43
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc6d98c7dbf6aad0800000000000000
+      internalID: -2691186823104992066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_9
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1023
+        width: 45
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3178f490a60f46d0800000000000000
+      internalID: -3004175139668987586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1023
+        width: 45
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474e57fa055f85990800000000000000
+      internalID: -7396892661066111884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 895
+        width: 44
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b5edfd5bb7a1ef0800000000000000
+      internalID: -136660817606190237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 895
+        width: 47
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ee042b7754583f0800000000000000
+      internalID: -899236170196521350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_13
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 895
+        width: 39
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ec9428d95317dd0800000000000000
+      internalID: -2490150168347160969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_14
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 895
+        width: 41
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d901422ec33dcf0800000000000000
+      internalID: -228772214100419236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_15
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 895
+        width: 45
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae303ad621f59240800000000000000
+      internalID: 4798006127204777641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_16
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 895
+        width: 45
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a083f264883c5bc00800000000000000
+      internalID: 915853089300232202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 767
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb31ab8abf4ff940800000000000000
+      internalID: 5332068146455067622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_18
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 767
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87af47245ae9e03e0800000000000000
+      internalID: -2085555144804205960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_19
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 767
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e917a83db0eff60800000000000000
+      internalID: 8069900585483214386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_20
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 767
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545dedac26266e010800000000000000
+      internalID: 1217768925700216133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_21
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 767
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb40aed1bc39f5910800000000000000
+      internalID: 1828342474325230780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_22
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 767
+        width: 56
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c8882e019958780800000000000000
+      internalID: -8681364408887636967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_23
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 813
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1bf11b796b6f3750800000000000000
+      internalID: 6286861705613015839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_24
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 814
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a1810f3b9cd9030800000000000000
+      internalID: 3503177859828554377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_25
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 814
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae564c4af733fde50800000000000000
+      internalID: 6836239382689900010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_26
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 639
+        width: 47
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7a8f830dac75590800000000000000
+      internalID: -7685451243426633821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_27
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 639
+        width: 43
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347002eff6780ad90800000000000000
+      internalID: -7088516898406529213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_28
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 639
+        width: 43
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b60c530afec40f00800000000000000
+      internalID: 1082217383669270194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_29
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 674
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0762f2f63722617d0800000000000000
+      internalID: -2948131026885466512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_30
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 675
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02a2cd2f9e525e50800000000000000
+      internalID: 6796598825416040974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_31
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 675
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe9cda61b5fa8a80800000000000000
+      internalID: -8463682407338565903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_32
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 511
+        width: 58
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e691fbab165abd440800000000000000
+      internalID: 4961741253642230126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_33
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 559
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc73446b95d2c9e10800000000000000
+      internalID: 2205687780837963723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_34
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 559
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e59112b7dde00430800000000000000
+      internalID: 3747256400633501157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_35
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 559
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557127f89ed04ef50800000000000000
+      internalID: 6909663025078343509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_36
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 383
+        width: 45
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93eec6e0121e425e0800000000000000
+      internalID: -1935174407770280391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_37
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 383
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380d99dce91136200800000000000000
+      internalID: 172000584522125443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_38
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 383
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac60d494a3148800800000000000000
+      internalID: 613637046821481641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_39
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 383
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b86bba25e052970800000000000000
+      internalID: 8729399200958548887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_40
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 383
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf5fc15164f7ea10800000000000000
+      internalID: 1938786863427837903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_41
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 383
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7cd3be29c9308420800000000000000
+      internalID: 2630165718619118717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_42
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 431
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db03327efe660ac70800000000000000
+      internalID: 8980290837537829053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_43
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 432
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6353bce98d5391d0800000000000000
+      internalID: -3345227251243068562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_44
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 432
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe7beb84df54fc10800000000000000
+      internalID: 2086397893864554238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_45
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 432
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d4b9fedf031abc0800000000000000
+      internalID: -3773681145554973340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_46
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 255
+        width: 54
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912595b9181e8ddc0800000000000000
+      internalID: -3613890754191470055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_47
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 255
+        width: 54
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb0f16ac1e76dba0800000000000000
+      internalID: -6064521186696557637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_48
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 274
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d582af1304f39c0800000000000000
+      internalID: -3945364165158740735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_49
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 275
+        width: 54
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc90cb4a21db39750800000000000000
+      internalID: 6310595390647044556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_50
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 255
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0a89a50591ba570800000000000000
+      internalID: 8478898556363120825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_51
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 255
+        width: 54
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8baee23afd7155d0800000000000000
+      internalID: -3075538556967539825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_52
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 127
+        width: 53
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57902e11b5f3458e0800000000000000
+      internalID: -1705668698491975307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_53
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 127
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9250c198b4a9d60800000000000000
+      internalID: 7897707948800289239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_54
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 59
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b711f72160a07d0800000000000000
+      internalID: -2951539929276908782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_55
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 60
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 683c61c148236cb10800000000000000
+      internalID: 2001342627401089926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_56
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7b79366af286d70800000000000000
+      internalID: 9036525044000864252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_57
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add31cf27200c5300800000000000000
+      internalID: 242068648276082138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_58
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 50
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708b3740b3f8ba540800000000000000
+      internalID: 5020263693275084807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_59
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda2d910b0f5f6d40800000000000000
+      internalID: 5579782964211690206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_60
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 51
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e6aa348ecfac690800000000000000
+      internalID: -7580968948226953631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_61
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 26
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575c2702ed4cb0f10800000000000000
+      internalID: 2237098098225759605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_62
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 21
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e7415b9f608a9f0800000000000000
+      internalID: -457107692623462828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_63
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 0
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab501e9b8b68f1c0800000000000000
+      internalID: -4469704382768718929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_64
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 11
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dc02338ed1d65f0800000000000000
+      internalID: -761919878828339926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_65
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 0
+        width: 39
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1cfd00db2414dd0800000000000000
+      internalID: -2503646538310368792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_66
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 0
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de33406b7c9732870800000000000000
+      internalID: 8656896807395406829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_67
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 12
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8119c0d660707fc10800000000000000
+      internalID: 2087144676490252568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_68
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 0
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66fc23bca70070cf0800000000000000
+      internalID: -286259523919622298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_69
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a3b201e32de6ee0800000000000000
+      internalID: -1265843281243456869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_70
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33b544394d575d50800000000000000
+      internalID: 6725947137492103999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_71
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 0
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbd055a378c41120800000000000000
+      internalID: 2383750501806169042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_72
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 0
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5a3fa00c85cf050800000000000000
+      internalID: 5835636799006025124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_73
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 0
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26912ab32e56a36c0800000000000000
+      internalID: -4162902883213108894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Countess_Vampire_Spritelist_74
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 0
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9629d90a88914f0800000000000000
+      internalID: -857504030617605719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
