@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Scream_0: -698445991872946889
+      Scream_1: -7753230735383741357
+      Scream_2: 1643304270273261513
+      Scream_3: -7271889780145406184
+      Scream_4: -6433560901112551847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
