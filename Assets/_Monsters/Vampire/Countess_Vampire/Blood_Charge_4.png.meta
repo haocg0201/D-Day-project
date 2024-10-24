@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blood_Charge_4_0: -1341383495734011532
+      Blood_Charge_4_1: -2632975657255610240
+      Blood_Charge_4_2: 8096979192513092020
+      Blood_Charge_4_3: 762205561470012771
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

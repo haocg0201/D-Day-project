@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blood_Charge_2_0: 4161539786851029976
+      Blood_Charge_2_1: 8696007776872256290
+      Blood_Charge_2_2: -2444719057947278522
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
