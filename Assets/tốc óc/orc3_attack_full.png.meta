@@ -1059,7 +1059,45 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc3_attack_full_0: -3809585615058110800
+      orc3_attack_full_1: 4747002199107184114
+      orc3_attack_full_10: 680340932920608335
+      orc3_attack_full_11: -6013386055170656685
+      orc3_attack_full_12: -8090667977797499917
+      orc3_attack_full_13: -6204556436599433264
+      orc3_attack_full_14: -1145788343208014003
+      orc3_attack_full_15: -5378692609353275755
+      orc3_attack_full_16: 1642094992213467647
+      orc3_attack_full_17: -3469232572465268100
+      orc3_attack_full_18: 1311249683321961765
+      orc3_attack_full_19: -1567273221783435077
+      orc3_attack_full_2: 7585061359825340689
+      orc3_attack_full_20: -3820001934154308826
+      orc3_attack_full_21: 6522102033845634049
+      orc3_attack_full_22: -8804892360203750076
+      orc3_attack_full_23: -359188942381974430
+      orc3_attack_full_24: -5093617538281716567
+      orc3_attack_full_25: 5236439483562366580
+      orc3_attack_full_26: 5636452358709889024
+      orc3_attack_full_27: -7618652576579081319
+      orc3_attack_full_28: 1395967768711553899
+      orc3_attack_full_29: 7461437797099579360
+      orc3_attack_full_3: -1921407539160383058
+      orc3_attack_full_30: -917345255648741076
+      orc3_attack_full_31: 4615477783806161374
+      orc3_attack_full_32: 1782230467763443501
+      orc3_attack_full_33: 1725349638390385598
+      orc3_attack_full_34: 116608617009276001
+      orc3_attack_full_35: 2805404458143901929
+      orc3_attack_full_36: -8557099785140511589
+      orc3_attack_full_37: -8512729010329508279
+      orc3_attack_full_4: 4597244580700133795
+      orc3_attack_full_5: -4695875701091383722
+      orc3_attack_full_6: -5032503779001124984
+      orc3_attack_full_7: -9079432600212008924
+      orc3_attack_full_8: 6532051090973591001
+      orc3_attack_full_9: -5265918430932932798
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

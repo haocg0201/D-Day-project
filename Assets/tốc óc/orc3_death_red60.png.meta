@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc3_death_red60_0: -1936678255550557191
+      orc3_death_red60_1: -1663326575706199237
+      orc3_death_red60_10: -3241055435613172429
+      orc3_death_red60_11: -993720809410113313
+      orc3_death_red60_2: -3243133992794717175
+      orc3_death_red60_3: -8741385477951759691
+      orc3_death_red60_4: 2476384253577067215
+      orc3_death_red60_5: 6695552230434780079
+      orc3_death_red60_6: 1087512624801415846
+      orc3_death_red60_7: 5864207639676175164
+      orc3_death_red60_8: -5046050577987662253
+      orc3_death_red60_9: 1859238330579417463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

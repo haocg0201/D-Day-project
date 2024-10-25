@@ -1109,7 +1109,47 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc1_run_attack_front_full_0: -595091266969744562
+      orc1_run_attack_front_full_1: -4810134645985666457
+      orc1_run_attack_front_full_10: 2784325803750327911
+      orc1_run_attack_front_full_11: -6037368816055078769
+      orc1_run_attack_front_full_12: -6641223857944625564
+      orc1_run_attack_front_full_13: 5806287593266841354
+      orc1_run_attack_front_full_14: 2448672299007149944
+      orc1_run_attack_front_full_15: -1031692436121777107
+      orc1_run_attack_front_full_16: 5117429637330683372
+      orc1_run_attack_front_full_17: -5980239851285078330
+      orc1_run_attack_front_full_18: -3828577947938195634
+      orc1_run_attack_front_full_19: -4947496893844553371
+      orc1_run_attack_front_full_2: 2099854415403851339
+      orc1_run_attack_front_full_20: 8228985704604925505
+      orc1_run_attack_front_full_21: -8914554276900382719
+      orc1_run_attack_front_full_22: -5592674021744633789
+      orc1_run_attack_front_full_23: 6858128260509073003
+      orc1_run_attack_front_full_24: 582809617239372703
+      orc1_run_attack_front_full_25: 1300745301876567750
+      orc1_run_attack_front_full_26: 4255670663924515088
+      orc1_run_attack_front_full_27: -3780999591402738684
+      orc1_run_attack_front_full_28: 3045945569809964763
+      orc1_run_attack_front_full_29: -3145081012926513833
+      orc1_run_attack_front_full_3: 3519942532013776516
+      orc1_run_attack_front_full_30: -8107655987776842432
+      orc1_run_attack_front_full_31: 487351259807310787
+      orc1_run_attack_front_full_32: -8079190011281014577
+      orc1_run_attack_front_full_33: -2492901642030758394
+      orc1_run_attack_front_full_34: 6782862616111822630
+      orc1_run_attack_front_full_35: -1325411448706924488
+      orc1_run_attack_front_full_36: 3647666851359109750
+      orc1_run_attack_front_full_37: 9006148062751299838
+      orc1_run_attack_front_full_38: 5490546586224719795
+      orc1_run_attack_front_full_39: -1389002599112860196
+      orc1_run_attack_front_full_4: 8276519119624779804
+      orc1_run_attack_front_full_5: -5366609936320560350
+      orc1_run_attack_front_full_6: -8706287395660072090
+      orc1_run_attack_front_full_7: 5572493340986013174
+      orc1_run_attack_front_full_8: 1715711946445323209
+      orc1_run_attack_front_full_9: 6950987946654714109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc2_walk_attack_orc2_walk_attack_swing_0: 1936705382239333010
+      orc2_walk_attack_orc2_walk_attack_swing_1: 8092306914574700695
+      orc2_walk_attack_orc2_walk_attack_swing_10: 7351842316632752130
+      orc2_walk_attack_orc2_walk_attack_swing_11: 1720934516442123371
+      orc2_walk_attack_orc2_walk_attack_swing_12: -3762270747619697179
+      orc2_walk_attack_orc2_walk_attack_swing_13: 7320218899699299557
+      orc2_walk_attack_orc2_walk_attack_swing_14: 6738229392753341500
+      orc2_walk_attack_orc2_walk_attack_swing_15: -2702083306516901427
+      orc2_walk_attack_orc2_walk_attack_swing_2: -4330023151417724722
+      orc2_walk_attack_orc2_walk_attack_swing_3: -8670682860827216364
+      orc2_walk_attack_orc2_walk_attack_swing_4: -2550252131411678825
+      orc2_walk_attack_orc2_walk_attack_swing_5: -1149602908313750572
+      orc2_walk_attack_orc2_walk_attack_swing_6: -185501320540077237
+      orc2_walk_attack_orc2_walk_attack_swing_7: -7667719409027458198
+      orc2_walk_attack_orc2_walk_attack_swing_8: -2929408195899783909
+      orc2_walk_attack_orc2_walk_attack_swing_9: 4490426145900599656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

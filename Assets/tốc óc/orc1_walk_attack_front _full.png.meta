@@ -859,7 +859,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc1_walk_attack_front _full_0: 8558595244162699850
+      orc1_walk_attack_front _full_1: 893154720071309649
+      orc1_walk_attack_front _full_10: 9064961374708176075
+      orc1_walk_attack_front _full_11: 4588162909936220877
+      orc1_walk_attack_front _full_12: 4991150142146735452
+      orc1_walk_attack_front _full_13: 7130599846890318948
+      orc1_walk_attack_front _full_14: 7346111473208433224
+      orc1_walk_attack_front _full_15: -3458214092489664524
+      orc1_walk_attack_front _full_16: 940076757344901999
+      orc1_walk_attack_front _full_17: -7441743251185708178
+      orc1_walk_attack_front _full_18: 6812044397673390362
+      orc1_walk_attack_front _full_19: 1495955473230327652
+      orc1_walk_attack_front _full_2: 2218251778988597258
+      orc1_walk_attack_front _full_20: 3302239771920393917
+      orc1_walk_attack_front _full_21: 5529003010661452353
+      orc1_walk_attack_front _full_22: 6713151990108296286
+      orc1_walk_attack_front _full_23: -2617675847578091405
+      orc1_walk_attack_front _full_24: -7228408625141918010
+      orc1_walk_attack_front _full_25: 7642633949005350609
+      orc1_walk_attack_front _full_26: 1289988927016532070
+      orc1_walk_attack_front _full_27: -2071611877205003490
+      orc1_walk_attack_front _full_28: 7038980368106376149
+      orc1_walk_attack_front _full_29: 426035230357136845
+      orc1_walk_attack_front _full_3: -323983760699048382
+      orc1_walk_attack_front _full_4: -7877585534941598786
+      orc1_walk_attack_front _full_5: -8091621730375043876
+      orc1_walk_attack_front _full_6: 2677660318966748412
+      orc1_walk_attack_front _full_7: 6138650068380870007
+      orc1_walk_attack_front _full_8: -8695282717463819489
+      orc1_walk_attack_front _full_9: -5274383835682269774
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

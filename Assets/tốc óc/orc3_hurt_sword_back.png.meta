@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc3_hurt_sword_back_0: 8349899800108366474
+      orc3_hurt_sword_back_1: 2771733839310152994
+      orc3_hurt_sword_back_10: 7679399834608866116
+      orc3_hurt_sword_back_11: -6440852729297183967
+      orc3_hurt_sword_back_2: -3307611434950879460
+      orc3_hurt_sword_back_3: 2096812700776469043
+      orc3_hurt_sword_back_4: -1267027617830227680
+      orc3_hurt_sword_back_5: 2869518707017107509
+      orc3_hurt_sword_back_6: -1493269936302596787
+      orc3_hurt_sword_back_7: -3921062156174400234
+      orc3_hurt_sword_back_8: 169641381174995567
+      orc3_hurt_sword_back_9: -7988761274347085705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

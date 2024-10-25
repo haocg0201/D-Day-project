@@ -709,7 +709,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc2_hurt_body_0: -278812616913038353
+      orc2_hurt_body_1: -8281637384118557016
+      orc2_hurt_body_10: -3254499484810430293
+      orc2_hurt_body_11: -8977931931754518100
+      orc2_hurt_body_12: -4340393162823158761
+      orc2_hurt_body_13: 2207380314935775269
+      orc2_hurt_body_14: 4342165781540981739
+      orc2_hurt_body_15: -6156166146225962105
+      orc2_hurt_body_16: 588461773032351479
+      orc2_hurt_body_17: 643043089378586030
+      orc2_hurt_body_18: 1624753733524952950
+      orc2_hurt_body_19: 4488931695231611870
+      orc2_hurt_body_2: 5051045310904821359
+      orc2_hurt_body_20: 3556928057278549325
+      orc2_hurt_body_21: 9143300631650594802
+      orc2_hurt_body_22: -6376156250722470832
+      orc2_hurt_body_23: 4944360517276945053
+      orc2_hurt_body_3: 5384362365450198961
+      orc2_hurt_body_4: -5824195600932715591
+      orc2_hurt_body_5: -6091386634501469116
+      orc2_hurt_body_6: -6671277324642557594
+      orc2_hurt_body_7: -8266074798432013671
+      orc2_hurt_body_8: -2517451828198038132
+      orc2_hurt_body_9: -1507920596337463286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

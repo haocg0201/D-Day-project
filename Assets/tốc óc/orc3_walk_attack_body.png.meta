@@ -709,7 +709,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc3_walk_attack_body_0: 6040890698457827258
+      orc3_walk_attack_body_1: 292444311765567505
+      orc3_walk_attack_body_10: 7681737964372218877
+      orc3_walk_attack_body_11: 8011043447958434909
+      orc3_walk_attack_body_12: 1775858306909940974
+      orc3_walk_attack_body_13: -9054340573319031887
+      orc3_walk_attack_body_14: -522945984581978842
+      orc3_walk_attack_body_15: -4785336611520162418
+      orc3_walk_attack_body_16: 1272508833669102210
+      orc3_walk_attack_body_17: 4152770483107179298
+      orc3_walk_attack_body_18: -2743876646449005242
+      orc3_walk_attack_body_19: 6002101382080968830
+      orc3_walk_attack_body_2: -2965993996363376582
+      orc3_walk_attack_body_20: 63459090262867807
+      orc3_walk_attack_body_21: -5086179484234617564
+      orc3_walk_attack_body_22: -559329719521880716
+      orc3_walk_attack_body_23: -2288021958253095997
+      orc3_walk_attack_body_3: -6759070544482720535
+      orc3_walk_attack_body_4: 70884376717944952
+      orc3_walk_attack_body_5: -4617064948814411452
+      orc3_walk_attack_body_6: -6142222487951521255
+      orc3_walk_attack_body_7: 6769833377886212096
+      orc3_walk_attack_body_8: 2968569923374841161
+      orc3_walk_attack_body_9: -8230183799684887676
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

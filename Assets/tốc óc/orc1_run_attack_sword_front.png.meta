@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc1_run_attack_sword_front_0: 6308484506243975113
+      orc1_run_attack_sword_front_1: 3344142434927760016
+      orc1_run_attack_sword_front_10: -1322321551122831656
+      orc1_run_attack_sword_front_11: -1396967642718467705
+      orc1_run_attack_sword_front_12: 4184639040841700493
+      orc1_run_attack_sword_front_13: 6061722007792037360
+      orc1_run_attack_sword_front_14: -8090726660243968340
+      orc1_run_attack_sword_front_15: 2623403190306088893
+      orc1_run_attack_sword_front_2: 7570094941690779949
+      orc1_run_attack_sword_front_3: 3287743785196954920
+      orc1_run_attack_sword_front_4: 6722395871992478383
+      orc1_run_attack_sword_front_5: 7607535357567793178
+      orc1_run_attack_sword_front_6: 3150133425855360470
+      orc1_run_attack_sword_front_7: 9185026817959153110
+      orc1_run_attack_sword_front_8: -4628221837064263329
+      orc1_run_attack_sword_front_9: -5290713234731297668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

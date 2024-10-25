@@ -1109,7 +1109,47 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc2_run_attack_full_0: -1270683565998439465
+      orc2_run_attack_full_1: -4728609713746886361
+      orc2_run_attack_full_10: -6451345922091444158
+      orc2_run_attack_full_11: 5649376687323693667
+      orc2_run_attack_full_12: -3589692831705048616
+      orc2_run_attack_full_13: 7654189549548976879
+      orc2_run_attack_full_14: 897362857384403520
+      orc2_run_attack_full_15: -8657134358449310473
+      orc2_run_attack_full_16: 677716548456841958
+      orc2_run_attack_full_17: 2196520738220485932
+      orc2_run_attack_full_18: -5691621171759203944
+      orc2_run_attack_full_19: -8633642620140320512
+      orc2_run_attack_full_2: -3228881163750501994
+      orc2_run_attack_full_20: -7199463679968288737
+      orc2_run_attack_full_21: 5774354448881244736
+      orc2_run_attack_full_22: -4215175181709467081
+      orc2_run_attack_full_23: 5287411489451183845
+      orc2_run_attack_full_24: 8550345899170615283
+      orc2_run_attack_full_25: 1653009681309629818
+      orc2_run_attack_full_26: 6242463989600260258
+      orc2_run_attack_full_27: 79388486235342694
+      orc2_run_attack_full_28: -6627890969497612370
+      orc2_run_attack_full_29: 5218099234540225511
+      orc2_run_attack_full_3: -4605177813235548122
+      orc2_run_attack_full_30: 4922707058319872275
+      orc2_run_attack_full_31: -8108528952681347951
+      orc2_run_attack_full_32: 7077679289391921524
+      orc2_run_attack_full_33: 5729140961224780856
+      orc2_run_attack_full_34: -2613607674142640368
+      orc2_run_attack_full_35: -6277946926043950236
+      orc2_run_attack_full_36: 1129633747927747012
+      orc2_run_attack_full_37: 1658799762635280939
+      orc2_run_attack_full_38: -9193319640670629524
+      orc2_run_attack_full_39: 3495960901113134330
+      orc2_run_attack_full_4: -5781503093477439730
+      orc2_run_attack_full_5: -762666367596102238
+      orc2_run_attack_full_6: 4470074815092669260
+      orc2_run_attack_full_7: 6730268619258780807
+      orc2_run_attack_full_8: 1643819830132858956
+      orc2_run_attack_full_9: 2600561696689826743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -909,7 +909,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc2_attack_body_0: 803437598812231098
+      orc2_attack_body_1: 2876790734986921624
+      orc2_attack_body_10: -7583317961976840452
+      orc2_attack_body_11: -1732197071380205628
+      orc2_attack_body_12: -8694335063394377161
+      orc2_attack_body_13: -397730012180270148
+      orc2_attack_body_14: -6783176268577599219
+      orc2_attack_body_15: -6693569593109086245
+      orc2_attack_body_16: 2276923773120269404
+      orc2_attack_body_17: -7968503597997209320
+      orc2_attack_body_18: 3199452415748686105
+      orc2_attack_body_19: -7085576214010130484
+      orc2_attack_body_2: -5689612154883028583
+      orc2_attack_body_20: -6618080449104510591
+      orc2_attack_body_21: 9031931890808931104
+      orc2_attack_body_22: 6353001955937847436
+      orc2_attack_body_23: -3879207123849653496
+      orc2_attack_body_24: -4789394341515738396
+      orc2_attack_body_25: -1629775112613647293
+      orc2_attack_body_26: -4198168560691150429
+      orc2_attack_body_27: 3065179675801558114
+      orc2_attack_body_28: 5143831095764106653
+      orc2_attack_body_29: -6834041236425518719
+      orc2_attack_body_3: -199514475668564720
+      orc2_attack_body_30: 3448835729727839291
+      orc2_attack_body_31: -8117203530573948189
+      orc2_attack_body_4: -6676144264150861053
+      orc2_attack_body_5: -5419685713559131330
+      orc2_attack_body_6: 273583452207616178
+      orc2_attack_body_7: -4020859561584858944
+      orc2_attack_body_8: -8921781443040658273
+      orc2_attack_body_9: -7299718340504901545
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

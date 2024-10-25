@@ -709,7 +709,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc1_death_sword_front_0: -1868492323575425828
+      orc1_death_sword_front_1: 8443233107961237903
+      orc1_death_sword_front_10: 946413991121538034
+      orc1_death_sword_front_11: -5586545414657908520
+      orc1_death_sword_front_12: -6888714690058751245
+      orc1_death_sword_front_13: -6113063920371073920
+      orc1_death_sword_front_14: 6691421327207141931
+      orc1_death_sword_front_15: 8150190389920954905
+      orc1_death_sword_front_16: -8876218542303119487
+      orc1_death_sword_front_17: -7349846238333991326
+      orc1_death_sword_front_18: 7784313653032024023
+      orc1_death_sword_front_19: -5498878281820176041
+      orc1_death_sword_front_2: -2323054248205079154
+      orc1_death_sword_front_20: 12296607164957180
+      orc1_death_sword_front_21: -5383187772689820803
+      orc1_death_sword_front_22: 4819298754331328373
+      orc1_death_sword_front_23: 6614948004341230622
+      orc1_death_sword_front_3: 999965620860809721
+      orc1_death_sword_front_4: -5118259589890520351
+      orc1_death_sword_front_5: 8138559144244138316
+      orc1_death_sword_front_6: 4758043478046064286
+      orc1_death_sword_front_7: -6152223387234987389
+      orc1_death_sword_front_8: 5265235548669010674
+      orc1_death_sword_front_9: -3896819132200711369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

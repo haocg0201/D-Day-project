@@ -709,7 +709,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc3_walk_head_0: 715141279804676439
+      orc3_walk_head_1: 5534509144675140827
+      orc3_walk_head_10: -2017960392735130136
+      orc3_walk_head_11: -402730599611183038
+      orc3_walk_head_12: -7307707155256682441
+      orc3_walk_head_13: 209967430276601292
+      orc3_walk_head_14: -2992289918105037320
+      orc3_walk_head_15: 2714081617891704832
+      orc3_walk_head_16: -5539839924377910430
+      orc3_walk_head_17: 1897894073204736359
+      orc3_walk_head_18: 215521973731047105
+      orc3_walk_head_19: -6899634016088290309
+      orc3_walk_head_2: 3137263983218423740
+      orc3_walk_head_20: 7356983419812930023
+      orc3_walk_head_21: -301161671457088974
+      orc3_walk_head_22: -7380746639794255748
+      orc3_walk_head_23: 8892534153981970713
+      orc3_walk_head_3: -4378035349637461557
+      orc3_walk_head_4: -6121054175743114369
+      orc3_walk_head_5: -3101542384604256949
+      orc3_walk_head_6: 5516182116372781750
+      orc3_walk_head_7: 2430976259712753410
+      orc3_walk_head_8: -1969331691615866950
+      orc3_walk_head_9: -2872529531800085017
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

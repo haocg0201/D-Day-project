@@ -1059,7 +1059,45 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc1_attack_full_0: -1459632630486504175
+      orc1_attack_full_1: 9052120870403060394
+      orc1_attack_full_10: -2090171585303833420
+      orc1_attack_full_11: -1882217219249422085
+      orc1_attack_full_12: -1314009764107779635
+      orc1_attack_full_13: 5896345051488477779
+      orc1_attack_full_14: -8238417651626266267
+      orc1_attack_full_15: -787675763247117579
+      orc1_attack_full_16: 8582950131985011519
+      orc1_attack_full_17: 3308552808994935941
+      orc1_attack_full_18: -7601089136935490775
+      orc1_attack_full_19: -2567584039384428469
+      orc1_attack_full_2: 7445535814382389512
+      orc1_attack_full_20: 7073632263531248735
+      orc1_attack_full_21: 4665389002540609570
+      orc1_attack_full_22: 8888189468813353279
+      orc1_attack_full_23: 9115704786555973157
+      orc1_attack_full_24: -1750382870862123674
+      orc1_attack_full_25: -3163239588350916456
+      orc1_attack_full_26: -4547532246091621362
+      orc1_attack_full_27: -511376623474335978
+      orc1_attack_full_28: 3977209578971829364
+      orc1_attack_full_29: 3516327373768981293
+      orc1_attack_full_3: 4325132614591300427
+      orc1_attack_full_30: -7152724370101924283
+      orc1_attack_full_31: 6639982633075396900
+      orc1_attack_full_32: -1049379396634498442
+      orc1_attack_full_33: -5452917607942109201
+      orc1_attack_full_34: -4405856283422269401
+      orc1_attack_full_35: 1971951974045997929
+      orc1_attack_full_36: -6038804543678213505
+      orc1_attack_full_37: -3729819014832686251
+      orc1_attack_full_4: -5029180193133222925
+      orc1_attack_full_5: -2266132824719722812
+      orc1_attack_full_6: -6951926677087998833
+      orc1_attack_full_7: -8629869926136175857
+      orc1_attack_full_8: 2566801441112676559
+      orc1_attack_full_9: 9083741465043326541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

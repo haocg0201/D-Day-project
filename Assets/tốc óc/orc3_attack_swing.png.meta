@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc3_attack_swing_0: -8503925478082457322
+      orc3_attack_swing_1: -6382843660512368002
+      orc3_attack_swing_10: -8201819277377985375
+      orc3_attack_swing_11: 7845388292512926497
+      orc3_attack_swing_12: -4430244776635442961
+      orc3_attack_swing_13: -4164101088535248488
+      orc3_attack_swing_14: -8531921676777954372
+      orc3_attack_swing_15: -3282735999592793373
+      orc3_attack_swing_2: -7725922438967869642
+      orc3_attack_swing_3: 2603629970873345753
+      orc3_attack_swing_4: -7894376884199892645
+      orc3_attack_swing_5: -7095127751796755795
+      orc3_attack_swing_6: 5935722974080522825
+      orc3_attack_swing_7: -1288744974197251415
+      orc3_attack_swing_8: -1126888341246284791
+      orc3_attack_swing_9: 4680165358677701341
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

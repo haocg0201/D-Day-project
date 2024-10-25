@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc1_walk_sword_back_0: 5776373941923969088
+      orc1_walk_sword_back_1: -5819980363709385978
+      orc1_walk_sword_back_10: 5441534383732028097
+      orc1_walk_sword_back_11: -6576190475888744985
+      orc1_walk_sword_back_2: -4455681689488077716
+      orc1_walk_sword_back_3: 2990369109480210055
+      orc1_walk_sword_back_4: 5253631114725955071
+      orc1_walk_sword_back_5: 7910485201452105041
+      orc1_walk_sword_back_6: -2255209681524034586
+      orc1_walk_sword_back_7: 912092295318811515
+      orc1_walk_sword_back_8: -5732508301537943923
+      orc1_walk_sword_back_9: 6207860998175186944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

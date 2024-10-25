@@ -909,7 +909,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc3_death_full_0: -6088160430727848194
+      orc3_death_full_1: 786754157128886498
+      orc3_death_full_10: 8300493304617011934
+      orc3_death_full_11: 5719606348432919157
+      orc3_death_full_12: -5283424870617045467
+      orc3_death_full_13: 3801547911216295397
+      orc3_death_full_14: -6539198537794664742
+      orc3_death_full_15: 6290346517465680523
+      orc3_death_full_16: 8331445126161097403
+      orc3_death_full_17: -239753438499051882
+      orc3_death_full_18: -8192147980557626581
+      orc3_death_full_19: 1529271531733879915
+      orc3_death_full_2: -1630103911303590487
+      orc3_death_full_20: -6869241416374231826
+      orc3_death_full_21: -1604887502628339912
+      orc3_death_full_22: -86347335370198568
+      orc3_death_full_23: -914803949413590093
+      orc3_death_full_24: 1118897753628056435
+      orc3_death_full_25: 8841849945254540076
+      orc3_death_full_26: 7459206333322554926
+      orc3_death_full_27: -78202286661496927
+      orc3_death_full_28: -7097195283911394536
+      orc3_death_full_29: -1156155928799402991
+      orc3_death_full_3: -7954534629114336502
+      orc3_death_full_30: -1937575299573596685
+      orc3_death_full_31: 8314312563707403923
+      orc3_death_full_4: 4788579365898200951
+      orc3_death_full_5: -3135965320659849849
+      orc3_death_full_6: 68376850601461189
+      orc3_death_full_7: -212493656311714792
+      orc3_death_full_8: -4711060416216766751
+      orc3_death_full_9: 2738588938302839140
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

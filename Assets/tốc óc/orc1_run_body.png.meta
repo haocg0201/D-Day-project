@@ -909,7 +909,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc1_run_body_0: 3172663342942677905
+      orc1_run_body_1: 8541821778499500788
+      orc1_run_body_10: 992259241172377381
+      orc1_run_body_11: -5589029716364708462
+      orc1_run_body_12: -3785710950718754115
+      orc1_run_body_13: -8764765090844381881
+      orc1_run_body_14: 6316577411160776749
+      orc1_run_body_15: 217908148513525856
+      orc1_run_body_16: 7878714201069967921
+      orc1_run_body_17: -2928825896824842228
+      orc1_run_body_18: 367688473549424152
+      orc1_run_body_19: 487115397700584638
+      orc1_run_body_2: 6541490708421155823
+      orc1_run_body_20: -813932535992991438
+      orc1_run_body_21: 5421783230774939844
+      orc1_run_body_22: 8549858867446504535
+      orc1_run_body_23: 2976363023175529175
+      orc1_run_body_24: 2982621540332375040
+      orc1_run_body_25: -7387366224743368548
+      orc1_run_body_26: -4736933288144678538
+      orc1_run_body_27: -3056824962807474909
+      orc1_run_body_28: -4305111116557684608
+      orc1_run_body_29: -7814854741767226721
+      orc1_run_body_3: -4135568787784002684
+      orc1_run_body_30: 7444916140188709437
+      orc1_run_body_31: -5884441759244985572
+      orc1_run_body_4: -1935642454075592459
+      orc1_run_body_5: 5401148323845925068
+      orc1_run_body_6: -1120021758327800797
+      orc1_run_body_7: 1175527568354413470
+      orc1_run_body_8: -1112601859193582704
+      orc1_run_body_9: 4314003097417824889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
