@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bringer-of-Death_Idle_7_0: 693971316463037970
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
