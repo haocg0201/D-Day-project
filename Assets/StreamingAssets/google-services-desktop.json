@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "466018151661",
+    "project_id": "dday-3456b",
+    "storage_bucket": "dday-3456b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466018151661:android:963abaa1ae045277f830e4",
+        "android_client_info": {
+          "package_name": "com.DDay.DDayproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLOJvpk2mYMnFE-epj_LE40VCxbEDcXTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
