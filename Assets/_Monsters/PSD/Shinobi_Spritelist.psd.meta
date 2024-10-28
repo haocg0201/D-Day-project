@@ -276,6 +276,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1634,7 +1647,68 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shinobi_Spritelist_0: 875974437788206116
+      Shinobi_Spritelist_1: 6667457948757533040
+      Shinobi_Spritelist_10: 64059188611573035
+      Shinobi_Spritelist_11: 8310324786522187372
+      Shinobi_Spritelist_12: -3932932912532957775
+      Shinobi_Spritelist_13: 3051315773281530946
+      Shinobi_Spritelist_14: -507999937446790761
+      Shinobi_Spritelist_15: -189331688299458617
+      Shinobi_Spritelist_16: 8032409338149875300
+      Shinobi_Spritelist_17: 9191547635711972149
+      Shinobi_Spritelist_18: -3931344779223143395
+      Shinobi_Spritelist_19: -131437672033858242
+      Shinobi_Spritelist_2: -597141423931316726
+      Shinobi_Spritelist_20: 5851765741094371358
+      Shinobi_Spritelist_21: 5114738379638548022
+      Shinobi_Spritelist_22: -7089582330826627335
+      Shinobi_Spritelist_23: 1727655697760183286
+      Shinobi_Spritelist_24: 2224715631165523887
+      Shinobi_Spritelist_25: -8705850245659727543
+      Shinobi_Spritelist_26: -3654072762595524066
+      Shinobi_Spritelist_27: 4358827021830536428
+      Shinobi_Spritelist_28: 6617003966765068732
+      Shinobi_Spritelist_29: 8323813504296539101
+      Shinobi_Spritelist_3: 2155909926923438270
+      Shinobi_Spritelist_30: -7033614953754347304
+      Shinobi_Spritelist_31: -5426057846740811153
+      Shinobi_Spritelist_32: 2747788016375006906
+      Shinobi_Spritelist_33: 3232213760335080049
+      Shinobi_Spritelist_34: 583094237831707403
+      Shinobi_Spritelist_35: -4749150274688760713
+      Shinobi_Spritelist_36: -6738992846314659397
+      Shinobi_Spritelist_37: 1805528552223593720
+      Shinobi_Spritelist_38: 1837053755745858764
+      Shinobi_Spritelist_39: 1060415496414716309
+      Shinobi_Spritelist_4: -8715281055603781042
+      Shinobi_Spritelist_40: -1259538237266010771
+      Shinobi_Spritelist_41: 5694060188226374353
+      Shinobi_Spritelist_42: -4626886210072076148
+      Shinobi_Spritelist_43: -463651379892061725
+      Shinobi_Spritelist_44: -5288330394259893389
+      Shinobi_Spritelist_45: -1239348045325506253
+      Shinobi_Spritelist_46: 2687740479783281092
+      Shinobi_Spritelist_47: 4161110196689111804
+      Shinobi_Spritelist_48: 7739385469028897220
+      Shinobi_Spritelist_49: -1579709443703328365
+      Shinobi_Spritelist_5: -6316691914683403604
+      Shinobi_Spritelist_50: -2406623603119132178
+      Shinobi_Spritelist_51: -3768532521344654559
+      Shinobi_Spritelist_52: -2229475638828623027
+      Shinobi_Spritelist_53: -5765156292530096257
+      Shinobi_Spritelist_54: -6807989327273255472
+      Shinobi_Spritelist_55: 3730389830779843578
+      Shinobi_Spritelist_56: 1254084997233391725
+      Shinobi_Spritelist_57: -8961132373396577752
+      Shinobi_Spritelist_58: -9061724897124683295
+      Shinobi_Spritelist_59: -3418424840326063601
+      Shinobi_Spritelist_6: -1723413608978368844
+      Shinobi_Spritelist_60: 3482687117486962058
+      Shinobi_Spritelist_7: 8354709464502394426
+      Shinobi_Spritelist_8: 6466343381698087774
+      Shinobi_Spritelist_9: 8172704343664956452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

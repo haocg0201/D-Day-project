@@ -249,6 +249,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1409,7 +1422,59 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fighter_Spritelist_0: 379639819003089545
+      Fighter_Spritelist_1: -2575335953741880472
+      Fighter_Spritelist_10: 3898841752132953810
+      Fighter_Spritelist_11: 8517251170212233580
+      Fighter_Spritelist_12: 2956975894347831794
+      Fighter_Spritelist_13: 5338748417559683660
+      Fighter_Spritelist_14: -7434252123856536804
+      Fighter_Spritelist_15: -1518482374542180239
+      Fighter_Spritelist_16: 6563988020043997071
+      Fighter_Spritelist_17: -4979038385549200610
+      Fighter_Spritelist_18: -5065736496330014679
+      Fighter_Spritelist_19: 8296769763622605324
+      Fighter_Spritelist_2: 2385240889527858563
+      Fighter_Spritelist_20: -6597558612354236449
+      Fighter_Spritelist_21: 1206741196384265768
+      Fighter_Spritelist_22: -6903089218318046929
+      Fighter_Spritelist_23: 4581686270297187184
+      Fighter_Spritelist_24: 399963562718000112
+      Fighter_Spritelist_25: 6500454283403163486
+      Fighter_Spritelist_26: -2123173735382500841
+      Fighter_Spritelist_27: 8776488287564579441
+      Fighter_Spritelist_28: 518320697557480917
+      Fighter_Spritelist_29: 2510265577746779478
+      Fighter_Spritelist_3: -449516744443954881
+      Fighter_Spritelist_30: 9087296793139618960
+      Fighter_Spritelist_31: -1956998055297215213
+      Fighter_Spritelist_32: -4887500350959257921
+      Fighter_Spritelist_33: -6024243429271258113
+      Fighter_Spritelist_34: -3730873627376986983
+      Fighter_Spritelist_35: -2941164502896490483
+      Fighter_Spritelist_36: 2419419445026401988
+      Fighter_Spritelist_37: -7337834202020352573
+      Fighter_Spritelist_38: -8088888665116619385
+      Fighter_Spritelist_39: -2396677733947419278
+      Fighter_Spritelist_4: 3085493453178764930
+      Fighter_Spritelist_40: 1105151624484948924
+      Fighter_Spritelist_41: -5463856360404853003
+      Fighter_Spritelist_42: -6054139070257004633
+      Fighter_Spritelist_43: -2814260794061391455
+      Fighter_Spritelist_44: 7037792824375308043
+      Fighter_Spritelist_45: 6922101068631400146
+      Fighter_Spritelist_46: -4855927395965003762
+      Fighter_Spritelist_47: 7788385068226175976
+      Fighter_Spritelist_48: -4294949600573477491
+      Fighter_Spritelist_49: 8077582823486574031
+      Fighter_Spritelist_5: 2567643301429548497
+      Fighter_Spritelist_50: 4282091246415821843
+      Fighter_Spritelist_51: -8916318985078352873
+      Fighter_Spritelist_6: 2283567369111575616
+      Fighter_Spritelist_7: -303262346743716886
+      Fighter_Spritelist_8: 7566579897623381459
+      Fighter_Spritelist_9: -8077630160843486270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
