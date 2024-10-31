@@ -4,9 +4,10 @@ using UnityEngine;
 public class PlayerPrefsManager
 {
     // lưu dữ liệu của người chơi vào PlayerPrefs
-    public static void SavePlayerDataToPlayerPrefs(PlayerData playerData)
+    public static void SavePlayerDataToPlayerPrefs(PlayerData playerData, string playerId)
     {
         // inf
+        PlayerPrefs.SetString("playerId", playerId);
         PlayerPrefs.SetString("username", playerData.username);
         PlayerPrefs.SetString("password", playerData.password);
         PlayerPrefs.SetInt("scode", playerData.scode);
@@ -51,6 +52,11 @@ public class PlayerPrefsManager
 
         PlayerPrefs.Save();
         Debug.Log("Player data saved to PlayerPrefs.");
+    }
+
+    public static string GetPlayerIdFromPlayerPrefs()
+    {
+        return PlayerPrefs.GetString("playerId", "");
     }
 
     public static PlayerData LoadPlayerDataFromPlayerPrefs()
