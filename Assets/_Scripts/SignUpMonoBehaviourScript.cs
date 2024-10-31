@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LoginMonoBehaviourScript : MonoBehaviour
+public class SignUpMonoBehaviourScript : MonoBehaviour
 {
     [SerializeField] private TMP_InputField _username;
     [SerializeField] private TMP_InputField _password;
+    [SerializeField] private TMP_InputField _scode;
     [SerializeField] private TMP_Text _notifMes;
-    [SerializeField] private Button _login;
-    [SerializeField] private Button _signup;
+    //[SerializeField] private Button _login;
+    //[SerializeField] private Button _signup;
     private bool isFirebaseInitialized = false;
     void Start()
     {
@@ -25,60 +26,58 @@ public class LoginMonoBehaviourScript : MonoBehaviour
         }
     }
 
-    public void OnLoginButtonClicked()
+    public void OnSignupButtonCliked()
     {
         if (!isFirebaseInitialized)
         {
-            _notifMes.text = "Vui lòng chờ Firebase được khởi tạo!";
-            return;
+            _notifMes.text = "Vui lòng chờ firebase được khởi tạo";
         }
         string username = _username.text;
         string password = _password.text;
+        int scode = int.Parse(_scode.text);
 
-        Login(username, password);
+        Register(username, password, scode);
     }
 
-    private async void Login(string username, string password)
+    public async void Register(string username, string password, int scode)
     {
-        int result = await FirebaseManager.Instance.Login(username, password);
+        int result = await FirebaseManager.Instance.Register(username, password, scode);
 
         switch (result)
         {
             case 1:
-                _notifMes.text = "Đăng nhập thành công!";
+                _notifMes.text = "Đăng ký thành công!";
                 break;
             case 0:
                 _notifMes.text = "Lỗi mạng, không phản hồi";
                 break;
             case -1:
-                _notifMes.text = "Tài khoản mật khẩu không chính xác.";
+                _notifMes.text = "Tài khoản đã tồn tại.";
                 break;
-            //case -2:
-            //    _notifMes.text = "Lỗi truy xuất dữ liệu.";
-            //    break;
             default:
-                _notifMes.text = "Lỗi không xác định.";
+                _notifMes.text = "Lỗi không xác định, có thể do chưa đóng tiền mạng hoặc firebase tính phí :((.";
                 break;
         }
+       
     }
 
-
-    public void OpenSignupFormBySceneIndex()
+    public void BackToLoginFormBySceneIndex()
     {
-        LoadSignupFormBySceneIndex(2); // Signup Scene Index = 2
+        LoadLoginFormBySceneIndex(1); // Signup Scene Index = 2
     }
 
-    private void LoadSignupFormBySceneIndex(int index)
+    private void LoadLoginFormBySceneIndex(int index)
     {
-        StartCoroutine(LoadSignupSceneAsync(index));
+        StartCoroutine(LoadLoginSceneAsync(index));
     }
 
-    private IEnumerator LoadSignupSceneAsync(int index)
+    private IEnumerator LoadLoginSceneAsync(int index)
     {
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(index);
         while (!asyncOperation.isDone)
         {
             yield return null; // ở đây đợi khung hình tiếp theo, nếu vẫn chưa load xong thì vẫn đợi 
-        } 
+        }
     }
+
 }

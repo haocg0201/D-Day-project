@@ -1,8 +1,9 @@
 {
   "project_info": {
     "project_number": "466018151661",
+    "firebase_url": "https://dday-3456b-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "dday-3456b",
-    "storage_bucket": "dday-3456b.appspot.com"
+    "storage_bucket": "dday-3456b.firebasestorage.app"
   },
   "client": [
     {
