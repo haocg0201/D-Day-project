@@ -1,0 +1,2067 @@
+fileFormatVersion: 2
+guid: 7cccd73894734494eaed578d31efc943
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2613772389953166708
+    second: Converted_Vampire_Spritelist_0
+  - first:
+      213: -2546148290538887116
+    second: Converted_Vampire_Spritelist_1
+  - first:
+      213: -2798271687873415478
+    second: Converted_Vampire_Spritelist_2
+  - first:
+      213: -573327352461418686
+    second: Converted_Vampire_Spritelist_3
+  - first:
+      213: 9137760867324768759
+    second: Converted_Vampire_Spritelist_4
+  - first:
+      213: 6727609311906304052
+    second: Converted_Vampire_Spritelist_5
+  - first:
+      213: -1572096638396905295
+    second: Converted_Vampire_Spritelist_6
+  - first:
+      213: -8677588468226599978
+    second: Converted_Vampire_Spritelist_7
+  - first:
+      213: 1068299058690749462
+    second: Converted_Vampire_Spritelist_8
+  - first:
+      213: 6981890977542662195
+    second: Converted_Vampire_Spritelist_9
+  - first:
+      213: 2145754644912699400
+    second: Converted_Vampire_Spritelist_10
+  - first:
+      213: -2202553948595039942
+    second: Converted_Vampire_Spritelist_11
+  - first:
+      213: 1779033363181479051
+    second: Converted_Vampire_Spritelist_12
+  - first:
+      213: 1655961118918443325
+    second: Converted_Vampire_Spritelist_13
+  - first:
+      213: -5263242778899053034
+    second: Converted_Vampire_Spritelist_14
+  - first:
+      213: 5645767517561035036
+    second: Converted_Vampire_Spritelist_15
+  - first:
+      213: -945746498013253688
+    second: Converted_Vampire_Spritelist_16
+  - first:
+      213: 5115429468339929765
+    second: Converted_Vampire_Spritelist_17
+  - first:
+      213: -8164268057732203726
+    second: Converted_Vampire_Spritelist_18
+  - first:
+      213: 3917097449775199288
+    second: Converted_Vampire_Spritelist_19
+  - first:
+      213: -5460069969916342216
+    second: Converted_Vampire_Spritelist_20
+  - first:
+      213: 3622546375006743336
+    second: Converted_Vampire_Spritelist_21
+  - first:
+      213: 8295628469411736673
+    second: Converted_Vampire_Spritelist_22
+  - first:
+      213: -6907248454647765386
+    second: Converted_Vampire_Spritelist_23
+  - first:
+      213: 7971728970768319580
+    second: Converted_Vampire_Spritelist_24
+  - first:
+      213: -1965195388194821177
+    second: Converted_Vampire_Spritelist_25
+  - first:
+      213: 276417739748035024
+    second: Converted_Vampire_Spritelist_26
+  - first:
+      213: -9148169844780541408
+    second: Converted_Vampire_Spritelist_27
+  - first:
+      213: -6434817856888154279
+    second: Converted_Vampire_Spritelist_28
+  - first:
+      213: -89285104840896928
+    second: Converted_Vampire_Spritelist_29
+  - first:
+      213: 2775682135324176161
+    second: Converted_Vampire_Spritelist_30
+  - first:
+      213: 8814920066378817544
+    second: Converted_Vampire_Spritelist_31
+  - first:
+      213: 1264528557356241175
+    second: Converted_Vampire_Spritelist_32
+  - first:
+      213: 2196966692683524321
+    second: Converted_Vampire_Spritelist_33
+  - first:
+      213: 981691395773460453
+    second: Converted_Vampire_Spritelist_34
+  - first:
+      213: 5571108913802009069
+    second: Converted_Vampire_Spritelist_35
+  - first:
+      213: 6490459367548885219
+    second: Converted_Vampire_Spritelist_36
+  - first:
+      213: -1730416465043175222
+    second: Converted_Vampire_Spritelist_37
+  - first:
+      213: 1456840288951964219
+    second: Converted_Vampire_Spritelist_38
+  - first:
+      213: 522985312931374566
+    second: Converted_Vampire_Spritelist_39
+  - first:
+      213: 3365002023509540666
+    second: Converted_Vampire_Spritelist_40
+  - first:
+      213: -3232126281501344120
+    second: Converted_Vampire_Spritelist_41
+  - first:
+      213: 4509801360703254829
+    second: Converted_Vampire_Spritelist_42
+  - first:
+      213: 5558304986418437411
+    second: Converted_Vampire_Spritelist_43
+  - first:
+      213: -2740265462375740102
+    second: Converted_Vampire_Spritelist_44
+  - first:
+      213: 5275125390646508566
+    second: Converted_Vampire_Spritelist_45
+  - first:
+      213: -3954390570266820418
+    second: Converted_Vampire_Spritelist_46
+  - first:
+      213: -8252011081694174708
+    second: Converted_Vampire_Spritelist_47
+  - first:
+      213: 8365874463864048065
+    second: Converted_Vampire_Spritelist_48
+  - first:
+      213: -2898654705068552552
+    second: Converted_Vampire_Spritelist_49
+  - first:
+      213: 9172772348859270469
+    second: Converted_Vampire_Spritelist_50
+  - first:
+      213: -1557895353019613503
+    second: Converted_Vampire_Spritelist_51
+  - first:
+      213: 6250572722686501114
+    second: Converted_Vampire_Spritelist_52
+  - first:
+      213: -6368063569975051457
+    second: Converted_Vampire_Spritelist_53
+  - first:
+      213: 4729035963299721514
+    second: Converted_Vampire_Spritelist_54
+  - first:
+      213: -9040320638874885438
+    second: Converted_Vampire_Spritelist_55
+  - first:
+      213: 4416659146916501250
+    second: Converted_Vampire_Spritelist_56
+  - first:
+      213: 5262743601937340776
+    second: Converted_Vampire_Spritelist_57
+  - first:
+      213: 5071924688315030221
+    second: Converted_Vampire_Spritelist_58
+  - first:
+      213: -8346022381166874398
+    second: Converted_Vampire_Spritelist_59
+  - first:
+      213: 4275358413461769769
+    second: Converted_Vampire_Spritelist_60
+  - first:
+      213: 5592667369379391467
+    second: Converted_Vampire_Spritelist_61
+  - first:
+      213: -7439192595678500356
+    second: Converted_Vampire_Spritelist_62
+  - first:
+      213: 2816724833097191265
+    second: Converted_Vampire_Spritelist_63
+  - first:
+      213: -1701817851255083751
+    second: Converted_Vampire_Spritelist_64
+  - first:
+      213: -8362345522306825978
+    second: Converted_Vampire_Spritelist_65
+  - first:
+      213: 356112849612572986
+    second: Converted_Vampire_Spritelist_66
+  - first:
+      213: 374732323026546054
+    second: Converted_Vampire_Spritelist_67
+  - first:
+      213: -8629402348117654688
+    second: Converted_Vampire_Spritelist_68
+  - first:
+      213: 3910983988597478698
+    second: Converted_Vampire_Spritelist_69
+  - first:
+      213: 1491420394573207425
+    second: Converted_Vampire_Spritelist_70
+  - first:
+      213: -3964153297800798432
+    second: Converted_Vampire_Spritelist_71
+  - first:
+      213: 2727150055291324824
+    second: Converted_Vampire_Spritelist_72
+  - first:
+      213: 2895292523008932254
+    second: Converted_Vampire_Spritelist_73
+  - first:
+      213: -5501888831110927139
+    second: Converted_Vampire_Spritelist_74
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1153
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c822e151cd30abbd0800000000000000
+      internalID: -2613772389953166708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1153
+        width: 54
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43826fcae934aacd0800000000000000
+      internalID: -2546148290538887116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1153
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6b54bc9ba8a29d0800000000000000
+      internalID: -2798271687873415478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1153
+        width: 54
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f95808fc12b08f0800000000000000
+      internalID: -573327352461418686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_4
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1153
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1bb5b4819dfce70800000000000000
+      internalID: 9137760867324768759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_5
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1023
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43019c756054d5d50800000000000000
+      internalID: 6727609311906304052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_6
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1023
+        width: 45
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b844cbcf6ace2ae0800000000000000
+      internalID: -1572096638396905295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_7
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1023
+        width: 45
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3d3549343039780800000000000000
+      internalID: -8677588468226599978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_8
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1023
+        width: 43
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6147523755c53de00800000000000000
+      internalID: 1068299058690749462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_9
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1023
+        width: 45
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3386fe83ad8a4e060800000000000000
+      internalID: 6981890977542662195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1023
+        width: 45
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8087a291b7047cd10800000000000000
+      internalID: 2145754644912699400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 895
+        width: 44
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31db577ad4fe61e0800000000000000
+      internalID: -2202553948595039942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 895
+        width: 47
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8420080b6560b810800000000000000
+      internalID: 1779033363181479051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_13
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 895
+        width: 39
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d310efe2dd72bf610800000000000000
+      internalID: 1655961118918443325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_14
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 895
+        width: 41
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6160515149435f6b0800000000000000
+      internalID: -5263242778899053034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_15
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 895
+        width: 45
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c191aa805abc95e40800000000000000
+      internalID: 5645767517561035036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_16
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 895
+        width: 45
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfa952229800e2f0800000000000000
+      internalID: -945746498013253688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 767
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a287fdaff7adf640800000000000000
+      internalID: 5115429468339929765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_18
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 767
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bbdc72571b2be80800000000000000
+      internalID: -8164268057732203726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_19
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 767
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834707c70635c5630800000000000000
+      internalID: 3917097449775199288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_20
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 767
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830db528a4fe934b0800000000000000
+      internalID: -5460069969916342216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_21
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 767
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82be7a82cbed54230800000000000000
+      internalID: 3622546375006743336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_22
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 767
+        width: 56
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c67eb042eff1370800000000000000
+      internalID: 8295628469411736673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_23
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 813
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676aa5d60268420a0800000000000000
+      internalID: -6907248454647765386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_24
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 814
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54065c434541ae60800000000000000
+      internalID: 7971728970768319580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_25
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 814
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb696cd4393ab4e0800000000000000
+      internalID: -1965195388194821177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_26
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 639
+        width: 47
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d94c43487806d300800000000000000
+      internalID: 276417739748035024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_27
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 639
+        width: 43
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a5ae8cefb2b0180800000000000000
+      internalID: -9148169844780541408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_28
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 639
+        width: 43
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95757d5904fe2b6a0800000000000000
+      internalID: -6434817856888154279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_29
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 674
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e89329babc2cef0800000000000000
+      internalID: -89285104840896928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_30
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 675
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f25652234358620800000000000000
+      internalID: 2775682135324176161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_31
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 675
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800e8ffc813e45a70800000000000000
+      internalID: 8814920066378817544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_32
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 511
+        width: 58
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7115e8de5028c8110800000000000000
+      internalID: 1264528557356241175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_33
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 559
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e824c421913d7e10800000000000000
+      internalID: 2196966692683524321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_34
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 559
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef622c8f1baf9d00800000000000000
+      internalID: 981691395773460453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_35
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 559
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de95e244a0e805d40800000000000000
+      internalID: 5571108913802009069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_36
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 383
+        width: 45
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e89bd7286eb21a50800000000000000
+      internalID: 6490459367548885219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_37
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 383
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac84d97a4635cf7e0800000000000000
+      internalID: -1730416465043175222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_38
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 383
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32957d268cb73410800000000000000
+      internalID: 1456840288951964219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_39
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 383
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e565080f54024700800000000000000
+      internalID: 522985312931374566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_40
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 383
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3fb1c70383e2be20800000000000000
+      internalID: 3365002023509540666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_41
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 383
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e78e1854e2523d0800000000000000
+      internalID: -3232126281501344120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_42
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 431
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d217a409178069e30800000000000000
+      internalID: 4509801360703254829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_43
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 432
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32dd0cc9fe0132d40800000000000000
+      internalID: 5558304986418437411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_44
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 432
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d82dc941f98f9d0800000000000000
+      internalID: -2740265462375740102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_45
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 432
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cf02f0892053940800000000000000
+      internalID: 5275125390646508566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_46
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 255
+        width: 54
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb087144abe2f19c0800000000000000
+      internalID: -3954390570266820418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_47
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 255
+        width: 54
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02280964a7fa7d80800000000000000
+      internalID: -8252011081694174708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_48
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 274
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9c026208e891470800000000000000
+      internalID: 8365874463864048065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_49
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 275
+        width: 54
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ecfd947e8e5c7d0800000000000000
+      internalID: -2898654705068552552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_50
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 255
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54548431adb3c4f70800000000000000
+      internalID: 9172772348859270469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_51
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 255
+        width: 54
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ceb8063e6e316ae0800000000000000
+      internalID: -1557895353019613503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_52
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 127
+        width: 53
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0a97a36ce7eb650800000000000000
+      internalID: 6250572722686501114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_53
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 127
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3bf78c2ce710a7a0800000000000000
+      internalID: -6368063569975051457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_54
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 59
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21f6823729e0a140800000000000000
+      internalID: 4729035963299721514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_55
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 60
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2ea30d6445a8280800000000000000
+      internalID: -9040320638874885438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_56
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20710f9f7102b4d30800000000000000
+      internalID: 4416659146916501250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_57
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 0
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8695f693c65090940800000000000000
+      internalID: 5262743601937340776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_58
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 50
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca1d8eb1a8136640800000000000000
+      internalID: 5071924688315030221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_59
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0b61b0dd8fc2c80800000000000000
+      internalID: -8346022381166874398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_60
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 51
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ecdd143df155b30800000000000000
+      internalID: 4275358413461769769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_61
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 26
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7e6ca57552d9d40800000000000000
+      internalID: 5592667369379391467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_62
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 21
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9eddeafbda2c890800000000000000
+      internalID: -7439192595678500356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_63
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 0
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f87c2ef44071720800000000000000
+      internalID: 2816724833097191265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_64
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 11
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91da58f4eade168e0800000000000000
+      internalID: -1701817851255083751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_65
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 0
+        width: 39
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601c2d59d0bf2fb80800000000000000
+      internalID: -8362345522306825978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_66
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 0
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a390c1dffba21f400800000000000000
+      internalID: 356112849612572986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_67
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 12
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68daad7ff01533500800000000000000
+      internalID: 374732323026546054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_68
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 0
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0638680f8443e3880800000000000000
+      internalID: -8629402348117654688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_69
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25d792673b964630800000000000000
+      internalID: 3910983988597478698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_70
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1871f4d62f692b410800000000000000
+      internalID: 1491420394573207425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_71
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 0
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fd361249f7cf8c0800000000000000
+      internalID: -3964153297800798432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_72
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 0
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89983d6b688c8d520800000000000000
+      internalID: 2727150055291324824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_73
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 0
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99bac2b5352e2820800000000000000
+      internalID: 2895292523008932254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Converted_Vampire_Spritelist_74
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 0
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddca1f3224d55a3b0800000000000000
+      internalID: -5501888831110927139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Converted_Vampire_Spritelist_0: -2613772389953166708
+      Converted_Vampire_Spritelist_1: -2546148290538887116
+      Converted_Vampire_Spritelist_10: 2145754644912699400
+      Converted_Vampire_Spritelist_11: -2202553948595039942
+      Converted_Vampire_Spritelist_12: 1779033363181479051
+      Converted_Vampire_Spritelist_13: 1655961118918443325
+      Converted_Vampire_Spritelist_14: -5263242778899053034
+      Converted_Vampire_Spritelist_15: 5645767517561035036
+      Converted_Vampire_Spritelist_16: -945746498013253688
+      Converted_Vampire_Spritelist_17: 5115429468339929765
+      Converted_Vampire_Spritelist_18: -8164268057732203726
+      Converted_Vampire_Spritelist_19: 3917097449775199288
+      Converted_Vampire_Spritelist_2: -2798271687873415478
+      Converted_Vampire_Spritelist_20: -5460069969916342216
+      Converted_Vampire_Spritelist_21: 3622546375006743336
+      Converted_Vampire_Spritelist_22: 8295628469411736673
+      Converted_Vampire_Spritelist_23: -6907248454647765386
+      Converted_Vampire_Spritelist_24: 7971728970768319580
+      Converted_Vampire_Spritelist_25: -1965195388194821177
+      Converted_Vampire_Spritelist_26: 276417739748035024
+      Converted_Vampire_Spritelist_27: -9148169844780541408
+      Converted_Vampire_Spritelist_28: -6434817856888154279
+      Converted_Vampire_Spritelist_29: -89285104840896928
+      Converted_Vampire_Spritelist_3: -573327352461418686
+      Converted_Vampire_Spritelist_30: 2775682135324176161
+      Converted_Vampire_Spritelist_31: 8814920066378817544
+      Converted_Vampire_Spritelist_32: 1264528557356241175
+      Converted_Vampire_Spritelist_33: 2196966692683524321
+      Converted_Vampire_Spritelist_34: 981691395773460453
+      Converted_Vampire_Spritelist_35: 5571108913802009069
+      Converted_Vampire_Spritelist_36: 6490459367548885219
+      Converted_Vampire_Spritelist_37: -1730416465043175222
+      Converted_Vampire_Spritelist_38: 1456840288951964219
+      Converted_Vampire_Spritelist_39: 522985312931374566
+      Converted_Vampire_Spritelist_4: 9137760867324768759
+      Converted_Vampire_Spritelist_40: 3365002023509540666
+      Converted_Vampire_Spritelist_41: -3232126281501344120
+      Converted_Vampire_Spritelist_42: 4509801360703254829
+      Converted_Vampire_Spritelist_43: 5558304986418437411
+      Converted_Vampire_Spritelist_44: -2740265462375740102
+      Converted_Vampire_Spritelist_45: 5275125390646508566
+      Converted_Vampire_Spritelist_46: -3954390570266820418
+      Converted_Vampire_Spritelist_47: -8252011081694174708
+      Converted_Vampire_Spritelist_48: 8365874463864048065
+      Converted_Vampire_Spritelist_49: -2898654705068552552
+      Converted_Vampire_Spritelist_5: 6727609311906304052
+      Converted_Vampire_Spritelist_50: 9172772348859270469
+      Converted_Vampire_Spritelist_51: -1557895353019613503
+      Converted_Vampire_Spritelist_52: 6250572722686501114
+      Converted_Vampire_Spritelist_53: -6368063569975051457
+      Converted_Vampire_Spritelist_54: 4729035963299721514
+      Converted_Vampire_Spritelist_55: -9040320638874885438
+      Converted_Vampire_Spritelist_56: 4416659146916501250
+      Converted_Vampire_Spritelist_57: 5262743601937340776
+      Converted_Vampire_Spritelist_58: 5071924688315030221
+      Converted_Vampire_Spritelist_59: -8346022381166874398
+      Converted_Vampire_Spritelist_6: -1572096638396905295
+      Converted_Vampire_Spritelist_60: 4275358413461769769
+      Converted_Vampire_Spritelist_61: 5592667369379391467
+      Converted_Vampire_Spritelist_62: -7439192595678500356
+      Converted_Vampire_Spritelist_63: 2816724833097191265
+      Converted_Vampire_Spritelist_64: -1701817851255083751
+      Converted_Vampire_Spritelist_65: -8362345522306825978
+      Converted_Vampire_Spritelist_66: 356112849612572986
+      Converted_Vampire_Spritelist_67: 374732323026546054
+      Converted_Vampire_Spritelist_68: -8629402348117654688
+      Converted_Vampire_Spritelist_69: 3910983988597478698
+      Converted_Vampire_Spritelist_7: -8677588468226599978
+      Converted_Vampire_Spritelist_70: 1491420394573207425
+      Converted_Vampire_Spritelist_71: -3964153297800798432
+      Converted_Vampire_Spritelist_72: 2727150055291324824
+      Converted_Vampire_Spritelist_73: 2895292523008932254
+      Converted_Vampire_Spritelist_74: -5501888831110927139
+      Converted_Vampire_Spritelist_8: 1068299058690749462
+      Converted_Vampire_Spritelist_9: 6981890977542662195
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
