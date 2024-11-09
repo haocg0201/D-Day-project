@@ -241,10 +241,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs: {fileID: 4385212406458396717, guid: 21d8972fba0016047afc274a2ff9d282, type: 3}
-  timeSpawn: 3
+  maxEnemy: 3
+  timeSpawn: 2
   spanwCountdown: 0
-  amountMax: 4
-  amountCount: 0
+  spawnPoints: []
 --- !u!4 &1553234569
 Transform:
   m_ObjectHideFlags: 0

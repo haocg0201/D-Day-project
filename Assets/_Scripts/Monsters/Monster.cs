@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Monster
+public class Monster : MonoBehaviour
 {
     // protected - private - public tùy chỉnh theo nhu cầu nhé huhu
     public string monsterName;

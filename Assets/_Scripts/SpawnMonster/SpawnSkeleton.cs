@@ -9,8 +9,12 @@ public class SpawnSkeleton :MonoBehaviour
 
     
     public GameObject enemyPrefabs;
+    public int maxEnemy = 3;
+    private int currentEnemyCount = 0;
 
-    public float timeSpawn, spanwCountdown, amountMax, amountCount;
+    public float timeSpawn, spanwCountdown;
+
+    public Transform[] spawnPoints;
 
     
     private void Start()
@@ -21,6 +25,13 @@ public class SpawnSkeleton :MonoBehaviour
         spanwCountdown = timeSpawn;
     }
 
+    private void SpawnEnemy()
+    {
+        for (int i = 0; i < maxEnemy; i++)
+        {
+            Amount();
+        }
+    }
     
     private void Amount()
     {
@@ -31,8 +42,12 @@ public class SpawnSkeleton :MonoBehaviour
        
         if (spanwCountdown <= 0)
         {
+            if (currentEnemyCount >= maxEnemy) return;
+
             spanwCountdown = timeSpawn;
+            
             Instantiate(enemyPrefabs, transform.position, transform.rotation);
+            currentEnemyCount++;
         }
 
     }
@@ -40,7 +55,10 @@ public class SpawnSkeleton :MonoBehaviour
     {
         spanwCountdown -= Time.deltaTime;
         
-        Amount();
+        if (currentEnemyCount < maxEnemy)
+        {
+            Amount();
+        }
         
     }
 }

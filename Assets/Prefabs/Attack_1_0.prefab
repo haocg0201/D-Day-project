@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2920700217971328171}
   - component: {fileID: 5481248350052587554}
   - component: {fileID: -8668755426962331710}
+  - component: {fileID: -5987193524927296242}
   m_Layer: 0
   m_Name: Attack_1_0
   m_TagString: Untagged
@@ -115,3 +116,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5987193524927296242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4385212406458396717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9295c1b6f3eacde4fa02eefaf0e85ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterName: Skeleton
+  health: 500
+  maxHealth: 500
+  attackDamage: 200
+  survivability: 1.5
+  size: 1.5
+  dialogues:
+  - Hm Ghuuu ..!
+  - ' ?!'
+  - Crak crakk
