@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class Orc : Monster
 {
-    public Orc() : base(
-        monsterName: "Orc",
+    public override void Start()
+    {
+        base.Start();
+        Initialize(monsterName: "Orc",
         health: 2000,
         attackDamage: 100,
         survivability: 1f,
@@ -14,13 +16,19 @@ public class Orc : Monster
                    "uglllyyy",
                    " ?!",
                    "shff shff"
-        },
-        mSkill: null
-        )
-    {}
+        });
+        transform.localScale = new Vector3(size, size, size);
+
+    }
+
+    public override void Update()
+    {
+        base.Update();
+    }
+
 
     public override void SkillConsumption()
     {
-        // tính sau
+        // tï¿½nh sau
     }
 }

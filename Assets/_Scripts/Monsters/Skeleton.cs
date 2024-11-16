@@ -3,21 +3,27 @@ using UnityEngine;
 
 public class Skeleton : Monster
 {
-    public Skeleton() : base(
-        monsterName: "Skeleton",        // Tên quái nhé
-        health: 500,                    // Máu quái nhé
-        attackDamage: 200,               // Sát thương của quái nhé
-        survivability: 1.5f,            // Chỉ số sinh tồn nhé
-        size: 1.5f,                     // Kích thước của quái nhé - F.range(1 - 1.5)
-        dialogues: new List<string>     // Các câu thoại đây nhé hh ;)
+    public override void Start()
+    {
+        base.Start();
+        Initialize(monsterName: "Skeleton",
+        health: 500,         
+        attackDamage: 200,
+        survivability: 1.5f,
+        size: 1.5f,
+        dialogues: new List<string>
         {
             "Hm Ghuuu ..!",
             " ?!",
             "Crak crakk"
-        },
-        mSkill:  null
-    )
+        });
+        transform.localScale = new Vector3(size, size,size);
+
+    }
+
+    public override void Update()
     {
+        base.Update();
     }
 
     public override void SkillConsumption()

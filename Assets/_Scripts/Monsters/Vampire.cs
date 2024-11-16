@@ -3,21 +3,16 @@ using UnityEngine;
 
 public class Vampire : Monster
 {
-    public Vampire() : base(
-    monsterName: "Vampire",        // Tên quái nhé
-    health: 2500,                    // Máu quái nhé
-    attackDamage: 500,               // Sát thương của quái nhé
-    survivability: 1.5f,            // Chỉ số sinh tồn nhé
-    size: 1.8f,                     // Kích thước của quái nhé - F.range(1 - 1.5)
-    dialogues: new List<string>     // Các câu thoại đây nhé hh ;) 1.5 - 2.2f
+    public override void Start()
     {
-            "!!",
-            " Blood",
-            " Geggg"
-    },
-    mSkill: null
-)
+        base.Start();
+        Initialize("Vampire",2500,500,1.5f,1.8f,new List<string>{"!!"," Blood"," Geggg"});
+        transform.localScale = new Vector3(size,size,size);
+    }
+
+    public override void Update()
     {
+        base.Update();
     }
 
     public override void SkillConsumption()

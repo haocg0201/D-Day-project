@@ -3,24 +3,19 @@ using UnityEngine;
 
 public class Troll : Monster
 {
-    public Troll() : base(
-    monsterName: "Troll",
-    health: 5000,
-    attackDamage: 1000,
-    survivability: 2f,
-    size: 4f,                            
-    dialogues: new List<string>
+    public override void Start()
     {
-               "uglllyyy",
-               " ?!",
-               "shff shff"
-    },
-    mSkill: null
-    )
-    { }
+        base.Start();
+        Initialize("Troll",5000,1000,2f,4f, new List<string>{"uglllyyy"," ?!","shff shff"});
+        transform.localScale = new Vector3(size,size,size);
+    }
 
+    public override void Update()
+    {
+        base.Update();
+    }
     public override void SkillConsumption()
     {
-        // tính sau
+        // tï¿½nh sau
     }
 }
