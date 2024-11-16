@@ -3,21 +3,16 @@ using UnityEngine;
 
 public class Werewolf : Monster
 {
-    public Werewolf() : base(
-    monsterName: "Werewolf",        
-    health: 2000,                    
-    attackDamage: 500,              
-    survivability: 1.5f,           
-    size: 2.0f,                         // 1 - 2.5f            
-    dialogues: new List<string>     
+    public override void Start()
     {
-           "auwww wuuu",
-           " ?!",
-           "waiiiuu"
-    },
-    mSkill: null
-)
+        base.Start();
+        Initialize("Werewolf",2000,500, 1.5f,2.0f,new List<string>{"auwww wuuu"," ?!","waiiiuu"});
+        transform.localScale = new Vector3(size,size,size);
+    }
+
+    public override void Update()
     {
+        base.Update();
     }
 
     public override void SkillConsumption()

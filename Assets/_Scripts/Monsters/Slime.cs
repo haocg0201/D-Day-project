@@ -3,25 +3,20 @@ using UnityEngine;
 
 public class Slime : Monster
 {
-    public Slime() : base(
-    monsterName: "Slime",           
-    health: 500,                    
-    attackDamage: 200,               
-    survivability: 1f,            
-    size: 0.3f,                     
-    dialogues: new List<string>     
+    public override void Start()
     {
-            ":))",
-            " ?!",
-            " @"
-    },
-    mSkill: null
-)
+        base.Start();
+        Initialize("Slime",500,200,1f,0.3f,new List<string>{":))"," ?!"," @"});
+        //transform.localScale = new Vector3(size, size, size);
+    }
+
+    public override void Update()
     {
+        base.Update();
     }
 
     public override void SkillConsumption()
     {
-        // tính sau
+        // tï¿½nh sau
     }
 }

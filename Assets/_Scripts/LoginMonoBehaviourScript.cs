@@ -46,6 +46,7 @@ public class LoginMonoBehaviourScript : MonoBehaviour
         {
             case 1:
                 _notifMes.text = "Đăng nhập thành công!";
+                OpenNewBornFormBySceneIndex();
                 break;
             case 0:
                 _notifMes.text = "Lỗi mạng, không phản hồi";
@@ -66,6 +67,11 @@ public class LoginMonoBehaviourScript : MonoBehaviour
     public void OpenSignupFormBySceneIndex()
     {
         LoadSignupFormBySceneIndex(2); // Signup Scene Index = 2
+    }
+
+        public void OpenNewBornFormBySceneIndex()
+    {
+        LoadSignupFormBySceneIndex(3); // NewBorn Scene Index = 3
     }
 
     private void LoadSignupFormBySceneIndex(int index)

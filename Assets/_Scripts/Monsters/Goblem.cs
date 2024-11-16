@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class Goblem : Monster
 {
-    public Goblem() : base(
-        monsterName: "Goblem",        // Tên quái nhé
+    public override void Start()
+    {
+        base.Start();
+        Initialize(monsterName: "Goblem",        // Tên quái nhé
         health: 1500,                    // Máu quái nhé
         attackDamage: 100,               // Sát thương của quái nhé
         survivability: 0.5f,            // Chỉ số sinh tồn nhé
@@ -14,10 +16,13 @@ public class Goblem : Monster
             "Con người",
             " ?!",
             "kesss kiess"
-        },
-        mSkill: null
-    )
+        });
+        transform.localScale = new Vector3(size, size, size);
+    }
+
+    public override void Update()
     {
+        base.Update();
     }
 
     public override void SkillConsumption()

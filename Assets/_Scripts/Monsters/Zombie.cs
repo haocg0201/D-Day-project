@@ -3,24 +3,22 @@ using UnityEngine;
 
 public class Zombie : Monster
 {
-    public Zombie() : base(
-        monsterName: "Zombie",
-        health: 1000,
-        attackDamage: 500,
-        survivability: 1f,
-        size: 1.6f,                         // 1 - 2f            
-        dialogues: new List<string>
-        {
-                   "uhhh owhh",
-                   " ?!",
-                   "Gawww wwwoo"
-        },
-        mSkill: null
-        )
-    { }
+    
+    public override void Start()
+    {
+        base.Start();
+        Initialize("Zombie", 1000, 500, 1f, 1.6f, new List<string> { "uhhh owhh", "?!", "Gawww wwwoo" });
+        transform.localScale = new Vector3(size, size, size);
+    }
+
+    public override void Update()
+    {
+        base.Update();
+    }
+
 
     public override void SkillConsumption()
     {
-        // tính sau
+        // tï¿½nh sau
     }
 }
