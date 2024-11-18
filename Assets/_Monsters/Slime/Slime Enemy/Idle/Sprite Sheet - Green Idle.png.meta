@@ -323,7 +323,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Sheet - Green Idle_0: -9074539206338946419
+      Sprite Sheet - Green Idle_1: -387061471815523496
+      Sprite Sheet - Green Idle_2: 469887860811983759
+      Sprite Sheet - Green Idle_3: 4557467248702983155
+      Sprite Sheet - Green Idle_4: -5816436153592121541
+      Sprite Sheet - Green Idle_5: -3371520512202314939
+      Sprite Sheet - Green Idle_6: -2599926529332704699
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

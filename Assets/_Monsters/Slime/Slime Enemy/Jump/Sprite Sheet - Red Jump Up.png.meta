@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Sheet - Red Jump Up_0: 6281314682489383663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

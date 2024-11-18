@@ -298,7 +298,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Sheet - Green Jump Land_0: 1618185110837684384
+      Sprite Sheet - Green Jump Land_1: -379935657828565217
+      Sprite Sheet - Green Jump Land_2: 7961362974256884671
+      Sprite Sheet - Green Jump Land_3: -3607888842448822257
+      Sprite Sheet - Green Jump Land_4: 4593568250741143324
+      Sprite Sheet - Green Jump Land_5: -255545124399731749
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

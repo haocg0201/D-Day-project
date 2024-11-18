@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Take Hit - white silhouette_0: -8008791250619013794
+      Take Hit - white silhouette_1: 3891156215361153934
+      Take Hit - white silhouette_2: -7146689698409757683
+      Take Hit - white silhouette_3: 8523606802079886837
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

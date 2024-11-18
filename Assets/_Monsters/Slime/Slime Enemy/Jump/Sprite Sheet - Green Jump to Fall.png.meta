@@ -273,7 +273,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Sheet - Green Jump to Fall_0: -7377153609105838001
+      Sprite Sheet - Green Jump to Fall_1: 8103759417398486482
+      Sprite Sheet - Green Jump to Fall_2: -822294439341482929
+      Sprite Sheet - Green Jump to Fall_3: 775961440259190869
+      Sprite Sheet - Green Jump to Fall_4: 8373471702286915353
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

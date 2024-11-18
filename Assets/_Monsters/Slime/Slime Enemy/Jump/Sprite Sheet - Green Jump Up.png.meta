@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Sheet - Green Jump Up_0: 7893624861783956641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

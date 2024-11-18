@@ -473,7 +473,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Sheet - Red Hurt_0: 8026528072735239920
+      Sprite Sheet - Red Hurt_1: 7736054985658259914
+      Sprite Sheet - Red Hurt_10: 2361712265066797785
+      Sprite Sheet - Red Hurt_11: -2860864970412520307
+      Sprite Sheet - Red Hurt_12: 7662829631507588164
+      Sprite Sheet - Red Hurt_2: -2014804344916573885
+      Sprite Sheet - Red Hurt_3: 1504283165939537004
+      Sprite Sheet - Red Hurt_4: -8827261716015467639
+      Sprite Sheet - Red Hurt_5: -5077676998291183177
+      Sprite Sheet - Red Hurt_6: 5477746851855525952
+      Sprite Sheet - Red Hurt_7: -1534065186954404213
+      Sprite Sheet - Red Hurt_8: -5647320889095281055
+      Sprite Sheet - Red Hurt_9: -2604183472304749704
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

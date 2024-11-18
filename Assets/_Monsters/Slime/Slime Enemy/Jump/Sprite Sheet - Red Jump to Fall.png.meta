@@ -273,7 +273,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Sheet - Red Jump to Fall_0: -5458417223804184178
+      Sprite Sheet - Red Jump to Fall_1: -5341182360199346485
+      Sprite Sheet - Red Jump to Fall_2: -899532003095006195
+      Sprite Sheet - Red Jump to Fall_3: 5055319903231160717
+      Sprite Sheet - Red Jump to Fall_4: -1753366007731108112
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

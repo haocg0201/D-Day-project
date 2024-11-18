@@ -373,7 +373,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Sheet - Red Jump Start-up_0: -2400561005729165699
+      Sprite Sheet - Red Jump Start-up_1: -1854006301320853947
+      Sprite Sheet - Red Jump Start-up_2: -6235214171369552668
+      Sprite Sheet - Red Jump Start-up_3: 1553150011518505082
+      Sprite Sheet - Red Jump Start-up_4: 3524159740885425599
+      Sprite Sheet - Red Jump Start-up_5: -8706880511750552084
+      Sprite Sheet - Red Jump Start-up_6: -6239600638264607141
+      Sprite Sheet - Red Jump Start-up_7: -1591092561066219656
+      Sprite Sheet - Red Jump Start-up_8: 624389125363875638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
