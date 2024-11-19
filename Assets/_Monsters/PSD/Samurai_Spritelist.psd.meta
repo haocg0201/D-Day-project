@@ -264,6 +264,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1534,7 +1573,64 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Samurai_Spritelist_0: -8564235451891986738
+      Samurai_Spritelist_1: 5607583349989479145
+      Samurai_Spritelist_10: -1603407119135932074
+      Samurai_Spritelist_11: -8813753171692185988
+      Samurai_Spritelist_12: -5265355290687389274
+      Samurai_Spritelist_13: -8261767935284506149
+      Samurai_Spritelist_14: -3371325926263869690
+      Samurai_Spritelist_15: 3503598165184272475
+      Samurai_Spritelist_16: -7935074100066498963
+      Samurai_Spritelist_17: -8325324060409352584
+      Samurai_Spritelist_18: -6365312533844970937
+      Samurai_Spritelist_19: 8563242040420090081
+      Samurai_Spritelist_2: -1874910220808807294
+      Samurai_Spritelist_20: 8784735808121123269
+      Samurai_Spritelist_21: 851962751731669556
+      Samurai_Spritelist_22: -8712215198776725581
+      Samurai_Spritelist_23: 6209424387136394472
+      Samurai_Spritelist_24: -8521256392641345079
+      Samurai_Spritelist_25: -9045808976555084763
+      Samurai_Spritelist_26: 3265083063962279127
+      Samurai_Spritelist_27: 5457889322396578425
+      Samurai_Spritelist_28: 2138136525937957790
+      Samurai_Spritelist_29: 4405574798355770003
+      Samurai_Spritelist_3: 1820470201439362107
+      Samurai_Spritelist_30: 6444144089052435139
+      Samurai_Spritelist_31: -3427687833799135340
+      Samurai_Spritelist_32: -3965796602067556740
+      Samurai_Spritelist_33: 8756132255276184454
+      Samurai_Spritelist_34: 7822531706931424477
+      Samurai_Spritelist_35: -7136295100306259522
+      Samurai_Spritelist_36: -5961910634738546065
+      Samurai_Spritelist_37: 3981443454812088998
+      Samurai_Spritelist_38: 5160208366044531025
+      Samurai_Spritelist_39: 6120712333876276711
+      Samurai_Spritelist_4: 19741499107435912
+      Samurai_Spritelist_40: 3608686684880648526
+      Samurai_Spritelist_41: -2046679510282649115
+      Samurai_Spritelist_42: -5670164304292880465
+      Samurai_Spritelist_43: 135332054116071654
+      Samurai_Spritelist_44: 6358890382935914046
+      Samurai_Spritelist_45: -7026984665886028962
+      Samurai_Spritelist_46: -6956725717336997530
+      Samurai_Spritelist_47: -3278533415381401418
+      Samurai_Spritelist_48: -69816957634548018
+      Samurai_Spritelist_49: -2471216273219511355
+      Samurai_Spritelist_5: -1758296197492193376
+      Samurai_Spritelist_50: 5413633799821903923
+      Samurai_Spritelist_51: -5808704714833747985
+      Samurai_Spritelist_52: -3520094443063618464
+      Samurai_Spritelist_53: 7259202124497091549
+      Samurai_Spritelist_54: -2519305346084049644
+      Samurai_Spritelist_55: -7355636366941122931
+      Samurai_Spritelist_56: 1521541787773657343
+      Samurai_Spritelist_6: 8593431222803285465
+      Samurai_Spritelist_7: 6842532057535646110
+      Samurai_Spritelist_8: 3494655754632329144
+      Samurai_Spritelist_9: -2645415561118222993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
