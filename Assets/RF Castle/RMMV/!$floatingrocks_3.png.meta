@@ -1,0 +1,743 @@
+fileFormatVersion: 2
+guid: 19c1ca92ea519fa4984dbda987ad248f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8164236760716258581
+    second: '!$floatingrocks_3_0'
+  - first:
+      213: 1776799550415511360
+    second: '!$floatingrocks_3_1'
+  - first:
+      213: 7008500743918614821
+    second: '!$floatingrocks_3_2'
+  - first:
+      213: 2862155003585633930
+    second: '!$floatingrocks_3_3'
+  - first:
+      213: 5707907882451882243
+    second: '!$floatingrocks_3_4'
+  - first:
+      213: -7721551999646611618
+    second: '!$floatingrocks_3_5'
+  - first:
+      213: -7090941496979377074
+    second: '!$floatingrocks_3_6'
+  - first:
+      213: 2160266158103158769
+    second: '!$floatingrocks_3_7'
+  - first:
+      213: 733389925127221308
+    second: '!$floatingrocks_3_8'
+  - first:
+      213: -4184439629935670944
+    second: '!$floatingrocks_3_9'
+  - first:
+      213: 386612485750565176
+    second: '!$floatingrocks_3_10'
+  - first:
+      213: -8837777813443835665
+    second: '!$floatingrocks_3_11'
+  - first:
+      213: 1209603127036726434
+    second: '!$floatingrocks_3_12'
+  - first:
+      213: -1474179928256365501
+    second: '!$floatingrocks_3_13'
+  - first:
+      213: -3466705813049488624
+    second: '!$floatingrocks_3_14'
+  - first:
+      213: -23490260299699328
+    second: '!$floatingrocks_3_15'
+  - first:
+      213: 1089075400998547558
+    second: '!$floatingrocks_3_16'
+  - first:
+      213: -6421109318302927912
+    second: '!$floatingrocks_3_17'
+  - first:
+      213: -3154833014237545866
+    second: '!$floatingrocks_3_18'
+  - first:
+      213: 3492486727827956721
+    second: '!$floatingrocks_3_19'
+  - first:
+      213: 1326869600371925036
+    second: '!$floatingrocks_3_20'
+  - first:
+      213: 1677562686987563398
+    second: '!$floatingrocks_3_21'
+  - first:
+      213: 3536743582227584453
+    second: '!$floatingrocks_3_22'
+  - first:
+      213: -4043373518974720340
+    second: '!$floatingrocks_3_23'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_0'
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 491
+        width: 32
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2525f0cedc2be80800000000000000
+      internalID: -8164236760716258581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_1'
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 488
+        width: 32
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f1797f6c578a810800000000000000
+      internalID: 1776799550415511360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_2'
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 485
+        width: 32
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52974514b42334160800000000000000
+      internalID: 7008500743918614821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_3'
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 446
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e14d8bfca68b720800000000000000
+      internalID: 2862155003585633930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_4'
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 446
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30152303aff863f40800000000000000
+      internalID: 5707907882451882243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_5'
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 446
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e574b5aed5987d490800000000000000
+      internalID: -7721551999646611618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_6'
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 344
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44b775274ae79d90800000000000000
+      internalID: -7090941496979377074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_7'
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 341
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff590e00aecafd10800000000000000
+      internalID: 2160266158103158769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_8'
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 338
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30fe0150468d2a00800000000000000
+      internalID: 733389925127221308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_9'
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 314
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0690e91a352ede5c0800000000000000
+      internalID: -4184439629935670944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_10'
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 314
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 839a4e6e1068d5500800000000000000
+      internalID: 386612485750565176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_11'
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 314
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe80ad937e7e95580800000000000000
+      internalID: -8837777813443835665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_12'
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 209
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acc932a2af59c010800000000000000
+      internalID: 1209603127036726434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_13'
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 206
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34cb4417a29aa8be0800000000000000
+      internalID: -1474179928256365501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_14'
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 203
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b47603e69c3efc0800000000000000
+      internalID: -3466705813049488624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_15'
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 176
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ba7239bbb8caff0800000000000000
+      internalID: -23490260299699328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_16'
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 176
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660722a9e4c2d1f00800000000000000
+      internalID: 1089075400998547558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_17'
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 176
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d37a927813a3e6a0800000000000000
+      internalID: -6421109318302927912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_18'
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 74
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a32bca618c734d0800000000000000
+      internalID: -3154833014237545866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_19'
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 71
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3a3facc2ec77030800000000000000
+      internalID: 3492486727827956721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_20'
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 68
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20ee691fdcf96210800000000000000
+      internalID: 1326869600371925036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_21'
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 681f75e2066e74710800000000000000
+      internalID: 1677562686987563398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_22'
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c55150bc89051130800000000000000
+      internalID: 3536743582227584453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$floatingrocks_3_23'
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 32
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca66a4b053d03e7c0800000000000000
+      internalID: -4043373518974720340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
