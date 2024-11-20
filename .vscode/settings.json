@@ -56,7 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "D-Day-project.sln",
-    "Codegeex.GenerationPreference": "automatic",
-    "Codegeex.SidebarUI.LanguagePreference": "English"
+    "dotnet.defaultSolution": "D-Day-project.sln"
 }
