@@ -137,6 +137,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -285,7 +298,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dd_waterfall_sheet_0: 4991124090343892676
+      dd_waterfall_sheet_1: 7328299382165340779
+      dd_waterfall_sheet_2: -8989817667979140352
+      dd_waterfall_sheet_3: 3932840819734095307
+      dd_waterfall_sheet_4: -69285578617989241
+      dd_waterfall_sheet_5: -6748856335704823577
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

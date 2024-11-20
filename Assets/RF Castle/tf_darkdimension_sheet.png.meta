@@ -320,6 +320,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1810,7 +1823,74 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tf_darkdimension_sheet_0: 5255222112775089997
+      tf_darkdimension_sheet_1: -7908670341655994902
+      tf_darkdimension_sheet_10: 2614704676248357475
+      tf_darkdimension_sheet_11: 4500814802849182134
+      tf_darkdimension_sheet_12: -1504280902576776673
+      tf_darkdimension_sheet_13: -6900461070111165282
+      tf_darkdimension_sheet_14: -9143210726958468258
+      tf_darkdimension_sheet_15: 7744425111993984057
+      tf_darkdimension_sheet_16: -316922187049810088
+      tf_darkdimension_sheet_17: -4527003762863889388
+      tf_darkdimension_sheet_18: -4462067968021222401
+      tf_darkdimension_sheet_19: -4301900319498977456
+      tf_darkdimension_sheet_2: 4866795559402307724
+      tf_darkdimension_sheet_20: -28034951216968592
+      tf_darkdimension_sheet_21: -6036214324608365794
+      tf_darkdimension_sheet_22: -3574443879159483604
+      tf_darkdimension_sheet_23: 8302774642520265139
+      tf_darkdimension_sheet_24: 5648755111196830454
+      tf_darkdimension_sheet_25: -1570453025182606051
+      tf_darkdimension_sheet_26: 7582783843751235414
+      tf_darkdimension_sheet_27: -2215993646190351657
+      tf_darkdimension_sheet_28: 2010276767235251505
+      tf_darkdimension_sheet_29: 2823585861833860070
+      tf_darkdimension_sheet_3: -1134721964210524819
+      tf_darkdimension_sheet_30: -5082398223701352599
+      tf_darkdimension_sheet_31: 3353807587128472119
+      tf_darkdimension_sheet_32: 6594514164268345719
+      tf_darkdimension_sheet_33: -6429413630954644377
+      tf_darkdimension_sheet_34: 7934935257312342306
+      tf_darkdimension_sheet_35: 5898456823085952571
+      tf_darkdimension_sheet_36: 3399774821612141838
+      tf_darkdimension_sheet_37: -323108314558218544
+      tf_darkdimension_sheet_38: 4879288790166744307
+      tf_darkdimension_sheet_39: -4950115025113454004
+      tf_darkdimension_sheet_4: -934609481751362700
+      tf_darkdimension_sheet_40: -7114891425137847652
+      tf_darkdimension_sheet_41: 2359303278372195401
+      tf_darkdimension_sheet_42: 6244056550582746360
+      tf_darkdimension_sheet_43: 3766998229428737618
+      tf_darkdimension_sheet_44: -3113599015898578405
+      tf_darkdimension_sheet_45: 2169206662323236945
+      tf_darkdimension_sheet_46: -2608998188186647786
+      tf_darkdimension_sheet_47: 7478549839838544255
+      tf_darkdimension_sheet_48: -3315714844045008374
+      tf_darkdimension_sheet_49: -8416618208119159095
+      tf_darkdimension_sheet_5: 2279503294575176341
+      tf_darkdimension_sheet_50: 8780385132543690032
+      tf_darkdimension_sheet_51: -1459717902191003774
+      tf_darkdimension_sheet_52: -5953987694475750800
+      tf_darkdimension_sheet_53: -3489665576933731012
+      tf_darkdimension_sheet_54: -4913489844359291944
+      tf_darkdimension_sheet_55: -7276066898016460657
+      tf_darkdimension_sheet_56: -3153715219015807675
+      tf_darkdimension_sheet_57: -240781749082198683
+      tf_darkdimension_sheet_58: 6027401784523441855
+      tf_darkdimension_sheet_59: -8438096012482746937
+      tf_darkdimension_sheet_6: -7332391482142921396
+      tf_darkdimension_sheet_60: -6288573771033411343
+      tf_darkdimension_sheet_61: -387324278614311863
+      tf_darkdimension_sheet_62: -3866482765192906412
+      tf_darkdimension_sheet_63: 4870539122258763862
+      tf_darkdimension_sheet_64: -6679604946432856978
+      tf_darkdimension_sheet_65: 4094227168379152662
+      tf_darkdimension_sheet_66: -4225006619802919592
+      tf_darkdimension_sheet_7: -7806398965107809348
+      tf_darkdimension_sheet_8: -4965256806195598451
+      tf_darkdimension_sheet_9: -8595669113059859310
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
