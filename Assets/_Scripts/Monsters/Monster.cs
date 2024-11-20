@@ -107,8 +107,6 @@ public class Monster : MonoBehaviour
         animator.SetTrigger("Attack");
         StartCoroutine(AttackCooldown());
         
-        
-
         Player player = playerTransform.GetComponent<Player>();
         player?.TakeDamage(attackDamage);
     }

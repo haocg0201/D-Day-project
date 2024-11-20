@@ -13,21 +13,21 @@ public class DialogueCtrler : MonoBehaviour
     public string[] dialogueLines = new string[]
     {
         "Hmm... Tôi không biết sao mình lại ở đây nữa?",
-        "Hình như là một giấc mơ... nhưng mà sao nó lại thật đến vậy?",
+        "Như là một giấc mơ... nhưng mà sao nó lại thật đến vậy?",
         "Có điều gì đó... đang chờ tôi ở đây sao.",
-        "Lần cuối cùng tôi còn nhớ là mình đã làm việc kiệt sức ở văn phòng tới mức phải nhập viện.",
+        "Lần cuối cùng tôi còn nhớ, tôi đã làm việc kiệt sức ở văn phòng tới mức phải nhập viện.",
         "Không... Tôi phải thức dậy ngay!",
         "Những ký ức... làm sao để nó trở lại...",
-        "Đây là... ngày bắt đầu hành trình của tôi.",
-        "Hôm nay, tôi không cần đi làm nữa.",
+        "Đây là... ngày bắt đầu hành trình mới của tôi.",
+        "Hôm nay, tôi không còn đi làm nữa.",
         "..."
     };
     private int dialogueIndex = 0;
-    public float typingSpeed = 0.0005f;
+    public float typingSpeed = 0.05f;
 
     void Start()
     {
-        if (PlayerPrefs.GetInt("level") == 0)
+        if (PlayerPrefs.GetInt("level") == 1)
         {
             mainCanvas.gameObject.SetActive(true); 
             StartCoroutine(StartDialogue());
@@ -40,15 +40,15 @@ public class DialogueCtrler : MonoBehaviour
 
     IEnumerator StartDialogue()
     {
-        yield return new WaitForSeconds(2f);  // 
+        yield return new WaitForSeconds(1f);  // 
         while (dialogueIndex < dialogueLines.Length)
         {
             yield return TypeDialogue(dialogueLines[dialogueIndex]);
             dialogueIndex++;
-            yield return new WaitForSeconds(1f);  // Dừng tí
+            yield return new WaitForSeconds(0.5f);  // Dừng tí
         }
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         StartCoroutine(FadeOutPanel());
     
     }
