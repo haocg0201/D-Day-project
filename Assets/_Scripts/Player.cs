@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
     public string playerName;
     public PlayerData playerData;
 
+    private bool isImmune = false;
+
     // Phương thức khởi tạo từ PlayerData
     public void Initialize(PlayerData data)
     {
@@ -78,6 +80,26 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isRunning",false);
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (!isImmune)
+            {
+                StartCoroutine(ActivateImmunity());
+            }
+        }
+    }
+
+    IEnumerator ActivateImmunity()
+    {
+        isImmune = true; // Bật chế độ miễn nhiễm
+        Debug.Log("Player is immune to damage for 5 seconds!");
+
+        // Đợi trong 5 giây
+        yield return new WaitForSeconds(5f);
+
+        isImmune = false; // Tắt chế độ miễn nhiễm sau 5 giây
+        Debug.Log("Player is no longer immune to damage.");
     }
 
     void OnMove(InputValue movementValue)
@@ -103,6 +125,11 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (isImmune)
+        {
+            Debug.Log("Player is immune, no damage taken!");
+            return;
+        }
         int damageToPlayer =  (int)Mathf.Floor(damage * (999/(100 + def)));
         UpdateHealth(damageToPlayer);
         ShowDamage(damageToPlayer);
