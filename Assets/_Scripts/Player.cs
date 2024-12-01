@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     public PlayerData playerData;
 
     private bool isImmune = false;
+    private bool isGospel = false;
 
     // Phương thức khởi tạo từ PlayerData
     public void Initialize(PlayerData data)
@@ -88,6 +89,14 @@ public class Player : MonoBehaviour
                 StartCoroutine(ActivateImmunity());
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.G)) 
+        {
+            if (!isGospel)
+            {
+                StartCoroutine(ActivateGospel());
+            }
+        }
     }
 
     IEnumerator ActivateImmunity()
@@ -100,6 +109,20 @@ public class Player : MonoBehaviour
 
         isImmune = false; // Tắt chế độ miễn nhiễm sau 5 giây
         Debug.Log("Player is no longer immune to damage.");
+    }
+
+    IEnumerator ActivateGospel()
+    {
+        isGospel = true; // Bật phúc âm
+        survivability += 1f;
+        Debug.Log("Survivability +1 for 30 seconds!");
+
+        // Đợi trong 30 giây
+        yield return new WaitForSeconds(30f);
+
+        isGospel = false; // Tắt phúc âm sau 30 giây
+        survivability -= 1f;
+        Debug.Log("Gospel expires.");
     }
 
     void OnMove(InputValue movementValue)
@@ -185,9 +208,14 @@ public class Player : MonoBehaviour
         dmg = defaultDmg + 10 * lvl;
         survivability = (defaultSurvivability + 0.01f * lvl) + 3f;
     }
-        
+        //if (isGospel)
+        //{
+        //    survivability += 1f;
+        //    Debug.Log("Survivability +1 for 30 seconds!");
+        //}
 
-         // phần nâng cấp vũ khí + chỉ số tính sau nhé
+
+        // phần nâng cấp vũ khí + chỉ số tính sau nhé
     }
 
         private IEnumerator FadeOutText(float duration)
