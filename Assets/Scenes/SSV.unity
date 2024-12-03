@@ -417,6 +417,37 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!1 &1062808430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062808431}
+  m_Layer: 0
+  m_Name: vitriban
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1062808431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062808430}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.127, y: 0.008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1513428059}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1263448008
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +652,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1513428059}
-  offset: {x: 0, y: 0, z: 0}
 --- !u!114 &1380998389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22379,9 +22409,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8413811757744329778, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 775802978101158647, guid: 1940d16a7b68a684b82aca88303cdaa3, type: 3}
+    - target: {fileID: 8413811757744329778, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
+      propertyPath: bulletPos
+      value: 
+      objectReference: {fileID: 1062808431}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6887592967225599019, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1062808431}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
 --- !u!1 &6958688019418111419 stripped
@@ -22411,9 +22452,9 @@ SceneRoots:
   - {fileID: 147416980}
   - {fileID: 1369046141}
   - {fileID: 111886206}
-  - {fileID: 1996864041}
   - {fileID: 493415885}
   - {fileID: 2371531732849851689}
   - {fileID: 5453883954988155840}
+  - {fileID: 1996864041}
   - {fileID: 1593321391391878012}
   - {fileID: 3064333250786705142}

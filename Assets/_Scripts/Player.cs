@@ -31,6 +31,12 @@ public class Player : MonoBehaviour
     private bool isImmune = false;
     private bool isGospel = false;
 
+    [Header("Bullet")]
+    public GameObject bullet;
+    public Transform bulletPos;
+    public float cooldownshoot = 5f;
+    private float timeSincelastshoot;
+
     // Phương thức khởi tạo từ PlayerData
     public void Initialize(PlayerData data)
     {
@@ -96,6 +102,17 @@ public class Player : MonoBehaviour
             {
                 StartCoroutine(ActivateGospel());
             }
+        }
+        timeSincelastshoot += Time.deltaTime;
+        Shoot();
+    }
+    // Skill_Ready to fight
+    private void Shoot()
+    {
+        if (Input.GetKeyDown(KeyCode.J) && timeSincelastshoot >= cooldownshoot)
+        {
+            Instantiate(bullet, bulletPos.position, Quaternion.identity, transform);
+            timeSincelastshoot = 0f;
         }
     }
 
