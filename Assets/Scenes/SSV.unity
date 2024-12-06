@@ -22118,6 +22118,37 @@ Sprite:
   m_Bones: []
   m_ScriptableObjects: []
   m_SpriteID: 
+--- !u!1 &2121265431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121265432}
+  m_Layer: 0
+  m_Name: Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2121265432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121265431}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.19, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1513428059}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1593321391391878012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22430,12 +22461,27 @@ PrefabInstance:
       propertyPath: bulletPos
       value: 
       objectReference: {fileID: 1062808431}
+    - target: {fileID: 8413811757744329778, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
+      propertyPath: attactPoint
+      value: 
+      objectReference: {fileID: 2121265432}
+    - target: {fileID: 8413811757744329778, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
+      propertyPath: Effect_Gospel
+      value: 
+      objectReference: {fileID: 920126817481325366, guid: c24c8e5602c741a4684813a232473d74, type: 3}
+    - target: {fileID: 8413811757744329778, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
+      propertyPath: Effect_Immortal
+      value: 
+      objectReference: {fileID: 4097729656911788998, guid: c92a2e6b423cb8e419a4b54a630fdb4e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6887592967225599019, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1062808431}
+    - targetCorrespondingSourceObject: {fileID: 6887592967225599019, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2121265432}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
 --- !u!1 &6958688019418111419 stripped

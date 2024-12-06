@@ -31,6 +31,10 @@ public class Player : MonoBehaviour
     private bool isImmune = false;
     private bool isGospel = false;
 
+    public GameObject Effect_Immortal, Effect_Gospel;
+    public Transform attactPoint;
+    private GameObject instantiatedObject; //luu tru doi tuong da instance
+
     [Header("Bullet")]
     public GameObject bullet;
     public Transform bulletPos;
@@ -119,12 +123,21 @@ public class Player : MonoBehaviour
     IEnumerator ActivateImmunity()
     {
         isImmune = true; // Bật chế độ miễn nhiễm
+        //EffectManager.instance.SpawnVFX("Immortal_Effect", transform.position, transform.rotation);
+        if (Effect_Immortal != null && attactPoint != null)
+        {
+            instantiatedObject = Instantiate(Effect_Immortal, attactPoint.position, Quaternion.identity);
+            instantiatedObject.transform.SetParent(attactPoint);
+
+            instantiatedObject.transform.position = attactPoint.position;
+        }
         Debug.Log("Player is immune to damage for 5 seconds!");
 
         // Đợi trong 5 giây
         yield return new WaitForSeconds(5f);
 
         isImmune = false; // Tắt chế độ miễn nhiễm sau 5 giây
+        Destroy(instantiatedObject);
         Debug.Log("Player is no longer immune to damage.");
     }
 
@@ -132,13 +145,21 @@ public class Player : MonoBehaviour
     {
         isGospel = true; // Bật phúc âm
         survivability += 1f;
+        if (Effect_Gospel != null && attactPoint != null)
+        {
+            instantiatedObject = Instantiate(Effect_Gospel, attactPoint.position, Quaternion.identity);
+            instantiatedObject.transform.SetParent(attactPoint);
+
+            instantiatedObject.transform.position = attactPoint.position;
+        }
         Debug.Log("Survivability +1 for 30 seconds!");
 
         // Đợi trong 30 giây
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(5f);
 
         isGospel = false; // Tắt phúc âm sau 30 giây
         survivability -= 1f;
+        Destroy(instantiatedObject);
         Debug.Log("Gospel expires.");
     }
 
