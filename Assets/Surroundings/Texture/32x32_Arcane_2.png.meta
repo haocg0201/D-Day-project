@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      32x32_Arcane_2_0: 6739049266166153123
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
