@@ -27,13 +27,19 @@ public class Player : MonoBehaviour
 
     public string playerName;
     public PlayerData playerData;
+    
 
     private bool isImmune = false;
     private bool isGospel = false;
+    
 
     public GameObject Effect_Immortal, Effect_Gospel;
     public Transform attactPoint;
     private GameObject instantiatedObject; //luu tru doi tuong da instance
+    private bool isCooldown = false;
+
+
+
 
     [Header("Bullet")]
     public GameObject bullet;
@@ -92,7 +98,7 @@ public class Player : MonoBehaviour
             animator.SetBool("isRunning",false);
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !isCooldown)
         {
             if (!isImmune)
             {
@@ -100,13 +106,14 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.G)) 
+        if (Input.GetKeyDown(KeyCode.G) && !isCooldown) 
         {
             if (!isGospel)
             {
                 StartCoroutine(ActivateGospel());
             }
         }
+        
         timeSincelastshoot += Time.deltaTime;
         Shoot();
     }
@@ -120,10 +127,12 @@ public class Player : MonoBehaviour
         }
     }
 
+    
+
     IEnumerator ActivateImmunity()
     {
         isImmune = true; // Bật chế độ miễn nhiễm
-        //EffectManager.instance.SpawnVFX("Immortal_Effect", transform.position, transform.rotation);
+        
         if (Effect_Immortal != null && attactPoint != null)
         {
             instantiatedObject = Instantiate(Effect_Immortal, attactPoint.position, Quaternion.identity);
@@ -136,9 +145,12 @@ public class Player : MonoBehaviour
         // Đợi trong 5 giây
         yield return new WaitForSeconds(5f);
 
+        Debug.Log("Player is no longer immune to damage,Cooldown in 10 seconds!");
         isImmune = false; // Tắt chế độ miễn nhiễm sau 5 giây
+        isCooldown = true;
         Destroy(instantiatedObject);
-        Debug.Log("Player is no longer immune to damage.");
+        yield return new WaitForSeconds(10f);
+        isCooldown = false;
     }
 
     IEnumerator ActivateGospel()
@@ -157,10 +169,13 @@ public class Player : MonoBehaviour
         // Đợi trong 30 giây
         yield return new WaitForSeconds(5f);
 
+        Debug.Log("Gospel expires.Cooldown in 10 seconds!");
         isGospel = false; // Tắt phúc âm sau 30 giây
+        isCooldown = true;
         survivability -= 1f;
         Destroy(instantiatedObject);
-        Debug.Log("Gospel expires.");
+        yield return new WaitForSeconds(10f);
+        isCooldown = false;
     }
 
     void OnMove(InputValue movementValue)

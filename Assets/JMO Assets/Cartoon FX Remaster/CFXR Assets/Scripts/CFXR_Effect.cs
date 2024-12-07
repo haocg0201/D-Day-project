@@ -37,9 +37,19 @@ namespace CartoonFX
 			CameraShake.editorPreview = EditorPrefs.GetBool("CFXR CameraShake EditorPreview", true);
 	#endif
 		}
+
+		// ------------------VA CHAM VOI QUAI-------------------
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.CompareTag("Monster"))
+            {
+                Destroy(collision.gameObject);
+
+            }
+        }
 #endif
 
-		public enum ClearBehavior
+        public enum ClearBehavior
 		{
 			None,
 			Disable,
