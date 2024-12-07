@@ -9,7 +9,7 @@ TagManager:
   - Vampire
   - Monster
   - EnemySpawner
-  - lightBall
+  - Shield
   layers:
   - Default
   - TransparentFX

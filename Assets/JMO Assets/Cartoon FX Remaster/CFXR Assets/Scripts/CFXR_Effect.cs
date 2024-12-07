@@ -38,15 +38,7 @@ namespace CartoonFX
 	#endif
 		}
 
-		// ------------------VA CHAM VOI QUAI-------------------
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (collision.gameObject.CompareTag("Monster"))
-            {
-                Destroy(collision.gameObject);
-
-            }
-        }
+		
 #endif
 
         public enum ClearBehavior

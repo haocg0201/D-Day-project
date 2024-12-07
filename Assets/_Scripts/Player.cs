@@ -31,7 +31,8 @@ public class Player : MonoBehaviour
 
     private bool isImmune = false;
     private bool isGospel = false;
-    
+
+
 
     public GameObject Effect_Immortal, Effect_Gospel;
     public Transform attactPoint;
@@ -114,6 +115,7 @@ public class Player : MonoBehaviour
             }
         }
         
+
         timeSincelastshoot += Time.deltaTime;
         Shoot();
     }
