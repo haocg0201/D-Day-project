@@ -410,36 +410,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a34e6de0876da2c4c9082279c31d8737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-
-  playerId: 
-  health: 100
-  maxHealth: 0
-  def: 15
-  dmg: 50
-  survivability: 2
-  damageText: {fileID: 0}
-  collisionOffset: 0.05
-  movementFilter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
- 
+  playerName: 
+  playerData:
+    username: 
+    password: 
+    scode: 0
+    stat:
+      level: 0
+      gem: 0
+      rune: 0
+    skill:
+      skillA: 0
+      skillB: 0
+      skillC: 0
+      skillD: 0
+      skillE: 0
+      skillF: 0
+      skillG: 0
+      skillH: 0
+      skillI: 0
+      skillJ: 0
+      skillK: 0
+      skillL: 0
+    dungeon: 0
+    survival: 
+    campaign:
+      mapA: 
+      mapB: 
+      mapC: 
+      mapD: 
+    weapon:
+      sword: 0
+      knife: 0
+      boxingGloves: 0
+      pistol: 0
+      akm: 0
+      ordinaryStick: 0
+      yoyo: 0
   currentWeaponLeft: {fileID: 0}
   currentWeaponMidTop: {fileID: 0}
   currentWeaponRight: {fileID: 0}
   damageText: {fileID: 0}
   damageTextTransform: {fileID: 0}
-  collisionOffset: 0.05
+  collisionOffset: 1
   movementFilter:
     useTriggers: 0
     useLayerMask: 0
@@ -457,19 +470,12 @@ MonoBehaviour:
   posLeft: {fileID: 5346725698713968777}
   posTopMid: {fileID: 5018413514613737530}
   posRight: {fileID: 6435215148853494281}
-  player: {fileID: 0}
-  Effect_Immortal: {fileID: 4097729656911788998, guid: c92a2e6b423cb8e419a4b54a630fdb4e, type: 3}
-  Effect_Gospel: {fileID: 920126817481325366, guid: c24c8e5602c741a4684813a232473d74, type: 3}
-  Effect_Lightning: {fileID: 920126817481325366, guid: c24c8e5602c741a4684813a232473d74, type: 3}
+  Effect_Immortal: {fileID: 0}
+  Effect_Gospel: {fileID: 0}
   attactPoint: {fileID: 0}
-  positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
   bullet: {fileID: 0}
   bulletPos: {fileID: 0}
   cooldownshoot: 5
-
 --- !u!114 &6589659913722060779
 MonoBehaviour:
   m_ObjectHideFlags: 0
