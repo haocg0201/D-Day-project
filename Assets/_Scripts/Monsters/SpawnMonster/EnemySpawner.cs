@@ -3,42 +3,89 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public List<GameObject> enemyPrefabs;
-    public Transform player;
-    public List<GameObject> monsters = new List<GameObject>();
-    [SerializeField] private float spawnRadius = 3f;
-    [SerializeField] private float spawnInterval = 0.3f;
-    private float spawnTimer = 0f;
+    public static EnemySpawner Instance { get; private set; }
 
-    void Update()
+    public List<GameObject> enemyPrefabs; // Danh sách các loại quái
+    [SerializeField]private Dictionary<int, Queue<GameObject>> poolDictionary = new(); // Pool cho từng loại quái
+    // typeIndex: golem = 0, orc = 1, skeleton = 2, slime = 3, troll = 4, vampire = 5, werewolf = 6, zombie = 7
+    public List<GameObject> ActiveEnemies = new(); // Danh sách quái đang hoạt động
+
+
+    void Awake()
     {
-        if (monsters.Count >= 300) return;
-        spawnTimer += Time.deltaTime;
-        if (spawnTimer >= spawnInterval)
-        {
-            SpawnEnemy();
-            spawnTimer = 0f;
+         if (Instance == null){
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+         }else Destroy(gameObject);
+    }
+
+    void DestroyEnemySpawner(){
+        if(Instance != null){
+            Destroy(gameObject);
         }
     }
 
-    void SpawnEnemy()
+    void Start()
     {
-        if (enemyPrefabs == null || enemyPrefabs.Count == 0)
+        for (int i = 0; i < enemyPrefabs.Count; i++)
         {
-            Debug.LogWarning("Yahalo, Enemy Prefabs list is empty or null!");
-            return;
+            PreloadEnemies(i, 10);
+            Debug.Log($"Preloaded {i} and enemyPrefabs[i].GetComponent<Monster>().typeIndex: {enemyPrefabs[i].GetComponent<Monster>().typeIndex}");
+        }
+    }
+
+    // Tạo pool cho từng loại quái
+    public void PreloadEnemies(int typeIndex, int count)
+    {
+        if (!poolDictionary.ContainsKey(typeIndex))
+            poolDictionary[typeIndex] = new Queue<GameObject>();
+
+        for (int i = 0; i < count; i++)
+        {
+            GameObject enemy = Instantiate(enemyPrefabs[typeIndex]);
+            enemy.transform.SetParent(transform);
+            enemy.SetActive(false);
+            poolDictionary[typeIndex].Enqueue(enemy);
+        }
+    }
+
+    // Lấy quái vật từ pool
+    public GameObject GetEnemy(int typeIndex, Vector3 position)
+    {
+        if (!poolDictionary.ContainsKey(typeIndex) || poolDictionary[typeIndex].Count == 0)
+        {
+            Debug.LogWarning("No enemies available in the pool! Creating new.");
+            GameObject newEnemy = Instantiate(enemyPrefabs[typeIndex]);
+            newEnemy.transform.position = position;
+            RegisterEnemy(newEnemy);
+            return newEnemy;
         }
 
-        GameObject randomEnemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Count)];
-        if (randomEnemyPrefab == null)
-        {
-            Debug.LogWarning("Yahalo, A prefab in the list is null!");
-            return;
+        GameObject enemy = poolDictionary[typeIndex].Dequeue();
+        enemy.transform.position = position;
+        enemy.SetActive(true);
+        if(enemy != null){
+            enemy.GetComponent<Monster>().ResetMonster();
+        }else{
+            Debug.LogError("Monster component is missing on enemy!");
         }
+        
+        
+        RegisterEnemy(enemy);
+        return enemy;
+    }
 
-        Vector2 spawnPos = (Vector2)player.position + Random.insideUnitCircle.normalized * spawnRadius;
-        GameObject spawnedEnemy = Instantiate(randomEnemyPrefab, new Vector3(spawnPos.x, spawnPos.y, 0), Quaternion.identity);
-        spawnedEnemy.SetActive(true);
-        monsters.Add(spawnedEnemy);
+    // Trả quái vật về pool
+    public void ReturnEnemy(int typeIndex, GameObject enemy)
+    {
+        enemy.SetActive(false);
+        poolDictionary[typeIndex].Enqueue(enemy);
+        ActiveEnemies.Remove(enemy);
+    }
+
+    // Đăng ký quái vào danh sách quái đang hoạt động
+    public void RegisterEnemy(GameObject enemy)
+    {
+        ActiveEnemies.Add(enemy);
     }
 }

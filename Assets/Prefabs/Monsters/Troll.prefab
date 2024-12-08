@@ -273,10 +273,12 @@ MonoBehaviour:
   survivability: 0
   size: 0
   dialogues: []
-  animator: {fileID: 0}
+  typeIndex: 0
+  animator: {fileID: 5213540399537299969}
   isRunning: 1
   isExhausted: 0
   attackRange: 0.3
+  time: 0
   damageText: {fileID: 0}
 --- !u!50 &8486918667109563756
 Rigidbody2D:
@@ -335,7 +337,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

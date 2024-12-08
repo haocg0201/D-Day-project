@@ -27,7 +27,7 @@ public class DialogueCtrler : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.GetInt("level") == 1)
+        if (PlayerPrefs.GetInt("level") <= -1)
         {
             mainCanvas.gameObject.SetActive(true); 
             StartCoroutine(StartDialogue());

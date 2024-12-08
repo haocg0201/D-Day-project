@@ -71,7 +71,7 @@ public class LoginMonoBehaviourScript : MonoBehaviour
 
         public void OpenNewBornFormBySceneIndex()
     {
-        LoadSignupFormBySceneIndex(3); // NewBorn Scene Index = 3
+        LoadSignupFormBySceneIndex(4); // NewBorn Scene Index = 3
     }
 
     private void LoadSignupFormBySceneIndex(int index)

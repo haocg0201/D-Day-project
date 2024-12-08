@@ -2,6 +2,7 @@
 using Firebase.Database;
 using Firebase.Extensions;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -87,15 +88,18 @@ public class FirebaseManager : MonoBehaviour
                     string playerId = playerDataSnapshot.Key;
                     if (_dbPassword == password)
                     {
+                        PlayerPrefsManager.ClearPlayerData();
                         PlayerData playerData = JsonUtility.FromJson<PlayerData>(playerDataSnapshot.GetRawJsonValue());
+                        Debug.Log("Đã lấy được dữ liệu: ");
                         PlayerPrefsManager.SavePlayerDataToPlayerPrefs(playerData,playerId);
+                        Debug.Log($"Đã lưu dữ liệu vào PlayerPrefs: {playerDataSnapshot.GetRawJsonValue()}, các trường dữ liệu: {playerData.username}, {playerData.password}, {playerData.stat.level}");
                         Debug.Log("Đăng nhập thành công!");
                         return 1;
                     }
                     else
                     {
                         Debug.LogWarning("Sai tài khoản hoặc mật khẩu."); // check là sai tài khoản hoặc mật khẩu chung chung thôi cho bọn trộm tk nó khó check :]
-                        return -1; // Incorrect password
+                        return -1; 
                     }
                 }
             }
@@ -110,6 +114,7 @@ public class FirebaseManager : MonoBehaviour
             Debug.LogError("Lỗi khi truy xuất dữ liệu: " + ex);
             return 0; // khai ra là timeout cho đỡ lộ dùng free firebase realtime XD
         }
+        Debug.LogError("Lỗi khi truy xuất dữ liệu: ???");
         return 0;
     }
 
@@ -130,7 +135,7 @@ public class FirebaseManager : MonoBehaviour
                 username = username,
                 password = password,
                 scode = scode,
-                stat = new PlayerStat { level = 0, gem = 1000, rune = 1000 },
+                stat = new PlayerStat { level = 1, gem = 10000, rune = 10000 },
                 skill = new PlayerSkill
                 {
                     skillA = false,
@@ -226,7 +231,7 @@ public class FirebaseManager : MonoBehaviour
             string json = JsonUtility.ToJson(updatedPlayerData);
 
             await DbReference.Child("player").Child(playerId).SetRawJsonValueAsync(json); // fb không trả về gì đâu ae nên cứ cho cập nhật thành công đi :v
-
+            Debug.Log("OK");
             return 1; // Cập nhật thành công
         }
         catch (Exception ex)
@@ -235,6 +240,151 @@ public class FirebaseManager : MonoBehaviour
             return -1; // Lỗi xảy ra, báo tại mạng nhé
         }
     }
+
+    public async Task<List<PlayerData>> GetAllPlayers()
+    {
+        List<PlayerData> players = new List<PlayerData>();
+        try
+        {
+            var task = await DbReference.Child("player").GetValueAsync();
+            if (task.Exists && task.ChildrenCount > 0)
+            {
+                foreach (var playerSnapshot in task.Children)
+                {
+                    PlayerData playerData = JsonUtility.FromJson<PlayerData>(playerSnapshot.GetRawJsonValue());
+                    players.Add(playerData);
+
+                    //Debug.Log($"Đã lấy dữ liệu người chơi: {playerData.username}, {playerData.stat.level}");
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Không có người chơi nào trong database");
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("Lỗi khi truy xuất dữ liệu người chơi: " + ex);
+        }
+        
+        return players;
+    }
+
+    // public async Task<List<PlayerData>> GetTop20Players()
+    // {
+    //     try 
+    //     {
+    //         List<PlayerData> players = new();
+    //         var task = await DbReference.OrderByChild("stat/level").LimitToFirst(20).GetValueAsync(); 
+    //         if (task.Exists && task.ChildrenCount > 0)
+    //         {
+    //             foreach (var playerDataSnapshot in task.Children)
+    //             {
+    //                 PlayerData playerData = JsonUtility.FromJson<PlayerData>(playerDataSnapshot.GetRawJsonValue());
+    //                 Debug.Log("Đã lấy được dữ liệu: " + playerData.username);
+    //                 players.Add(playerData);
+    //             }
+    //             return players;
+    //         }
+    //         else
+    //         {
+    //             Debug.LogWarning("Không lấy được dữ liệu");
+    //             return new List<PlayerData>(); 
+    //         }
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         Debug.LogError("Lỗi khi truy xuất dữ liệu: " + ex);
+    //         return new List<PlayerData>(); // Khi có lỗi, trả về danh sách rỗng
+    //     }
+    // }
+
+    // public async Task<List<PlayerData>> GetTop20WealthPlayers()
+    // {
+    //     try 
+    //     {
+    //         List<PlayerData> players = new();
+    //         var task = await DbReference.OrderByChild("stat/gem").LimitToFirst(20).GetValueAsync(); 
+    //         if (task.Exists && task.ChildrenCount > 0)
+    //         {
+    //             foreach (var playerDataSnapshot in task.Children)
+    //             {
+    //                 PlayerData playerData = JsonUtility.FromJson<PlayerData>(playerDataSnapshot.GetRawJsonValue());
+    //                 Debug.Log("Đã lấy được dữ liệu: " + playerData.username);
+    //                 players.Add(playerData);
+    //             }
+    //             return players;
+    //         }
+    //         else
+    //         {
+    //             Debug.LogWarning("Không lấy được dữ liệu");
+    //             return new List<PlayerData>(); 
+    //         }
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         Debug.LogError("Lỗi khi truy xuất dữ liệu: " + ex);
+    //         return new List<PlayerData>(); // Khi có lỗi, trả về danh sách rỗng
+    //     }
+    // }
+
+    // public async Task<List<PlayerData>> GetTop20CampaignPlayers()
+    // {
+    //     try 
+    //     {
+    //         List<PlayerData> players = new();
+    //         var task = await DbReference.OrderByChild("campaign/mapA").LimitToFirst(20).GetValueAsync(); 
+    //         if (task.Exists && task.ChildrenCount > 0)
+    //         {
+    //             foreach (var playerDataSnapshot in task.Children)
+    //             {
+    //                 PlayerData playerData = JsonUtility.FromJson<PlayerData>(playerDataSnapshot.GetRawJsonValue());
+    //                 Debug.Log("Đã lấy được dữ liệu: " + playerData.username);
+    //                 players.Add(playerData);
+    //             }
+    //             return players;
+    //         }
+    //         else
+    //         {
+    //             Debug.LogWarning("Không lấy được dữ liệu");
+    //             return new List<PlayerData>(); 
+    //         }
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         Debug.LogError("Lỗi khi truy xuất dữ liệu: " + ex);
+    //         return new List<PlayerData>(); // Khi có lỗi, trả về danh sách rỗng
+    //     }
+    // }
+
+    // public async Task<List<PlayerData>> GetTop20SvvPlayers()
+    // {
+    //     try 
+    //     {
+    //         List<PlayerData> players = new();
+    //         var task = await DbReference.OrderByChild("survival").LimitToFirst(20).GetValueAsync(); 
+    //         if (task.Exists && task.ChildrenCount > 0)
+    //         {
+    //             foreach (var playerDataSnapshot in task.Children)
+    //             {
+    //                 PlayerData playerData = JsonUtility.FromJson<PlayerData>(playerDataSnapshot.GetRawJsonValue());
+    //                 Debug.Log("Đã lấy được dữ liệu: " + playerData.username);
+    //                 players.Add(playerData);
+    //             }
+    //             return players;
+    //         }
+    //         else
+    //         {
+    //             Debug.LogWarning("Không lấy được dữ liệu");
+    //             return new List<PlayerData>(); 
+    //         }
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         Debug.LogError("Lỗi khi truy xuất dữ liệu: " + ex);
+    //         return new List<PlayerData>(); // Khi có lỗi, trả về danh sách rỗng
+    //     }
+    // }
 
 }
 
