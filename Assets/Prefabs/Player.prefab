@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 8413811757744329778}
-  Effect_Immortal: {fileID: 3148461363344547131, guid: ab6bd86018194ca43a53f119d02787ce, type: 3}
+  Effect_Immortal: {fileID: 2717183997239933570, guid: bb00da5f790862142939f7f4d98877f0, type: 3}
   attactPoint: {fileID: 3646008904636827289}
 --- !u!1 &2183222761352538565
 GameObject:
