@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 3646008904636827289}
   - component: {fileID: 3256044705129188620}
   m_Layer: 0
-  m_Name: Effect
+  m_Name: immortal_Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,8 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df0d7bf98ef20b84fac750c1b62e24fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  Effect_Immortal: {fileID: 4097729656911788998, guid: c92a2e6b423cb8e419a4b54a630fdb4e, type: 3}
+  player: {fileID: 8413811757744329778}
+  Effect_Immortal: {fileID: 3148461363344547131, guid: ab6bd86018194ca43a53f119d02787ce, type: 3}
   attactPoint: {fileID: 3646008904636827289}
 --- !u!1 &2183222761352538565
 GameObject:
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac90e91bb3452a44fa3258336c8e1174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Effect_Gospel: {fileID: 920126817481325366, guid: c24c8e5602c741a4684813a232473d74, type: 3}
+  Effect_Gospel: {fileID: 8683663627810720471, guid: c24c8e5602c741a4684813a232473d74, type: 3}
   attactPoint: {fileID: 8785707905637207391}
 --- !u!1 &3491073118758645117
 GameObject:
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 3491073118758645117}
-  Effect_Lightning: {fileID: 399722736624245325, guid: 045c51876d41f0c44b730d8d58a9009c, type: 3}
+  Effect_Lightning: {fileID: 6110723416913662437, guid: cbf0fe9be22d8c344868001467b4bfc1, type: 3}
   positions:
   - {x: 0, y: 2, z: 0}
   - {x: 2, y: 0, z: 0}

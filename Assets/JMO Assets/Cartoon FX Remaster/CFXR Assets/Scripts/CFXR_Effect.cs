@@ -37,11 +37,9 @@ namespace CartoonFX
 			CameraShake.editorPreview = EditorPrefs.GetBool("CFXR CameraShake EditorPreview", true);
 	#endif
 		}
-
-		
 #endif
 
-        public enum ClearBehavior
+		public enum ClearBehavior
 		{
 			None,
 			Disable,
