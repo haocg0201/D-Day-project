@@ -56,8 +56,8 @@ public class Player : MonoBehaviour
     private float textHeight;
     private Weapon weapon;
     
-    public string playerName;
-    public PlayerData playerData;
+    // public string playerName;
+    // public PlayerData playerData;
     
 
     private bool isImmune = false;
@@ -186,41 +186,54 @@ public class Player : MonoBehaviour
         // } 
     }
 
-private void HandleMovement()
-{
-    if (movementInput != Vector2.zero)
+    private void HandleMovement()
     {
-        bool success = TryMove(movementInput);
-
-        if (!success)
+        if (movementInput != Vector2.zero)
         {
-            success = TryMove(new Vector2(movementInput.x, 0)); 
-        }
+            bool success = TryMove(movementInput);
 
-        if (!success)
-        {
-            success = TryMove(new Vector2(0, movementInput.y));
-        }
-
-        if (Input.GetKeyDown(KeyCode.E) && !isCooldown)
-        {
-            if (!isImmune)
+            if (!success)
             {
-                StartCoroutine(ActivateImmunity());
+                success = TryMove(new Vector2(movementInput.x, 0)); 
             }
-        }
 
-        if (Input.GetKeyDown(KeyCode.G) && !isCooldown) 
-        {
-            if (!isGospel)
+            if (!success)
             {
-                StartCoroutine(ActivateGospel());
+                success = TryMove(new Vector2(0, movementInput.y));
             }
-        }
-        
+            animator.SetBool("isWalking", success);
+            
+            if (success)
+            {
+                StartCoroutine(SwitchToRunningAfterDelay(1.5f));
+            }
+            //Debug.Log($"Movement input - success: {success} and movementInput: {movementInput}");
+            else
+            {
+                animator.SetBool("isWalking", false);
+                animator.SetBool("isRunning", false);
+            }
 
-        timeSincelastshoot += Time.deltaTime;
-        Shoot();
+            if (Input.GetKeyDown(KeyCode.E) && !isCooldown)
+            {
+                if (!isImmune)
+                {
+                    StartCoroutine(ActivateImmunity());
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.G) && !isCooldown) 
+            {
+                if (!isGospel)
+                {
+                    StartCoroutine(ActivateGospel());
+                }
+            }
+            
+
+            timeSincelastshoot += Time.deltaTime;
+            Shoot();
+        }
     }
     // Skill_Ready to fight
     private void Shoot()
@@ -261,7 +274,7 @@ private void HandleMovement()
     IEnumerator ActivateGospel()
     {
         isGospel = true; // Bật phúc âm
-        survivability += 1f;
+        GameManager.Instance.Survivability += 1f;
         if (Effect_Gospel != null && attactPoint != null)
         {
             instantiatedObject = Instantiate(Effect_Gospel, attactPoint.position, Quaternion.identity);
@@ -277,26 +290,11 @@ private void HandleMovement()
         Debug.Log("Gospel expires.Cooldown in 10 seconds!");
         isGospel = false; // Tắt phúc âm sau 30 giây
         isCooldown = true;
-        survivability -= 1f;
+        GameManager.Instance.Survivability -= 1f;
         Destroy(instantiatedObject);
         yield return new WaitForSeconds(10f);
         isCooldown = false;
     }
-
-        animator.SetBool("isWalking", success);
-        if (success)
-        {
-            StartCoroutine(SwitchToRunningAfterDelay(1.5f));
-        }
-        //Debug.Log($"Movement input - success: {success} and movementInput: {movementInput}");
-    }
-    else
-    {
-        animator.SetBool("isWalking", false);
-        animator.SetBool("isRunning", false);
-    }
-}
-
 
     void StartWalking()
     {
@@ -364,9 +362,6 @@ private void HandleMovement()
             Debug.Log("Player is immune, no damage taken!");
             return;
         }
-        int damageToPlayer =  (int)Mathf.Floor(damage * (999/(100 + def)));
-        UpdateHealth(damageToPlayer);
-        ShowDamage(damageToPlayer);
     }
 
     void UpdateHealth(int damageToPlayer)
