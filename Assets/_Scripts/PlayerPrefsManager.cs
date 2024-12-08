@@ -24,7 +24,7 @@ public class PlayerPrefsManager
         PlayerPrefs.SetInt("skillD", playerData.skill.skillD ? 1 : 0);
         PlayerPrefs.SetInt("skillE", playerData.skill.skillE ? 1 : 0);
         PlayerPrefs.SetInt("skillF", playerData.skill.skillF ? 1 : 0);
-        PlayerPrefs.SetInt("skillJ", playerData.skill.skillJ ? 1 : 0);
+        PlayerPrefs.SetInt("skillG", playerData.skill.skillJ ? 1 : 0);
         PlayerPrefs.SetInt("skillH", playerData.skill.skillH ? 1 : 0);
         PlayerPrefs.SetInt("skillI", playerData.skill.skillI ? 1 : 0);
         PlayerPrefs.SetInt("skillJ", playerData.skill.skillJ ? 1 : 0);
@@ -51,7 +51,56 @@ public class PlayerPrefsManager
         PlayerPrefs.SetInt("yoyo", playerData.weapon.yoyo);
 
         PlayerPrefs.Save();
-        Debug.Log("Player data saved to PlayerPrefs.");
+        //Debug.Log("Player data saved to PlayerPrefs.");
+    }
+
+        public static void SavePlayerDataToPlayerPrefsWithoutPlayerId(PlayerData playerData)
+    {
+        // inf
+        PlayerPrefs.SetString("username", playerData.username);
+        PlayerPrefs.SetString("password", playerData.password);
+        PlayerPrefs.SetInt("scode", playerData.scode);
+
+        // stat
+        PlayerPrefs.SetInt("level", playerData.stat.level);
+        PlayerPrefs.SetInt("gem", playerData.stat.gem);
+        PlayerPrefs.SetInt("rune", playerData.stat.rune);
+
+        //skill
+        PlayerPrefs.SetInt("skillA", playerData.skill.skillA ? 1 : 0);
+        PlayerPrefs.SetInt("skillB", playerData.skill.skillB ? 1 : 0);
+        PlayerPrefs.SetInt("skillC", playerData.skill.skillC ? 1 : 0);
+        PlayerPrefs.SetInt("skillD", playerData.skill.skillD ? 1 : 0);
+        PlayerPrefs.SetInt("skillE", playerData.skill.skillE ? 1 : 0);
+        PlayerPrefs.SetInt("skillF", playerData.skill.skillF ? 1 : 0);
+        PlayerPrefs.SetInt("skillG", playerData.skill.skillJ ? 1 : 0);
+        PlayerPrefs.SetInt("skillH", playerData.skill.skillH ? 1 : 0);
+        PlayerPrefs.SetInt("skillI", playerData.skill.skillI ? 1 : 0);
+        PlayerPrefs.SetInt("skillJ", playerData.skill.skillJ ? 1 : 0);
+        PlayerPrefs.SetInt("skillK", playerData.skill.skillK ? 1 : 0);
+        PlayerPrefs.SetInt("skillL", playerData.skill.skillL ? 1 : 0);
+
+        // dungeon và survival
+        PlayerPrefs.SetInt("dungeon", playerData.dungeon);
+        PlayerPrefs.SetString("survival", playerData.survival);
+
+        // campaign
+        PlayerPrefs.SetString("mapA", playerData.campaign.mapA);
+        PlayerPrefs.SetString("mapB", playerData.campaign.mapB);
+        PlayerPrefs.SetString("mapC", playerData.campaign.mapC);
+        PlayerPrefs.SetString("mapD", playerData.campaign.mapD);
+
+        // Lưu vũ khí
+        PlayerPrefs.SetInt("sword", playerData.weapon.sword);
+        PlayerPrefs.SetInt("knife", playerData.weapon.knife);
+        PlayerPrefs.SetInt("boxingGloves", playerData.weapon.boxingGloves);
+        PlayerPrefs.SetInt("pistol", playerData.weapon.pistol);
+        PlayerPrefs.SetInt("akm", playerData.weapon.akm);
+        PlayerPrefs.SetInt("ordinaryStick", playerData.weapon.ordinaryStick);
+        PlayerPrefs.SetInt("yoyo", playerData.weapon.yoyo);
+
+        PlayerPrefs.Save();
+        //Debug.Log("Player data saved to PlayerPrefs.");
     }
 
     public static string GetPlayerIdFromPlayerPrefs()
@@ -61,17 +110,17 @@ public class PlayerPrefsManager
 
     public static PlayerData LoadPlayerDataFromPlayerPrefs()
     {
-        PlayerData playerData = new PlayerData
+        PlayerData data = new()
         {
-            username = PlayerPrefs.GetString("username", ""),
-            password = PlayerPrefs.GetString("password", ""),
-            scode = PlayerPrefs.GetInt("scode", 0),
+            username = PlayerPrefs.GetString("username"),
+            password = PlayerPrefs.GetString("password"),
+            scode = PlayerPrefs.GetInt("scode"),
 
             stat = new PlayerStat
             {
-                level = PlayerPrefs.GetInt("level", 0),
-                gem = PlayerPrefs.GetInt("gem", 0),
-                rune = PlayerPrefs.GetInt("rune", 0)
+                level = PlayerPrefs.GetInt("level"),
+                gem = PlayerPrefs.GetInt("gem"),
+                rune = PlayerPrefs.GetInt("rune")
             },
 
             skill = new PlayerSkill
@@ -79,43 +128,44 @@ public class PlayerPrefsManager
                 skillA = PlayerPrefs.GetInt("skillA", 0) == 1,
                 skillB = PlayerPrefs.GetInt("skillB", 0) == 1,
                 skillC = PlayerPrefs.GetInt("skillC", 0) == 1,
-                skillD = PlayerPrefs.GetInt("skillC", 0) == 1,
-                skillE = PlayerPrefs.GetInt("skillC", 0) == 1,
-                skillF = PlayerPrefs.GetInt("skillC", 0) == 1,
-                skillG = PlayerPrefs.GetInt("skillC", 0) == 1,
-                skillH = PlayerPrefs.GetInt("skillC", 0) == 1,
-                skillI = PlayerPrefs.GetInt("skillC", 0) == 1,
-                skillJ = PlayerPrefs.GetInt("skillC", 0) == 1,
-                skillK = PlayerPrefs.GetInt("skillC", 0) == 1,
-                skillL = PlayerPrefs.GetInt("skillC", 0) == 1
+                skillD = PlayerPrefs.GetInt("skillD", 0) == 1,
+                skillE = PlayerPrefs.GetInt("skillE", 0) == 1,
+                skillF = PlayerPrefs.GetInt("skillF", 0) == 1,
+                skillG = PlayerPrefs.GetInt("skillG", 0) == 1,
+                skillH = PlayerPrefs.GetInt("skillH", 0) == 1,
+                skillI = PlayerPrefs.GetInt("skillI", 0) == 1,
+                skillJ = PlayerPrefs.GetInt("skillJ", 0) == 1,
+                skillK = PlayerPrefs.GetInt("skillK", 0) == 1,
+                skillL = PlayerPrefs.GetInt("skillL", 0) == 1
             },
 
-            dungeon = PlayerPrefs.GetInt("dungeon", 0),
-            survival = PlayerPrefs.GetString("survival", "00:00"),
+
+            dungeon = PlayerPrefs.GetInt("dungeon"),
+            survival = PlayerPrefs.GetString("survival"),
 
             campaign = new PlayerCampaignAchievement
             {
-                mapA = PlayerPrefs.GetString("mapA", ""),
-                mapB = PlayerPrefs.GetString("mapB", ""),
-                mapC = PlayerPrefs.GetString("mapC", ""),
-                mapD = PlayerPrefs.GetString("mapD", "")
+                mapA = PlayerPrefs.GetString("mapA"),
+                mapB = PlayerPrefs.GetString("mapB"),
+                mapC = PlayerPrefs.GetString("mapC"),
+                mapD = PlayerPrefs.GetString("mapD")
             },
 
             weapon = new PlayerWeapon
             {
-                sword = PlayerPrefs.GetInt("sword", 0),
-                knife = PlayerPrefs.GetInt("knife", 0),
-                boxingGloves = PlayerPrefs.GetInt("boxingGloves", 0),
-                pistol = PlayerPrefs.GetInt("pistol", 0),
-                akm = PlayerPrefs.GetInt("akm", 0),
-                ordinaryStick = PlayerPrefs.GetInt("ordinaryStick", 0),
-                yoyo = PlayerPrefs.GetInt("yoyo", 0)
+                sword = PlayerPrefs.GetInt("sword"),
+                knife = PlayerPrefs.GetInt("knife"),
+                boxingGloves = PlayerPrefs.GetInt("boxingGloves"),
+                pistol = PlayerPrefs.GetInt("pistol"),
+                akm = PlayerPrefs.GetInt("akm"),
+                ordinaryStick = PlayerPrefs.GetInt("ordinaryStick"),
+                yoyo = PlayerPrefs.GetInt("yoyo")
             }
         };
 
-        Debug.Log("PlayerData loaded from PlayerPrefs.");
-        return playerData;
+        return data;
     }
+
 
     public static void ClearPlayerData()
     {
@@ -157,6 +207,6 @@ public class PlayerPrefsManager
         PlayerPrefs.DeleteKey("yoyo");
 
         PlayerPrefs.Save();
-        Debug.Log("Player data cleared from PlayerPrefs.");
+        //Debug.Log("Player data cleared from PlayerPrefs.");
     }
 }

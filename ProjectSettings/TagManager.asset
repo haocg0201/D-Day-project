@@ -9,6 +9,18 @@ TagManager:
   - Vampire
   - Monster
   - EnemySpawner
+  - Sword
+  - Knife
+  - Weapon
+  - Enhance
+  - CampA
+  - CampB
+  - CampC
+  - CampD
+  - Dungeon
+  - Svv
+  - Bullet
+  - Disarmer
   - Shield
   layers:
   - Default

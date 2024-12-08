@@ -197,10 +197,12 @@ MonoBehaviour:
   survivability: 0
   size: 0
   dialogues: []
-  animator: {fileID: 0}
+  typeIndex: 0
+  animator: {fileID: 5862581669237324902}
   isRunning: 1
   isExhausted: 0
   attackRange: 0.3
+  time: 0
   damageText: {fileID: 0}
 --- !u!1 &6519128070113643143
 GameObject:
