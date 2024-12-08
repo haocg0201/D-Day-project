@@ -55,6 +55,31 @@ public class Player : MonoBehaviour
     bool isDisarmer = true;
     private float textHeight;
     private Weapon weapon;
+    
+    public string playerName;
+    public PlayerData playerData;
+    
+
+    private bool isImmune = false;
+    private bool isGospel = false;
+
+
+
+    public GameObject Effect_Immortal, Effect_Gospel;
+    public Transform attactPoint;
+    private GameObject instantiatedObject; //luu tru doi tuong da instance
+    private bool isCooldown = false;
+
+
+
+
+    [Header("Bullet")]
+    public GameObject bullet;
+    public Transform bulletPos;
+    public float cooldownshoot = 5f;
+    private float timeSincelastshoot;
+
+    // Phương thức khởi tạo từ PlayerData
     public void Initialize(PlayerData data)
     {
         damageText = GetComponentInChildren<TextMeshProUGUI>();
@@ -177,6 +202,87 @@ private void HandleMovement()
             success = TryMove(new Vector2(0, movementInput.y));
         }
 
+        if (Input.GetKeyDown(KeyCode.E) && !isCooldown)
+        {
+            if (!isImmune)
+            {
+                StartCoroutine(ActivateImmunity());
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.G) && !isCooldown) 
+        {
+            if (!isGospel)
+            {
+                StartCoroutine(ActivateGospel());
+            }
+        }
+        
+
+        timeSincelastshoot += Time.deltaTime;
+        Shoot();
+    }
+    // Skill_Ready to fight
+    private void Shoot()
+    {
+        if (Input.GetKeyDown(KeyCode.J) && timeSincelastshoot >= cooldownshoot)
+        {
+            Instantiate(bullet, bulletPos.position, Quaternion.identity, transform);
+            timeSincelastshoot = 0f;
+        }
+    }
+
+    
+
+    IEnumerator ActivateImmunity()
+    {
+        isImmune = true; // Bật chế độ miễn nhiễm
+        
+        if (Effect_Immortal != null && attactPoint != null)
+        {
+            instantiatedObject = Instantiate(Effect_Immortal, attactPoint.position, Quaternion.identity);
+            instantiatedObject.transform.SetParent(attactPoint);
+
+            instantiatedObject.transform.position = attactPoint.position;
+        }
+        Debug.Log("Player is immune to damage for 5 seconds!");
+
+        // Đợi trong 5 giây
+        yield return new WaitForSeconds(5f);
+
+        Debug.Log("Player is no longer immune to damage,Cooldown in 10 seconds!");
+        isImmune = false; // Tắt chế độ miễn nhiễm sau 5 giây
+        isCooldown = true;
+        Destroy(instantiatedObject);
+        yield return new WaitForSeconds(10f);
+        isCooldown = false;
+    }
+
+    IEnumerator ActivateGospel()
+    {
+        isGospel = true; // Bật phúc âm
+        survivability += 1f;
+        if (Effect_Gospel != null && attactPoint != null)
+        {
+            instantiatedObject = Instantiate(Effect_Gospel, attactPoint.position, Quaternion.identity);
+            instantiatedObject.transform.SetParent(attactPoint);
+
+            instantiatedObject.transform.position = attactPoint.position;
+        }
+        Debug.Log("Survivability +1 for 30 seconds!");
+
+        // Đợi trong 30 giây
+        yield return new WaitForSeconds(5f);
+
+        Debug.Log("Gospel expires.Cooldown in 10 seconds!");
+        isGospel = false; // Tắt phúc âm sau 30 giây
+        isCooldown = true;
+        survivability -= 1f;
+        Destroy(instantiatedObject);
+        yield return new WaitForSeconds(10f);
+        isCooldown = false;
+    }
+
         animator.SetBool("isWalking", success);
         if (success)
         {
@@ -253,6 +359,14 @@ private void HandleMovement()
         if(isExhausted) return;
         UpdateHealth((int)damageToPlayer);
         ShowDamage((int)damageToPlayer);
+        if (isImmune)
+        {
+            Debug.Log("Player is immune, no damage taken!");
+            return;
+        }
+        int damageToPlayer =  (int)Mathf.Floor(damage * (999/(100 + def)));
+        UpdateHealth(damageToPlayer);
+        ShowDamage(damageToPlayer);
     }
 
     void UpdateHealth(int damageToPlayer)
@@ -298,6 +412,14 @@ private void HandleMovement()
 
     public void GetHealBuff(int heal){
         UpdateHealth(-heal);
+        //if (isGospel)
+        //{
+        //    survivability += 1f;
+        //    Debug.Log("Survivability +1 for 30 seconds!");
+        //}
+
+
+        // phần nâng cấp vũ khí + chỉ số tính sau nhé
     }
 
     private IEnumerator FadeOutText(float duration)

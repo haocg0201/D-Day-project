@@ -21,6 +21,7 @@ TagManager:
   - Svv
   - Bullet
   - Disarmer
+  - Shield
   layers:
   - Default
   - TransparentFX
