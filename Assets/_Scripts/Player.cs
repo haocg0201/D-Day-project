@@ -27,6 +27,26 @@ public class Player : MonoBehaviour
 
     public string playerName;
     public PlayerData playerData;
+    
+
+    private bool isImmune = false;
+    private bool isGospel = false;
+
+
+
+    public GameObject Effect_Immortal, Effect_Gospel;
+    public Transform attactPoint;
+    private GameObject instantiatedObject; //luu tru doi tuong da instance
+    private bool isCooldown = false;
+
+
+
+
+    [Header("Bullet")]
+    public GameObject bullet;
+    public Transform bulletPos;
+    public float cooldownshoot = 5f;
+    private float timeSincelastshoot;
 
     // Phương thức khởi tạo từ PlayerData
     public void Initialize(PlayerData data)
@@ -78,6 +98,86 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isRunning",false);
         }
+
+        if (Input.GetKeyDown(KeyCode.E) && !isCooldown)
+        {
+            if (!isImmune)
+            {
+                StartCoroutine(ActivateImmunity());
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.G) && !isCooldown) 
+        {
+            if (!isGospel)
+            {
+                StartCoroutine(ActivateGospel());
+            }
+        }
+        
+
+        timeSincelastshoot += Time.deltaTime;
+        Shoot();
+    }
+    // Skill_Ready to fight
+    private void Shoot()
+    {
+        if (Input.GetKeyDown(KeyCode.J) && timeSincelastshoot >= cooldownshoot)
+        {
+            Instantiate(bullet, bulletPos.position, Quaternion.identity, transform);
+            timeSincelastshoot = 0f;
+        }
+    }
+
+    
+
+    IEnumerator ActivateImmunity()
+    {
+        isImmune = true; // Bật chế độ miễn nhiễm
+        
+        if (Effect_Immortal != null && attactPoint != null)
+        {
+            instantiatedObject = Instantiate(Effect_Immortal, attactPoint.position, Quaternion.identity);
+            instantiatedObject.transform.SetParent(attactPoint);
+
+            instantiatedObject.transform.position = attactPoint.position;
+        }
+        Debug.Log("Player is immune to damage for 5 seconds!");
+
+        // Đợi trong 5 giây
+        yield return new WaitForSeconds(5f);
+
+        Debug.Log("Player is no longer immune to damage,Cooldown in 10 seconds!");
+        isImmune = false; // Tắt chế độ miễn nhiễm sau 5 giây
+        isCooldown = true;
+        Destroy(instantiatedObject);
+        yield return new WaitForSeconds(10f);
+        isCooldown = false;
+    }
+
+    IEnumerator ActivateGospel()
+    {
+        isGospel = true; // Bật phúc âm
+        survivability += 1f;
+        if (Effect_Gospel != null && attactPoint != null)
+        {
+            instantiatedObject = Instantiate(Effect_Gospel, attactPoint.position, Quaternion.identity);
+            instantiatedObject.transform.SetParent(attactPoint);
+
+            instantiatedObject.transform.position = attactPoint.position;
+        }
+        Debug.Log("Survivability +1 for 30 seconds!");
+
+        // Đợi trong 30 giây
+        yield return new WaitForSeconds(5f);
+
+        Debug.Log("Gospel expires.Cooldown in 10 seconds!");
+        isGospel = false; // Tắt phúc âm sau 30 giây
+        isCooldown = true;
+        survivability -= 1f;
+        Destroy(instantiatedObject);
+        yield return new WaitForSeconds(10f);
+        isCooldown = false;
     }
 
     void OnMove(InputValue movementValue)
@@ -103,6 +203,11 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (isImmune)
+        {
+            Debug.Log("Player is immune, no damage taken!");
+            return;
+        }
         int damageToPlayer =  (int)Mathf.Floor(damage * (999/(100 + def)));
         UpdateHealth(damageToPlayer);
         ShowDamage(damageToPlayer);
@@ -158,9 +263,14 @@ public class Player : MonoBehaviour
         dmg = defaultDmg + 10 * lvl;
         survivability = (defaultSurvivability + 0.01f * lvl) + 3f;
     }
-        
+        //if (isGospel)
+        //{
+        //    survivability += 1f;
+        //    Debug.Log("Survivability +1 for 30 seconds!");
+        //}
 
-         // phần nâng cấp vũ khí + chỉ số tính sau nhé
+
+        // phần nâng cấp vũ khí + chỉ số tính sau nhé
     }
 
         private IEnumerator FadeOutText(float duration)
