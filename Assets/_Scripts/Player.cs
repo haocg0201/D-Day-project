@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+   
     public static Player Instance { get; private set; }
     void Awake()
     {
@@ -24,6 +25,9 @@ public class Player : MonoBehaviour
         Instance = null;
         Debug.Log("Singleton instance destroyed.");
     }
+
+    public Boolean isTakeDamage;
+
 
     public string playerName;
     public PlayerData playerData;
@@ -57,20 +61,10 @@ public class Player : MonoBehaviour
     private Weapon weapon;
     
     // public string playerName;
-    // public PlayerData playerData;
+     public PlayerData playerdata = new ();
     
 
-    private bool isImmune = false;
-    private bool isGospel = false;
-
-
-
-    public GameObject Effect_Immortal, Effect_Gospel;
-    public Transform attactPoint;
-    private GameObject instantiatedObject; //luu tru doi tuong da instance
-    private bool isCooldown = false;
-
-
+    
 
 
     [Header("Bullet")]
@@ -153,6 +147,8 @@ public class Player : MonoBehaviour
         weapons.Add(new GameObject());
         isExhausted = false;
         isRunning = false;
+        playerdata = GameManager.Instance.GetPlayerData();
+        isTakeDamage = true;
     }
 
     void Update()
@@ -214,21 +210,9 @@ public class Player : MonoBehaviour
                 animator.SetBool("isRunning", false);
             }
 
-            if (Input.GetKeyDown(KeyCode.E) && !isCooldown)
-            {
-                if (!isImmune)
-                {
-                    StartCoroutine(ActivateImmunity());
-                }
-            }
+            
 
-            if (Input.GetKeyDown(KeyCode.G) && !isCooldown) 
-            {
-                if (!isGospel)
-                {
-                    StartCoroutine(ActivateGospel());
-                }
-            }
+            
             
 
             timeSincelastshoot += Time.deltaTime;
@@ -247,54 +231,8 @@ public class Player : MonoBehaviour
 
     
 
-    IEnumerator ActivateImmunity()
-    {
-        isImmune = true; // Bật chế độ miễn nhiễm
-        
-        if (Effect_Immortal != null && attactPoint != null)
-        {
-            instantiatedObject = Instantiate(Effect_Immortal, attactPoint.position, Quaternion.identity);
-            instantiatedObject.transform.SetParent(attactPoint);
 
-            instantiatedObject.transform.position = attactPoint.position;
-        }
-        Debug.Log("Player is immune to damage for 5 seconds!");
-
-        // Đợi trong 5 giây
-        yield return new WaitForSeconds(5f);
-
-        Debug.Log("Player is no longer immune to damage,Cooldown in 10 seconds!");
-        isImmune = false; // Tắt chế độ miễn nhiễm sau 5 giây
-        isCooldown = true;
-        Destroy(instantiatedObject);
-        yield return new WaitForSeconds(10f);
-        isCooldown = false;
-    }
-
-    IEnumerator ActivateGospel()
-    {
-        isGospel = true; // Bật phúc âm
-        GameManager.Instance.Survivability += 1f;
-        if (Effect_Gospel != null && attactPoint != null)
-        {
-            instantiatedObject = Instantiate(Effect_Gospel, attactPoint.position, Quaternion.identity);
-            instantiatedObject.transform.SetParent(attactPoint);
-
-            instantiatedObject.transform.position = attactPoint.position;
-        }
-        Debug.Log("Survivability +1 for 30 seconds!");
-
-        // Đợi trong 30 giây
-        yield return new WaitForSeconds(5f);
-
-        Debug.Log("Gospel expires.Cooldown in 10 seconds!");
-        isGospel = false; // Tắt phúc âm sau 30 giây
-        isCooldown = true;
-        GameManager.Instance.Survivability -= 1f;
-        Destroy(instantiatedObject);
-        yield return new WaitForSeconds(10f);
-        isCooldown = false;
-    }
+    
 
     void StartWalking()
     {
@@ -350,18 +288,18 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        float def = GameManager.Instance.Def;
-        float damageToPlayer =  (int)Mathf.Floor(damage - (damage * (def/100f)));
-        if(damageToPlayer <= 0) damageToPlayer = 5; // sát thương ở mức tối thiểu
-        Debug.Log($"{playerData.username} take {damageToPlayer} damage while def = {def} and dmg input = {damage}");
-        if(isExhausted) return;
-        UpdateHealth((int)damageToPlayer);
-        ShowDamage((int)damageToPlayer);
-        if (isImmune)
+        if (isTakeDamage)
         {
-            Debug.Log("Player is immune, no damage taken!");
-            return;
+            float def = GameManager.Instance.Def;
+            float damageToPlayer = (int)Mathf.Floor(damage - (damage * (def / 100f)));
+            if (damageToPlayer <= 0) damageToPlayer = 5; // sát thương ở mức tối thiểu
+            Debug.Log($"{playerData.username} take {damageToPlayer} damage while def = {def} and dmg input = {damage}");
+            if (isExhausted) return;
+            UpdateHealth((int)damageToPlayer);
+            ShowDamage((int)damageToPlayer);
         }
+        
+        
     }
 
     void UpdateHealth(int damageToPlayer)

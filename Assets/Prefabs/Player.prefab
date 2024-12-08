@@ -136,6 +136,145 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1247577634995865909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 878486789602877331}
+  - component: {fileID: 4156156537736620920}
+  m_Layer: 0
+  m_Name: Shield
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &878486789602877331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247577634995865909}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6887592967225599019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4156156537736620920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247577634995865909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d48c6e5094679d4eaaca78b80ca7eaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 3491073118758645117}
+  Effect_Shield: {fileID: 7206482615413744829, guid: d3f695f86f1407245a6982c13741a428, type: 3}
+--- !u!1 &2064668312212169522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3646008904636827289}
+  - component: {fileID: 3256044705129188620}
+  m_Layer: 0
+  m_Name: Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3646008904636827289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064668312212169522}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.19, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6887592967225599019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3256044705129188620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064668312212169522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df0d7bf98ef20b84fac750c1b62e24fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  Effect_Immortal: {fileID: 4097729656911788998, guid: c92a2e6b423cb8e419a4b54a630fdb4e, type: 3}
+  attactPoint: {fileID: 3646008904636827289}
+--- !u!1 &2183222761352538565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8785707905637207391}
+  - component: {fileID: 7170965569209358213}
+  m_Layer: 0
+  m_Name: Gospel_Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8785707905637207391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2183222761352538565}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6887592967225599019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7170965569209358213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2183222761352538565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac90e91bb3452a44fa3258336c8e1174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Effect_Gospel: {fileID: 920126817481325366, guid: c24c8e5602c741a4684813a232473d74, type: 3}
+  attactPoint: {fileID: 8785707905637207391}
 --- !u!1 &3491073118758645117
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,6 +313,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 878486789602877331}
+  - {fileID: 1534080251233269465}
+  - {fileID: 8785707905637207391}
+  - {fileID: 3646008904636827289}
   - {fileID: 9160028336968407730}
   - {fileID: 4003607088777233595}
   - {fileID: 5346725698713968777}
@@ -410,6 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a34e6de0876da2c4c9082279c31d8737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTakeDamage: 0
   playerName: 
   playerData:
     username: 
@@ -470,9 +614,42 @@ MonoBehaviour:
   posLeft: {fileID: 5346725698713968777}
   posTopMid: {fileID: 5018413514613737530}
   posRight: {fileID: 6435215148853494281}
-  Effect_Immortal: {fileID: 0}
-  Effect_Gospel: {fileID: 0}
-  attactPoint: {fileID: 0}
+  playerdata:
+    username: 
+    password: 
+    scode: 0
+    stat:
+      level: 0
+      gem: 0
+      rune: 0
+    skill:
+      skillA: 0
+      skillB: 0
+      skillC: 0
+      skillD: 0
+      skillE: 0
+      skillF: 0
+      skillG: 0
+      skillH: 0
+      skillI: 0
+      skillJ: 0
+      skillK: 0
+      skillL: 0
+    dungeon: 0
+    survival: 
+    campaign:
+      mapA: 
+      mapB: 
+      mapC: 
+      mapD: 
+    weapon:
+      sword: 0
+      knife: 0
+      boxingGloves: 0
+      pistol: 0
+      akm: 0
+      ordinaryStick: 0
+      yoyo: 0
   bullet: {fileID: 0}
   bulletPos: {fileID: 0}
   cooldownshoot: 5
@@ -711,6 +888,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6887592967225599019}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6820433551078500122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534080251233269465}
+  - component: {fileID: 2995981609950033721}
+  m_Layer: 0
+  m_Name: Lightning_Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1534080251233269465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6820433551078500122}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6887592967225599019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2995981609950033721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6820433551078500122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c652df5733fbfab4ca590ac37b308238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 3491073118758645117}
+  Effect_Lightning: {fileID: 399722736624245325, guid: 045c51876d41f0c44b730d8d58a9009c, type: 3}
+  positions:
+  - {x: 0, y: 2, z: 0}
+  - {x: 2, y: 0, z: 0}
+  - {x: -2, y: 0, z: 0}
 --- !u!1 &6977186180317218234
 GameObject:
   m_ObjectHideFlags: 0
