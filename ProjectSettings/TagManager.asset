@@ -22,6 +22,12 @@ TagManager:
   - Bullet
   - Disarmer
   - Shield
+  - MXtal
+  - RXtal
+  - HP
+  - LP
+  - SP
+  - DP
   layers:
   - Default
   - TransparentFX

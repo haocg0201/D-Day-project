@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Monster : MonoBehaviour
 {
@@ -16,19 +17,19 @@ public class Monster : MonoBehaviour
     public int typeIndex; // phân loại quái, phân biệt
     public Animator animator;
 
-    public bool isRunning = false;
+    public bool isRunning;
     public bool isExhausted = false;
     [SerializeField]private float attackRange;
-    private bool isOnCooldown = false;
+    private bool isOnCooldown;
     private bool isDead = false;
-    private bool isAttacking = false;
+    private bool isAttacking;
     public float time;
 
     Transform playerTransform;
     public TextMeshProUGUI damageText;
     Transform damageTextTransform;
     private float textHeight;
-    private EnemySpawner enemySpawner;
+    public Image healthBar;
 
     public virtual void Initialize(string monsterName, int health, int attackDamage, float survivability, float size, List<string> dialogues, int typeIndex)
     {
@@ -44,8 +45,11 @@ public class Monster : MonoBehaviour
 
     public virtual void Start()
     {
-        Initialize("Nowhere", 10000, 1000, 1f, 1.5f, new List<string>{"?","!!","$*&"},-1);
-        playerTransform = Player.Instance.transform;
+        Initialize("Nowhere", 10000, 1000, 1f, 1.5f, new List<string>{"?","!!","$*&"},0);
+        if(Player.Instance != null){
+            playerTransform = Player.Instance.transform;
+        }
+        
         animator = GetComponent<Animator>();
         transform.localScale = new Vector3(size, size, size);
         damageText = GetComponentInChildren<TextMeshProUGUI>();
@@ -53,8 +57,9 @@ public class Monster : MonoBehaviour
         {
             damageTextTransform = damageText.transform;
         }
-        attackRange = 0.3f;
+        attackRange = 0.4f;
         isRunning = false;
+        isOnCooldown = false;
         isAttacking = false;
         time = 1f;
     }
@@ -67,25 +72,7 @@ public class Monster : MonoBehaviour
         {
             MoveTowardsPlayer();
         }
-
-        // if(isAttacking) {
-        //     //Debug.Log($"{monsterName} is attacking");
-        //     time -= Time.deltaTime;
-        // }
-
-        // if(time <= 0){
-        //     isAttacking = false;
-        //     time = 1f;
-        // }
     }
-
-    // public void SetIsAttacking(){
-    //     this.isAttacking = true;
-    // }
-
-    // public bool GetIsAttacking(){
-    //     return this.isAttacking;
-    // }
 
     protected void MoveTowardsPlayer()
     {
@@ -122,15 +109,24 @@ public class Monster : MonoBehaviour
 
     private void FacePlayer()
     {
+        GameObject hpChild = transform.GetChild(0).GetChild(1).gameObject;
         if (playerTransform.position.x < transform.position.x)
         {
             transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             damageTextTransform.localScale = new Vector3(-Mathf.Abs(damageTextTransform.localScale.x), damageTextTransform.localScale.y, damageTextTransform.localScale.z);
+            
+            if (hpChild != null){
+                hpChild.transform.localScale = new Vector3(-Mathf.Abs(hpChild.transform.localScale.x), hpChild.transform.localScale.y, hpChild.transform.localScale.z);
+            }
         }
         else
         {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             damageTextTransform.localScale = new Vector3(Mathf.Abs(damageTextTransform.localScale.x), damageTextTransform.localScale.y, damageTextTransform.localScale.z);
+
+            if (hpChild != null){
+                hpChild.transform.localScale = new Vector3(Mathf.Abs(hpChild.transform.localScale.x), hpChild.transform.localScale.y, hpChild.transform.localScale.z);
+            }
         }
     }
 
@@ -169,6 +165,8 @@ public class Monster : MonoBehaviour
         {
             Die();
         }
+
+        healthBar.fillAmount = (float)health / maxHealth;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -179,14 +177,9 @@ public class Monster : MonoBehaviour
             StartCoroutine(WaitForSecondsToTakeDame(0.5f));
         }
 
-        if(other.CompareTag("Player") && !isOnCooldown){
+        if(other.CompareTag("Player") && !isRunning){
             Player.Instance.TakeDamage(attackDamage);
         }
-    }
-
-    IEnumerator WaitThenDie(float time){
-        yield return new WaitForSeconds(time);
-        EnemySpawner.Instance.ReturnEnemy(typeIndex, gameObject);
     }
 
     IEnumerator WaitForSecondsToTakeDame(float time){
@@ -198,6 +191,11 @@ public class Monster : MonoBehaviour
         isDead = true; // Đánh dấu quái đã chết
         animator.SetTrigger("Exhausted");
         StartCoroutine(WaitThenDie(1.5f)); 
+    }
+
+    IEnumerator WaitThenDie(float time){
+        yield return new WaitForSeconds(time);
+        EnemySpawner.Instance.ReturnEnemy(typeIndex, gameObject);
     }
 
     public virtual void SkillConsumption()
@@ -254,7 +252,14 @@ public class Monster : MonoBehaviour
 
     public void ResetMonster()
     {
+        isDead = false;
+        if (maxHealth == 0)
+        {
+            //Debug.LogError("maxHealth is 0! Cannot reset monster.");
+            return;
+        }
         health = maxHealth;
+        healthBar.fillAmount = health / maxHealth;
         transform.rotation = Quaternion.identity;
     }
 }

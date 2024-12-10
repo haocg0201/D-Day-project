@@ -12,13 +12,17 @@ public class Player : MonoBehaviour
     public static Player Instance { get; private set; }
     void Awake()
     {
-        if(Instance == null){
+        if (Instance == null)
+        {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-        }else{
+        }
+        else
+        {
             Destroy(gameObject);
-        }  
+        }
     }
+
 
     public static void DestroyPlayerInstance()
     {
@@ -40,14 +44,14 @@ public class Player : MonoBehaviour
     public Transform damageTextTransform;
     public float collisionOffset = 1f;
     public ContactFilter2D movementFilter;
-    private List<GameObject> weapons = new List<GameObject>();
+    private List<GameObject> weapons = new();
     public Transform posLeft;
     public Transform posTopMid;
     public Transform posRight;
 
     
 
-    List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    List<RaycastHit2D> castCollisions = new();
     Vector2 movementInput;
 
     Rigidbody2D rb;
@@ -132,9 +136,21 @@ public class Player : MonoBehaviour
             Debug.Log("Waiting for GameManager and PlayerData are init-in...");
             yield return null;
         }
-        Debug.Log("PlayerData loaded successfully.");
+        //Debug.Log("PlayerData loaded successfully.");
         playerData = GameManager.Instance.playerData;
         Initialize(playerData);
+    }
+
+    public void ResetInput(){
+        var existingInputs = FindObjectsByType<PlayerInput>(FindObjectsSortMode.None);
+
+        foreach (var input in existingInputs)
+        {
+            if (input != this)
+            {
+                Destroy(input.gameObject); 
+            }
+        }
     }
 
 
@@ -204,19 +220,14 @@ public class Player : MonoBehaviour
                 StartCoroutine(SwitchToRunningAfterDelay(1.5f));
             }
             //Debug.Log($"Movement input - success: {success} and movementInput: {movementInput}");
-            else
-            {
-                animator.SetBool("isWalking", false);
-                animator.SetBool("isRunning", false);
-            }
-
-            
-
-            
-            
 
             timeSincelastshoot += Time.deltaTime;
             Shoot();
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isRunning", false);
         }
     }
     // Skill_Ready to fight
@@ -228,11 +239,6 @@ public class Player : MonoBehaviour
             timeSincelastshoot = 0f;
         }
     }
-
-    
-
-
-    
 
     void StartWalking()
     {
@@ -292,7 +298,7 @@ public class Player : MonoBehaviour
         {
             float def = GameManager.Instance.Def;
             float damageToPlayer = (int)Mathf.Floor(damage - (damage * (def / 100f)));
-            if (damageToPlayer <= 0) damageToPlayer = 5; // sát thương ở mức tối thiểu
+            if (damageToPlayer <= 0) damageToPlayer = 5; // sát thương ở mức tối thiểu cho là 5 đi ae
             Debug.Log($"{playerData.username} take {damageToPlayer} damage while def = {def} and dmg input = {damage}");
             if (isExhausted) return;
             UpdateHealth((int)damageToPlayer);
@@ -300,6 +306,12 @@ public class Player : MonoBehaviour
         }
         
         
+    }
+
+    public void Recovery(){
+        GameManager.Instance.Health = GameManager.Instance.MaxHealth;
+        isExhausted = false;
+        animator.ResetTrigger("Exhausted");
     }
 
     void UpdateHealth(int damageToPlayer)
@@ -379,7 +391,7 @@ public class Player : MonoBehaviour
                 
                 StartCoroutine(HandleDisarmer());
             }
-        }
+        } 
     }
 
     private IEnumerator HandleDisarmer() {

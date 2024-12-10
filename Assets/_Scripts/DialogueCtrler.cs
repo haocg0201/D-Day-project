@@ -27,10 +27,14 @@ public class DialogueCtrler : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.GetInt("level") <= -1)
+        if (PlayerPrefs.GetInt("level") <= 1)
         {
             mainCanvas.gameObject.SetActive(true); 
             StartCoroutine(StartDialogue());
+            if(GameManager.Instance != null){
+                GameManager.Instance.SetStat(2);
+                PlayerPrefs.SetInt("level", 2);
+            }
         }
         else
         {
@@ -50,7 +54,6 @@ public class DialogueCtrler : MonoBehaviour
 
         yield return new WaitForSeconds(1.5f);
         StartCoroutine(FadeOutPanel());
-    
     }
 
     IEnumerator TypeDialogue(string line)
