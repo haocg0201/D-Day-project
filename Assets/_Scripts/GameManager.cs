@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    private void SetStat(int lvl)
+    public void SetStat(int lvl)
     {
         int defaultHealth = 100;
         int defaultDef = 10;
@@ -152,19 +152,65 @@ public class GameManager : MonoBehaviour
     public async void SaveAndUpdatePlayerDataFireBase(){
         PlayerData playerData = PlayerPrefsManager.LoadPlayerDataFromPlayerPrefs();
         string playerId = PlayerPrefsManager.GetPlayerIdFromPlayerPrefs();
-        await FirebaseManager.Instance.UpdatePlayerData(playerId,playerData);
+        if (FirebaseManager.Instance != null){
+            await FirebaseManager.Instance.UpdatePlayerData(playerId,playerData);
+        }
     }
 
     public PlayerData GetPlayerData(){
         return playerData;
     }
 
-    public void UpdateMoonG(int quantity){
-        this.playerData.stat.gem += quantity;
+    public void UpdateMoonG(){
+        this.playerData.stat.gem += _mgCounter;
+        SaveAndUpdatePlayerData(playerData);
     }
 
-    public void UpdateRune(int quantity){
-        this.playerData.stat.rune += quantity;
+    public void ToSubTract(int quality){
+        this.playerData.stat.gem -= quality;
+        SaveAndUpdatePlayerData(playerData);
+    }
+
+    public void UpdateRune(){
+        this.playerData.stat.rune += _rgCounter;
+        SaveAndUpdatePlayerData(playerData);
+    }
+
+    public void UpdateTraningTime(){
+        int seconds = (int)svvTime; 
+        int minutes = seconds / 60; 
+        int remainingSeconds = seconds % 60;  // đoạn trên thấy thừa thãi quá, thôi kệ vậy @@
+        string survvTime = minutes.ToString("00") + ":" + remainingSeconds.ToString("00");
+        GetHigherSvvTime(survvTime,playerData.survival);
+        SaveAndUpdatePlayerData(playerData);
+    }
+
+    public void GetHigherSvvTime(string time1, string time2){
+
+        int ConvertToSeconds(string time)
+        {
+            var parts = time.Split(':');
+            int minutes = int.Parse(parts[0]);
+            int seconds = int.Parse(parts[1]);
+            return minutes * 60 + seconds; 
+        }
+
+        // So sánh hai thời gian
+        int seconds1 = ConvertToSeconds(time1);
+        int seconds2 = ConvertToSeconds(time2);
+
+        if (seconds1 > seconds2)
+        {
+            playerData.survival = time1;
+        }
+        else if (seconds1 < seconds2)
+        {
+            playerData.survival = time2;
+        }
+        else
+        {
+            playerData.survival = time1;
+        }
     }
 
     public string PlayerId { get { return playerId; } set { playerId = value; } } 

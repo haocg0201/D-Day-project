@@ -1,10 +1,12 @@
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class WorldSetting : MonoBehaviour
 {
-    public Button btnPause, btnClose, btnSound, btnControl, btnLogout, btnExit, btnSaveToFireBase;
+    public Button btnPause, btnClose, btnSound, btnControl, btnLogout, btnExit, btnSaveToFireBase, btnHome;
     public GameObject panelSetting, panelSound, panelControl;
     public TextMeshProUGUI txtMoonG, txtRuneG;
 //    public GameObject[] tabs;
@@ -18,7 +20,22 @@ public class WorldSetting : MonoBehaviour
         btnLogout.onClick.AddListener(OnLogout);
         btnExit.onClick.AddListener(OnExit);
         btnSaveToFireBase.onClick.AddListener(OnSaveToFireBase);
+        btnHome.onClick.AddListener(OnHomeClick);
         UpdateUIGem();
+    }
+
+    public void OnHomeClick(){
+        UnityEngine.SceneManagement.Scene currentScene = SceneManager.GetActiveScene();
+
+        if (currentScene.name != "NewBorn")
+        {
+            SceneLoader.Instance.LoadSceneBySceneName("NewBorn");
+        }
+        else
+        {
+            panelSetting.SetActive(false);
+            GameManager.Instance.PauseGame(false);
+        }
     }
 
     public void UpdateUIGem(){
@@ -50,22 +67,9 @@ public class WorldSetting : MonoBehaviour
 
     }
     public void OnExit(){
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #else
-            Application.Quit();
-        #endif
+        SceneLoader.Instance.QuitGame();
     }
     public void OnSaveToFireBase(){
         GameManager.Instance.SaveAndUpdatePlayerDataFireBase();
     }
-
-    // public void ShowTab(int index)
-    // {
-    //     for (int i = 0; i < tabs.Length; i++)
-    //     {
-    //         tabs[i].SetActive(i == index);
-    //     }
-    // }
-
 }

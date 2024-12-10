@@ -10,13 +10,13 @@ public class WeaponHolder : MonoBehaviour
 {
     public GameObject wType;
     public Canvas wInfoCanvas;
-    public TextMeshProUGUI txtWName, txtWLvl, txtWHP, txtWDef, txtWSvvability, txtDescribe, txtNofi;
+    public TextMeshProUGUI txtWName, txtWLvl, txtWHP, txtWDef, txtWSvvability, txtDescribe;
     public GameObject wFrame;
     public Button btnEnhance, btnEquipment;
     private int lvlNow = 1;
     private Weapon w;
     public GameObject enhance;
-    public Player player;
+    Player player;
 
     void Start()
     {   
@@ -94,7 +94,7 @@ public class WeaponHolder : MonoBehaviour
                 if(playerData != null){
                     lvlNow ++;
                     w.UpdateStat(lvlNow);
-                    GameManager.Instance.UpdateMoonG(-200); // thực hiện trước nhé
+                    GameManager.Instance.ToSubTract(-200); // thực hiện trước nhé
                     GameManager.Instance.UpdateWeaponLevel(w.wCode, lvlNow);
                     WorldWhisperManager.Instance.GetComponent<WorldSetting>().UpdateUIGem();
                     GameManager.Instance.SaveAndUpdatePlayerDataFireBase();

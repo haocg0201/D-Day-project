@@ -137,14 +137,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.015313312, y: 0.01149711}
-      - {x: -0.12402357, y: 0.051077105}
-      - {x: -0.12795462, y: -0.066818774}
-      - {x: -0.069924556, y: -0.0948489}
-      - {x: 0.0318945, y: -0.118939534}
-      - {x: 0.12393965, y: -0.05893967}
-      - {x: 0.12393953, y: 0.084849015}
-      - {x: 0.081893906, y: 0.050682887}
+    - - {x: -0.010967328, y: 0.11781433}
+      - {x: -0.11088325, y: 0.04629878}
+      - {x: -0.11003603, y: -0.07756996}
+      - {x: -0.028114405, y: -0.103210896}
+      - {x: 0.016365109, y: -0.111772075}
+      - {x: 0.116772294, y: -0.04102108}
+      - {x: 0.11318828, y: 0.058568433}
+      - {x: 0.062780604, y: 0.08293639}
   m_UseDelaunayMesh: 0
 --- !u!114 &6159995649430503079
 MonoBehaviour:
@@ -166,13 +166,10 @@ MonoBehaviour:
   txtWDef: {fileID: 0}
   txtWSvvability: {fileID: 0}
   txtDescribe: {fileID: 0}
-  txtNofi: {fileID: 0}
   wFrame: {fileID: 0}
   btnEnhance: {fileID: 0}
   btnEquipment: {fileID: 0}
   enhance: {fileID: 0}
-  gameManager: {fileID: 0}
-  player: {fileID: 0}
 --- !u!58 &5237127262147726325
 CircleCollider2D:
   m_ObjectHideFlags: 0

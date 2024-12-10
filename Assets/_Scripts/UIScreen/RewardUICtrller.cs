@@ -9,36 +9,53 @@ public class RewardUICtrller : MonoBehaviour
     public GameObject rewardPanel;
     public TextMeshProUGUI txtSvvTime, txtKillCount, txtRewardMG, txtRewardRG;
     public Button btnReplay, btnHome;
+    string survvTime = "00:00";
     void Start()
     {
-        btnReplay.onClick.AddListener(OnReplay);
+        btnReplay.onClick.AddListener(OnReplay); // tôi đặt điều kiện check null ở dưới cho chắc vì người chơi ấn nhiều lần
         btnHome.onClick.AddListener(OnHome);
+        SetInf();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void SetInf(){
+        if(GameManager.Instance != null){
+            int seconds = (int)GameManager.Instance.svvTime; 
+            int minutes = seconds / 60; 
+            int remainingSeconds = seconds % 60; 
+            string survvTime = minutes.ToString("00") + ":" + remainingSeconds.ToString("00");
+            txtSvvTime.text = "Thời gian sinh tồn: " + survvTime;
+            txtKillCount.text = "Số lượng quái vật bị tiêu diệt: " + GameManager.Instance.killCount;
+            txtRewardMG.text = "Lượng nguyệt thạch thu thập được: " + GameManager.Instance._mgCounter;
+            txtRewardRG.text = "Lượng rune thu thập được: " + GameManager.Instance._rgCounter;
+        }   
     }
 
     public void OnReplay(){
-        rewardPanel.SetActive(false);
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
-        GameManager.Instance.PauseGame(false);
-        Debug.Log("Replay" + currentSceneName);
+        if(Player.Instance != null && GameManager.Instance != null){
+            rewardPanel.SetActive(false);
+            GameManager.Instance.PauseGame(false);
+            EnemySpawner.Instance.ClearActiveEnemies();
+            Player.Instance.Recovery();
+        }  
     }
     public void OnHome(){
-        rewardPanel.SetActive(false);
-        StartCoroutine(WaitSceneLoading());
+        if(Player.Instance != null && GameManager.Instance != null){
+            rewardPanel.SetActive(false);
+            Player.Instance.Recovery();
+            Player.Instance.transform.position = new Vector3(0, 0, 0);
+            Player.Instance.ResetInput();
+
+            GameManager.Instance.UpdateMoonG();
+            GameManager.Instance.UpdateRune();
+            GameManager.Instance.UpdateTraningTime();
+            StartCoroutine(Wait(2f));
+
+            SceneLoader.Instance.LoadSceneBySceneName("NewBorn");
+        }
     }
 
-    private IEnumerator WaitSceneLoading(){
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(4); // home, scene index = 4;
-        GameManager.Instance.PauseGame(false);
-        while(!asyncOperation.isDone){
-            yield return null;
-        }
-        Debug.Log("Home" + asyncOperation.ToString());
+    private IEnumerator Wait(float time){
+        yield return new WaitForSeconds(time);
     }
+
 }
