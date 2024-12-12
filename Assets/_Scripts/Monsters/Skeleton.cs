@@ -8,7 +8,7 @@ public class Skeleton : Monster
         base.Start();
         Initialize(monsterName: "Skeleton",
         health: 500,         
-        attackDamage: 20,
+        attackDamage: 200,
         survivability: 1.5f,
         size: 1.5f,
         dialogues: new List<string>

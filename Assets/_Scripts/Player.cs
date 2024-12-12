@@ -10,17 +10,15 @@ public class Player : MonoBehaviour
 {
    
     public static Player Instance { get; private set; }
-    void Awake()
+    private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
 
@@ -63,6 +61,7 @@ public class Player : MonoBehaviour
     bool isDisarmer = true;
     private float textHeight;
     private Weapon weapon;
+    public bool isConsume = false;
     
     // public string playerName;
      public PlayerData playerdata = new ();
@@ -89,22 +88,30 @@ public class Player : MonoBehaviour
 
     public void EquipWeapon(GameObject newWeapon)
     {
-        if(weapons.Count <= 3){
+        if(weapons.Count < 3){
             GameObject nowWeapon = Instantiate(newWeapon, GetPos(), Quaternion.identity,transform);
             Vector3 targetWPosition = new(transform.localPosition.x + 0.2f, transform.localPosition.y - 0.1f,transform.localPosition.z);
             nowWeapon.transform.localPosition = targetWPosition;
             weapons.Add(nowWeapon);
             this.weapon = nowWeapon.GetComponent<Weapon>();
-            foreach(GameObject weapon in weapons){
-                Weapon w = weapon.GetComponent<Weapon>();
-                if(w != null){
-                    w.Equip();
-                    Debug.Log($"Weapon equipped: {w.wName}");
-                }             
-            }
+            ExcuteToGameManager();
+        }      
+                
+    } 
+
+    public void ExcuteToGameManager(){
+        List<Weapon> weaponList = new List<Weapon>();
+        foreach(GameObject weapon in weapons){
+            Weapon w = weapon.GetComponent<Weapon>();
+            if(w != null){
+                w.Equip();
+                Debug.Log($"Weapon equipped: {w.wName}");
+            }   
+            weaponList.Add(w);
         }
-        
+        GameManager.Instance?.SetWeaponStat(weaponList);
     }
+
 
     public Vector3 GetPos(){
         int count = weapons.Count;
@@ -117,19 +124,15 @@ public class Player : MonoBehaviour
     }
     public void UnEquipWeapon()
     {
-        if (weapons.Count > 1)
-        {
-            GameObject weaponToRemove = weapons[^1]; // Lấy vũ khí cuối cùng GameObject weaponToRemove = weapons[weapons.Count - 1]
-            weapons.RemoveAt(weapons.Count - 1);                   // Xóa khỏi danh sách
-            Destroy(weaponToRemove);                               // Hủy GameObject vũ khí
-            Debug.Log("Đã hủy trang bị vũ khí cuối danh sách.");
-        }
-        else
-        {
-            //Debug.LogWarning("Không còn vũ khí nào để hủy trang bị.");
-            return;
-        }
+        GameObject weaponToRemove = weapons[^1];
+        Weapon w = weaponToRemove.GetComponent<Weapon>();// Lấy vũ khí cuối cùng GameObject weaponToRemove = weapons[weapons.Count - 1]
+        Destroy(weaponToRemove);                               // Hủy GameObject vũ khí
+        //Debug.Log("Đã hủy trang bị vũ khí cuối danh sách.");
+        weapons.RemoveAt(weapons.Count - 1); 
+        ExcuteToGameManager();
     }
+
+
 
     private IEnumerator WaitingForGameManagerInit(){
         while (GameManager.Instance == null && GameManager.Instance.playerData == null){
@@ -160,11 +163,16 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         transform.localScale = new Vector3(1.2f,1.2f,0);
-        weapons.Add(new GameObject());
+        if (Player.Instance != null && Player.Instance != this)
+        {
+            gameObject.SetActive(false);
+        }
+        // weapons.Add(new GameObject());
         isExhausted = false;
         isRunning = false;
         playerdata = GameManager.Instance.GetPlayerData();
         isTakeDamage = true;
+        isConsume = true;
     }
 
     void Update()
@@ -175,12 +183,12 @@ public class Player : MonoBehaviour
     void SByS(){
         int count = weapons.Count;
         switch(count) {
-            case 2 : weapons[1].transform.position = posLeft.transform.position; break;
-            case 3 : weapons[1].transform.position = posLeft.transform.position;
-                     weapons[2].transform.position = posRight.transform.position; break;
-            case 4 : weapons[1].transform.position = posLeft.transform.position;
-                    weapons[2].transform.position = posRight.transform.position;
-                    weapons[3].transform.position = posTopMid.transform.position; break;
+            case 1 : weapons[0].transform.position = posLeft.transform.position; break;
+            case 2 : weapons[0].transform.position = posLeft.transform.position;
+                     weapons[1].transform.position = posRight.transform.position; break;
+            case 3 : weapons[0].transform.position = posLeft.transform.position;
+                    weapons[1].transform.position = posRight.transform.position;
+                    weapons[2].transform.position = posTopMid.transform.position; break;
             default: break;
         }
     }
@@ -188,6 +196,8 @@ public class Player : MonoBehaviour
     private void FixedUpdate() {
         if (isExhausted) return;
         HandleMovement();
+  
+        
         // // Kiểm tra nếu Player đang bị dính vào Tilemap :v thế quái nào nhân vật chạm vào cái gì là nó bị dính vào với ní luông
         // Collider2D overlapCollider = Physics2D.OverlapCircle(transform.position, 0.1f, movementFilter.layerMask);
         // if (overlapCollider != null)
@@ -200,6 +210,10 @@ public class Player : MonoBehaviour
 
     private void HandleMovement()
     {
+        if(!isConsume){
+            animator.Play("Idle"); 
+            return;
+        }
         if (movementInput != Vector2.zero)
         {
             bool success = TryMove(movementInput);
@@ -263,6 +277,7 @@ public class Player : MonoBehaviour
 
     private bool TryMove(Vector2 direction)
     {
+
         if(direction != Vector2.zero){
             float svvability = GameManager.Instance.Survivability;
 
@@ -289,7 +304,11 @@ public class Player : MonoBehaviour
 
     void OnMove(InputValue movementValue)
     {
-        movementInput = movementValue.Get<Vector2>();
+        if(isConsume){
+            movementInput = movementValue.Get<Vector2>();
+        }else{
+            movementInput = Vector2.zero;
+        }
     }
 
     public void TakeDamage(int damage)

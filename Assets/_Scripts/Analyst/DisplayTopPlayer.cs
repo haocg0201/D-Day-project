@@ -1,14 +1,27 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DisplayTopPlayer : MonoBehaviour
 {
     public GameObject panelTopPlayer;
+    public Button btnClose;
+
+    void Start()
+    {
+        btnClose.onClick.AddListener(() => {OnClose();});
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        panelTopPlayer.SetActive(true);
+        
+        if(other.CompareTag("Player") && Player.Instance != null){
+            Player.Instance.isConsume = false;
+            panelTopPlayer.SetActive(true);
+        }      
     }
-    private void OnTriggerExit2D(Collider2D other) {
+
+    void OnClose(){
+        Player.Instance.isConsume = true;
         panelTopPlayer.SetActive(false);
     }
 }

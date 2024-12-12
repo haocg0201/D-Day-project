@@ -32,7 +32,7 @@ public class DialogueCtrler : MonoBehaviour
             mainCanvas.gameObject.SetActive(true); 
             StartCoroutine(StartDialogue());
             if(GameManager.Instance != null){
-                GameManager.Instance.SetStat(2);
+                GameManager.Instance.playerData.stat.level = 2;
                 PlayerPrefs.SetInt("level", 2);
             }
         }

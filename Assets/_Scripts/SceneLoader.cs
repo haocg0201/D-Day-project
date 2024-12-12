@@ -20,7 +20,10 @@ public class SceneLoader : MonoBehaviour
         Debug.Log($"Thời gian đếm được: {elapsedTime} giây");
     }
 
-
+    void Start()
+    {
+        elapsedTime = 0f;
+    }
 
     void Awake()
     {
@@ -43,7 +46,9 @@ public class SceneLoader : MonoBehaviour
         if (isCounting)
         {
             elapsedTime += Time.deltaTime;
-        }else if(GameManager.Instance != null && GameManager.Instance.Health == 0){
+        }
+        
+        if(GameManager.Instance != null && GameManager.Instance.Health == 0){
             StopCounting();
             GameManager.Instance.svvTime = elapsedTime;
         }

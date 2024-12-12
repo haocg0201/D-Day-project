@@ -6,12 +6,13 @@ using TMPro; // Thêm để sử dụng OrderBy và Take
 
 public class TopLevelPlayer : MonoBehaviour
 {
-    public UnityEngine.UI.Button btnLevel, btnWealth, btnCampaign, btnSvv;
+    public UnityEngine.UI.Button btnLevel, btnWealth, btnCampaign, btnSvv, btnClose;
     public ScrollRect _scrollView;
     public GameObject goLvl, goWealth, goCampaign, goSvv;
     public GameObject goLvlTitle, goWealthTitle, goCampaignTitle, goSvvTitle;
     RectTransform content;
     [SerializeField]private List<PlayerData> lvls, wealths, campaigns, svvs;
+    public GameObject panelTop;
 
     async void Start()
     {
@@ -50,6 +51,10 @@ public class TopLevelPlayer : MonoBehaviour
             SetActiveTitle("svv");
             DisplayPlayersBy("svv");
         });
+
+        // btnClose.onClick.AddListener(() =>{
+        //     OnClose();
+        // });
     }
 
     private void OnLoad()
@@ -59,7 +64,16 @@ public class TopLevelPlayer : MonoBehaviour
         goWealth.SetActive(true);
         goCampaign.SetActive(true);
         goSvv.SetActive(true);
+        goLvlTitle.SetActive(true);
         DisplayPlayersBy("level");
+        if(Player.Instance != null){
+            Player.Instance.isConsume = false;
+        }
+    }
+
+    void OnClose(){
+        Player.Instance.isConsume = true;
+        panelTop.SetActive(false);
     }
 
     public List<PlayerData> GetTop20PlayersByLevel(List<PlayerData> allPlayers)

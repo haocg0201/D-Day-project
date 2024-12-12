@@ -84,7 +84,7 @@ public class EnemySpawner : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("ActiveEnemies contains a null reference.");
+                Debug.Log("ActiveEnemies contains a null reference.");
             }
         }
 

@@ -11,7 +11,10 @@ public class PlayerRotation : MonoBehaviour
     // }
     void Update()
     {
-        PStareM();
+        if(Player.Instance.isConsume){
+            PStareM();
+        }
+        
     }
 
     void PStareM(){

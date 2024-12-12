@@ -8,7 +8,7 @@ public class Goblem : Monster
         base.Start();
         Initialize(monsterName: "Goblem",        // Tên quái nhé
             health: 1500,                    // Máu quái nhé
-            attackDamage: 10,               // Sát thương của quái nhé
+            attackDamage: 100,               // Sát thương của quái nhé
             survivability: 0.5f,            // Chỉ số sinh tồn nhé
             size: 2.5f,                     // Kích thước của quái nhé
             dialogues: new List<string>     // Các câu thoại đây nhé hh ;) 2- 2.5f
