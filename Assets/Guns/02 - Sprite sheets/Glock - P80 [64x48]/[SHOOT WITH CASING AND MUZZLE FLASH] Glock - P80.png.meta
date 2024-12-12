@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: ba4a52ca436de004ebc14d48de38c149
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7646583126708383269
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_0'
+  - first:
+      213: 4937666967531113331
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_1'
+  - first:
+      213: 9002179093806222244
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_2'
+  - first:
+      213: -471193822796080287
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_3'
+  - first:
+      213: -3258474384101988862
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_4'
+  - first:
+      213: -5461949461467639415
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_5'
+  - first:
+      213: -7963033330447855121
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_6'
+  - first:
+      213: -4678631841296931091
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_7'
+  - first:
+      213: 8657858392568958179
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_8'
+  - first:
+      213: 4750002075149453667
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_9'
+  - first:
+      213: -7730862056397615294
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_10'
+  - first:
+      213: -3551689308263116861
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_11'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_0'
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 19
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd11d0bd821e1e590800000000000000
+      internalID: -7646583126708383269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_1'
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 19
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b4fd232fd168440800000000000000
+      internalID: 4937666967531113331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_2'
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 19
+        width: 39
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab84c2b03a2eec70800000000000000
+      internalID: 9002179093806222244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_3'
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 19
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b91e3f6bbf579f0800000000000000
+      internalID: -471193822796080287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_4'
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 19
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20624e1dfc297c2d0800000000000000
+      internalID: -3258474384101988862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_5'
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 19
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981d51847e14334b0800000000000000
+      internalID: -5461949461467639415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_6'
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 19
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe15f0c306f9d7190800000000000000
+      internalID: -7963033330447855121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_7'
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 19
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de62aa8f029221fb0800000000000000
+      internalID: -4678631841296931091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_8'
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 19
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec05b43654e62870800000000000000
+      internalID: 8657858392568958179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_9'
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 19
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369c6a388b56be140800000000000000
+      internalID: 4750002075149453667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_10'
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 19
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fcfd86be576b490800000000000000
+      internalID: -7730862056397615294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_11'
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 15
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf8c6c446dd5bec0800000000000000
+      internalID: -3551689308263116861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_0': -7646583126708383269
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_1': 4937666967531113331
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_10': -7730862056397615294
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_11': -3551689308263116861
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_2': 9002179093806222244
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_3': -471193822796080287
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_4': -3258474384101988862
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_5': -5461949461467639415
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_6': -7963033330447855121
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_7': -4678631841296931091
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_8': 8657858392568958179
+      '[SHOOT WITH CASING AND MUZZLE FLASH] Glock - P80_9': 4750002075149453667
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

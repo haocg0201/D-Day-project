@@ -1,0 +1,471 @@
+fileFormatVersion: 2
+guid: 7db5e74107fd93c4e91a4cd435b4c26a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3038409573160069703
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_0'
+  - first:
+      213: 4189837386570626800
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_1'
+  - first:
+      213: -7455949374253545077
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_2'
+  - first:
+      213: 5194039080343900044
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_3'
+  - first:
+      213: -4476886048860569410
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_4'
+  - first:
+      213: -6708500154244127487
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_5'
+  - first:
+      213: 6846757434819787156
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_6'
+  - first:
+      213: 4798601279395579148
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_7'
+  - first:
+      213: -4141626576590974337
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_8'
+  - first:
+      213: -1134205842822312936
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_9'
+  - first:
+      213: -8180811724172578064
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_10'
+  - first:
+      213: -614987271149505200
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_11'
+  - first:
+      213: 1108933591343212422
+    second: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_12'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_0'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 21
+        width: 76
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b5d5a5679665d5d0800000000000000
+      internalID: -3038409573160069703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_1'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 21
+        width: 76
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6713587ea452a30800000000000000
+      internalID: 4189837386570626800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_2'
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 21
+        width: 90
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8942542c85278890800000000000000
+      internalID: -7455949374253545077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_3'
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 21
+        width: 93
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f056d360fe41840800000000000000
+      internalID: 5194039080343900044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_4'
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 21
+        width: 82
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb083cdabd7eed1c0800000000000000
+      internalID: -4476886048860569410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_5'
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 21
+        width: 76
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10520a227ae96e2a0800000000000000
+      internalID: -6708500154244127487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_6'
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 21
+        width: 76
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499b2bd7c91940f50800000000000000
+      internalID: 6846757434819787156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_7'
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 21
+        width: 76
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05cb15807e089240800000000000000
+      internalID: 4798601279395579148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_8'
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 21
+        width: 76
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f725af5629cf586c0800000000000000
+      internalID: -4141626576590974337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_9'
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 20
+        width: 76
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c47649bcd7240f0800000000000000
+      internalID: -1134205842822312936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_10'
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 16
+        width: 76
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2b756a41be77e80800000000000000
+      internalID: -8180811724172578064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_11'
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 21
+        width: 76
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0553fb1d5502777f0800000000000000
+      internalID: -614987271149505200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 448bac45cb5e033448fb976440459383
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_0': -3038409573160069703
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_1': 4189837386570626800
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_10': -8180811724172578064
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_11': -614987271149505200
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_2': -7455949374253545077
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_3': 5194039080343900044
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_4': -4476886048860569410
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_5': -6708500154244127487
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_6': 6846757434819787156
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_7': 4798601279395579148
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_8': -4141626576590974337
+      '[SHOOT WITH CASING AND MUZZLE FLASH] FULL AUTO - AK 47_9': -1134205842822312936
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

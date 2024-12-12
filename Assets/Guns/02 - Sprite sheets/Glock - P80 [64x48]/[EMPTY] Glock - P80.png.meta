@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 0652b6f58a435ba48acbae31cc23bdc7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8358773651410596491
+    second: '[EMPTY] Glock - P80_0'
+  - first:
+      213: 9030250038441628362
+    second: '[EMPTY] Glock - P80_1'
+  - first:
+      213: 1558900988165147294
+    second: '[EMPTY] Glock - P80_2'
+  - first:
+      213: -5636395727935705934
+    second: '[EMPTY] Glock - P80_3'
+  - first:
+      213: 3484671659947103412
+    second: '[EMPTY] Glock - P80_4'
+  - first:
+      213: -4422537444101531232
+    second: '[EMPTY] Glock - P80_5'
+  - first:
+      213: 1452716276389732969
+    second: '[EMPTY] Glock - P80_6'
+  - first:
+      213: -5919787844870121230
+    second: '[EMPTY] Glock - P80_7'
+  - first:
+      213: -2198037323114521609
+    second: '[EMPTY] Glock - P80_8'
+  - first:
+      213: 1202883429062493848
+    second: '[EMPTY] Glock - P80_9'
+  - first:
+      213: -7065024186563477575
+    second: '[EMPTY] Glock - P80_10'
+  - first:
+      213: 1161148314927320498
+    second: '[EMPTY] Glock - P80_11'
+  - first:
+      213: 241554267651214040
+    second: '[EMPTY] Glock - P80_12'
+  - first:
+      213: -9044354865305273868
+    second: '[EMPTY] Glock - P80_13'
+  - first:
+      213: -4163775823500239210
+    second: '[EMPTY] Glock - P80_14'
+  - first:
+      213: -2244547438809559888
+    second: '[EMPTY] Glock - P80_15'
+  - first:
+      213: -2106442572908175668
+    second: '[EMPTY] Glock - P80_16'
+  - first:
+      213: -3613013584479439038
+    second: '[EMPTY] Glock - P80_17'
+  - first:
+      213: -558421404758446067
+    second: '[EMPTY] Glock - P80_18'
+  - first:
+      213: 5822360371272187427
+    second: '[EMPTY] Glock - P80_19'
+  - first:
+      213: -8566276657250333761
+    second: '[EMPTY] Glock - P80_20'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_0'
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 19
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82393a6954500470800000000000000
+      internalID: 8358773651410596491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_1'
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 19
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2554ec094e15d70800000000000000
+      internalID: 9030250038441628362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_2'
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 19
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ac697703452a510800000000000000
+      internalID: 1558900988165147294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_3'
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 19
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bcecd6c2ff77c1b0800000000000000
+      internalID: -5636395727935705934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_4'
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 19
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b49402896a0c5030800000000000000
+      internalID: 3484671659947103412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_5'
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 19
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9d67e40adff92c0800000000000000
+      internalID: -4422537444101531232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_6'
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 17
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96263ada1c5192410800000000000000
+      internalID: 1452716276389732969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_7'
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 15
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f857d8c150b8dda0800000000000000
+      internalID: -5919787844870121230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_8'
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 13
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb55b843b00f71e0800000000000000
+      internalID: -2198037323114521609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_9'
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 9
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89649770b1081b010800000000000000
+      internalID: 1202883429062493848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_10'
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 20
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf37563fedf3fd90800000000000000
+      internalID: -7065024186563477575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_11'
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 20
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd49ca8d3a3d1010800000000000000
+      internalID: 1161148314927320498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_12'
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 20
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da845d935c2a5300800000000000000
+      internalID: 241554267651214040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_13'
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 20
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f937e64b2ffb7280800000000000000
+      internalID: -9044354865305273868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_14'
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 20
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e98ebf2fb4736c0800000000000000
+      internalID: -4163775823500239210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_15'
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 20
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc4e3c1ff3c9d0e0800000000000000
+      internalID: -2244547438809559888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_16'
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 7
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce5c0ee3a964c2e0800000000000000
+      internalID: -2106442572908175668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_17'
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 4
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2473178994ffbddc0800000000000000
+      internalID: -3613013584479439038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_18'
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00f566e0b61048f0800000000000000
+      internalID: -558421404758446067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_19'
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e7df3d8ed2dc050800000000000000
+      internalID: 5822360371272187427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[EMPTY] Glock - P80_20'
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb8fdc24c87e1980800000000000000
+      internalID: -8566276657250333761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '[EMPTY] Glock - P80_0': 8358773651410596491
+      '[EMPTY] Glock - P80_1': 9030250038441628362
+      '[EMPTY] Glock - P80_10': -7065024186563477575
+      '[EMPTY] Glock - P80_11': 1161148314927320498
+      '[EMPTY] Glock - P80_12': 241554267651214040
+      '[EMPTY] Glock - P80_13': -9044354865305273868
+      '[EMPTY] Glock - P80_14': -4163775823500239210
+      '[EMPTY] Glock - P80_15': -2244547438809559888
+      '[EMPTY] Glock - P80_16': -2106442572908175668
+      '[EMPTY] Glock - P80_17': -3613013584479439038
+      '[EMPTY] Glock - P80_18': -558421404758446067
+      '[EMPTY] Glock - P80_19': 5822360371272187427
+      '[EMPTY] Glock - P80_2': 1558900988165147294
+      '[EMPTY] Glock - P80_20': -8566276657250333761
+      '[EMPTY] Glock - P80_3': -5636395727935705934
+      '[EMPTY] Glock - P80_4': 3484671659947103412
+      '[EMPTY] Glock - P80_5': -4422537444101531232
+      '[EMPTY] Glock - P80_6': 1452716276389732969
+      '[EMPTY] Glock - P80_7': -5919787844870121230
+      '[EMPTY] Glock - P80_8': -2198037323114521609
+      '[EMPTY] Glock - P80_9': 1202883429062493848
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
