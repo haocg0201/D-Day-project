@@ -86,6 +86,14 @@ public class Player : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        var playerInput = GetComponent<PlayerInput>();
+        playerInput.SwitchCurrentControlScheme("Any");
+        playerInput.enabled = false;
+        playerInput.enabled = true;
+    }
+
     public void EquipWeapon(GameObject newWeapon)
     {
         if(weapons.Count < 3){
@@ -316,15 +324,24 @@ public class Player : MonoBehaviour
         if (isTakeDamage)
         {
             float def = GameManager.Instance.Def;
-            float damageToPlayer = (int)Mathf.Floor(damage - (damage * (def / 100f)));
-            if (damageToPlayer <= 0) damageToPlayer = 5; // sát thương ở mức tối thiểu cho là 5 đi ae
+            float health = GameManager.Instance.Health;
+
+            float damageToPlayer = Mathf.Floor(damage - (damage * (def / 100f)));
+
+            float minDamage = health * 0.03f;
+
+            if (damageToPlayer < minDamage)
+            {
+                damageToPlayer = Mathf.Ceil(minDamage);
+            }
+
             Debug.Log($"{playerData.username} take {damageToPlayer} damage while def = {def} and dmg input = {damage}");
+
             if (isExhausted) return;
+
             UpdateHealth((int)damageToPlayer);
             ShowDamage((int)damageToPlayer);
         }
-        
-        
     }
 
     public void Recovery(){

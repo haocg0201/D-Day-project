@@ -6,7 +6,7 @@ public class Werewolf : Monster
     public override void Start()
     {
         base.Start();
-        Initialize("Werewolf",2000,200, 1.5f,2.0f,new List<string>{"auwww wuuu"," ?!","waiiiuu"},6);
+        Initialize("Werewolf",20000,900, 1.5f,2.0f,new List<string>{"auwww wuuu"," ?!","waiiiuu"},6);
         transform.localScale = new Vector3(size,size,size);
     }
 

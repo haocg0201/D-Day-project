@@ -27,7 +27,7 @@ public class DesertQuestDialogManager : MonoBehaviour
 
     void OnEnable()
     {
-        if (GameManager.Instance.isQuestDone && GameManager.Instance.isGetQuest)
+        if (GameManager.Instance.isQuestDone)
         {
             nextButton.gameObject.SetActive(true);
         }
@@ -114,6 +114,7 @@ public class DesertQuestDialogManager : MonoBehaviour
 
         string sentence = sentences.Dequeue();
         dialogueText.text = sentence;
+        nextButton.gameObject.SetActive(true);
     }
 
     public void EndDialogue()

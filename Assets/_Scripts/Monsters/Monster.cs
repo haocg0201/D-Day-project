@@ -57,7 +57,7 @@ public class Monster : MonoBehaviour
         {
             damageTextTransform = damageText.transform;
         }
-        attackRange = 0.4f;
+        attackRange = 0.5f;
         isRunning = false;
         isOnCooldown = false;
         isAttacking = false;
@@ -135,6 +135,10 @@ public class Monster : MonoBehaviour
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
             animator.SetTrigger("Attack");
+            if(isAttacking){
+                Player.Instance.TakeDamage(attackDamage);
+            }
+            
             StartCoroutine(AttackCooldown());
         }
 
@@ -177,9 +181,14 @@ public class Monster : MonoBehaviour
             StartCoroutine(WaitForSecondsToTakeDame(0.5f));
         }
 
-        if(other.CompareTag("Player") && !isRunning){
-            Player.Instance.TakeDamage(attackDamage);
+        if(other.CompareTag("Player")){
+            isAttacking = true;
         }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        isAttacking = false;
     }
 
     IEnumerator WaitForSecondsToTakeDame(float time){

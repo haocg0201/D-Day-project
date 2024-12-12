@@ -15,16 +15,18 @@ public class DesertQuest : MonoBehaviour
         if(GameManager.Instance != null){
             int i = GameManager.Instance.killCount;
             int ii = GameManager.Instance.killCountBoss;
-            if(i <= 50 && ii <= 1){
-                SetResult(i,ii);
-            }else{
+            SetResult(i,ii);
+            if(i > 50 && ii > 1){
+                i = 50; ii = 1;
+                SetResult(50,1);
+            }
+            if(i == 50 && ii == 1){
                 SetResult(50,1);
                 txtResult.text = "Hoàn thành nhiệm vụ";
                 Color color = Color.yellow;
                 txtResult.color = color;
                 GameManager.Instance.isQuestDone = true;
             }
-           
         }
     }
 
