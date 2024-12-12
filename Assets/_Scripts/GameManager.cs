@@ -10,20 +10,30 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int def;
     [SerializeField] private int dmg;
     [SerializeField] private float survivability;
+
+    [SerializeField] private int healthFromWeapon = 0;
+    [SerializeField] private int defFromWeapon = 0;
+    [SerializeField] private int dmgFromWeapon = 0;
+    [SerializeField] private float survivabilityFromWeapon = 0;
+
     public static GameManager Instance { get; private set; } // singleton
     public PlayerData playerData;
     public List<GameObject> monsters = new();
 
     // Check var mapppp
     public int killCount = 0;
+    public int killCountBoss = 0;
     public float svvTime = 0f;
     public int _mgCounter = 0;
     public int _rgCounter = 0;
+    public bool isGetQuest = false;
+    public bool isQuestDone = false;
+
 
     private void Awake()
     {
         // singleton pattern để đảm bảo rằng là chỉ có duy nhất một GameManager nhé
-        if (Instance == null) 
+        if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
@@ -32,46 +42,83 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
             Debug.Log("Mới xóa kìa");
-        } 
+        }
     }
 
     public void InitPlayerData()
     {
         playerData = PlayerPrefsManager.LoadPlayerDataFromPlayerPrefs();
-            if (playerData != null){
-                SetStat(playerData.stat.level);
-                Debug.Log($"un: {playerData.username}, lvl: {playerData.stat.level} khi khởi tạo");
-            }else{
-                Debug.Log("Không tải đc dữ liệu :v");
-            }   
-        if (playerData == null)
-        { 
-        }else{
-           Debug.Log($"un: {playerData.username}, lvl: {playerData.stat.level} khi player đã tồn tại"); 
+        if (playerData != null)
+        {
+            SetStat();
+            Debug.Log($"un: {playerData.username}, lvl: {playerData.stat.level} khi khởi tạo");
         }
-        
+        else
+        {
+            Debug.Log("Không tải đc dữ liệu :v");
+        }
+        if (playerData == null)
+        {
+        }
+        else
+        {
+            Debug.Log($"un: {playerData.username}, lvl: {playerData.stat.level} khi player đã tồn tại");
+        }
+
     }
 
-    public void SetStat(int lvl)
+    public void SetStat()
     {
         int defaultHealth = 100;
         int defaultDef = 10;
         int defaultDmg = 50;
         float defaultSurvivability = 2f;
 
-        if (lvl <= 0){
-            lvl = 1;
+        if (playerData.stat.level <= 0)
+        {
+            playerData.stat.level = 1;
         }
 
-        if(lvl >= 1){
+        if (playerData.stat.level >= 1)
+        {
             // set stat
-            this.health = defaultHealth * lvl;
-            this.def = defaultDef + 5 * lvl;
-            this.dmg = defaultDmg + 10 * lvl;
-            this.survivability = (defaultSurvivability + 0.01f * lvl) + 3f;
+            this.health = defaultHealth * playerData.stat.level + healthFromWeapon;
+            this.def = defaultDef + 5 * playerData.stat.level + defFromWeapon;
+            this.dmg = defaultDmg + 10 * playerData.stat.level + dmgFromWeapon;
+            this.survivability = defaultSurvivability + (0.01f * playerData.stat.level) + survivabilityFromWeapon;
         }
-         // phần nâng cấp vũ khí + chỉ số tính sau nhé
+        // phần nâng cấp vũ khí + chỉ số tính sau nhé
         this.maxHealth = health;
+    }
+
+    public void SetWeaponStat(List<Weapon> weapons)
+    {   
+        int h = 0;
+        int d = 0;
+        float s = 0;
+        if(weapons != null && weapons.Count > 0){
+            foreach(Weapon weapon in weapons){
+                Weapon w = weapon.GetComponent<Weapon>();
+                if(GameManager.Instance != null){
+                    h += (int)w.wHealth / 2;
+                    d += (int)w.wDef / 2;
+                    s += w.wSvvability / 2; 
+                }
+            }
+            this.healthFromWeapon = h;
+            this.defFromWeapon = d;
+            this.dmgFromWeapon = 100;
+            this.survivabilityFromWeapon = s;
+
+        }else{
+            this.healthFromWeapon = 0;
+            this.defFromWeapon = 0;
+            this.dmgFromWeapon = 0;
+            this.survivabilityFromWeapon = 0; 
+        }
+        SetStat();
+
+        // làm gì đó ở đây thì làm sau vậy
     }
 
     void Start()
@@ -80,24 +127,30 @@ public class GameManager : MonoBehaviour
         InitPlayerData();
         LoadGameData();
     }
-    
-    private void Update() {
-        
+
+    private void Update()
+    {
+
     }
-    public void LoadGameData(){}
-    
-    public void StartGame(){}    
-    public void PauseGame(bool time){
+    public void LoadGameData() { }
+
+    public void StartGame() { }
+    public void PauseGame(bool time)
+    {
         Time.timeScale = time ? 0 : 1;
     }
-    public void ResumeGame(){}
-    public void EndGame(){}
-    private void UpdateUI(){}
-    public void ResetTheCounter(){
+    public void ResumeGame() { }
+    public void EndGame() { }
+    private void UpdateUI() { }
+    public void ResetTheCounter()
+    {
         killCount = 0;
+        killCountBoss = 0;
         svvTime = 0f;
         _mgCounter = 0;
         _rgCounter = 0;
+        isGetQuest = false;
+        isQuestDone = false;
     }
 
 
@@ -144,55 +197,80 @@ public class GameManager : MonoBehaviour
 
     public void SaveAndUpdatePlayerData(PlayerData data)
     {
+        if(WorldWhisperManager.Instance != null){
+            WorldWhisperManager.Instance.GetComponent<WorldSetting>().UpdateUIGem();
+        }
         PlayerPrefsManager.SavePlayerDataToPlayerPrefsWithoutPlayerId(data);
+        InitPlayerData();
+        SetStat();
         Debug.Log("Dữ liệu người chơi đã được lưu thành công.");
     }
 
-    
-    public async void SaveAndUpdatePlayerDataFireBase(){
+
+    public async void SaveAndUpdatePlayerDataFireBase()
+    {
         PlayerData playerData = PlayerPrefsManager.LoadPlayerDataFromPlayerPrefs();
         string playerId = PlayerPrefsManager.GetPlayerIdFromPlayerPrefs();
-        if (FirebaseManager.Instance != null){
-            await FirebaseManager.Instance.UpdatePlayerData(playerId,playerData);
+        if (FirebaseManager.Instance != null)
+        {
+            await FirebaseManager.Instance.UpdatePlayerData(playerId, playerData);
         }
     }
 
-    public PlayerData GetPlayerData(){
+    public PlayerData GetPlayerData()
+    {
         return playerData;
     }
 
-    public void UpdateMoonG(){
+    public void UpdateMoonG()
+    {
         this.playerData.stat.gem += _mgCounter;
         SaveAndUpdatePlayerData(playerData);
     }
 
-    public void ToSubTract(int quality){
-        this.playerData.stat.gem -= quality;
+    public void ToSubTract(int quanlity)
+    {
+        this.playerData.stat.gem -= quanlity;
         SaveAndUpdatePlayerData(playerData);
     }
 
-    public void UpdateRune(){
+
+
+    public void UpdateRune()
+    {
         this.playerData.stat.rune += _rgCounter;
         SaveAndUpdatePlayerData(playerData);
-    }
-
-    public void UpdateTraningTime(){
-        int seconds = (int)svvTime; 
-        int minutes = seconds / 60; 
-        int remainingSeconds = seconds % 60;  // đoạn trên thấy thừa thãi quá, thôi kệ vậy @@
-        string survvTime = minutes.ToString("00") + ":" + remainingSeconds.ToString("00");
-        GetHigherSvvTime(survvTime,playerData.survival);
+    }    
+    
+    public void OnPlayerLevelUp(int quantity){
+        this.playerData.stat.rune -= quantity;
+        this.playerData.stat.level += 1;
         SaveAndUpdatePlayerData(playerData);
     }
 
-    public void GetHigherSvvTime(string time1, string time2){
+    public int LvlCost(){
+        return 100 + playerData.stat.level * 10;
+    }
+
+    public void UpdateTraningTime()
+    {
+        int seconds = (int)svvTime;
+        int minutes = seconds / 60;
+        int remainingSeconds = seconds % 60;  // đoạn trên thấy thừa thãi quá, thôi kệ vậy @@
+        string survvTime = minutes.ToString("00") + ":" + remainingSeconds.ToString("00");
+        GetHigherSvvTime(survvTime, playerData.survival);
+        SaveAndUpdatePlayerData(playerData);
+    }
+
+    public void GetHigherSvvTime(string time1, string time2)
+    {
 
         int ConvertToSeconds(string time)
         {
             var parts = time.Split(':');
             int minutes = int.Parse(parts[0]);
             int seconds = int.Parse(parts[1]);
-            return minutes * 60 + seconds; 
+            return minutes * 60 + seconds;
         }
 
         // So sánh hai thời gian
@@ -213,11 +291,34 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public string PlayerId { get { return playerId; } set { playerId = value; } } 
-    public int Health { get { return health; } set { health = value; } } 
+    public string PlayerId { get { return playerId; } set { playerId = value; } }
+    public int Health { get { return health; } set { health = value; } }
     public int MaxHealth { get { return maxHealth; } set { maxHealth = value; } }
-    public int Def { get { return def; } set { def = value; } } 
-    public int Dmg { get { return dmg; } set { dmg = value; } } 
+    public int Def { get { return def; } set { def = value; } }
+    public int Dmg { get { return dmg; } set { dmg = value; } }
     public float Survivability { get { return survivability; } set { survivability = value; } }
+    public int HealthFromWeapon
+    {
+        get { return healthFromWeapon; }
+        set { healthFromWeapon = value; }
+    }
+
+    public int DefFromWeapon
+    {
+        get { return defFromWeapon; }
+        set { defFromWeapon = value; }
+    }
+
+    public int DmgFromWeapon
+    {
+        get { return dmgFromWeapon; }
+        set { dmgFromWeapon = value; }
+    }
+
+    public float SurvivabilityFromWeapon
+    {
+        get { return survivabilityFromWeapon; }
+        set { survivabilityFromWeapon = value; }
+    }
 
 }

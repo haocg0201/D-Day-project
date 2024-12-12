@@ -12,7 +12,7 @@ public class WeaponHolder : MonoBehaviour
     public Canvas wInfoCanvas;
     public TextMeshProUGUI txtWName, txtWLvl, txtWHP, txtWDef, txtWSvvability, txtDescribe;
     public GameObject wFrame;
-    public Button btnEnhance, btnEquipment;
+    public Button btnEnhance, btnEquipment, btnClose;
     private int lvlNow = 1;
     private Weapon w;
     public GameObject enhance;
@@ -23,6 +23,7 @@ public class WeaponHolder : MonoBehaviour
         player = Player.Instance;
         btnEnhance.onClick.AddListener(OnEnhanceWeapon);
         btnEquipment.onClick.AddListener(OnWeaponEquipment);
+        btnClose.onClick.AddListener(OnCloseWeapon);
     }
 
     public void ShowWeaponInfo(){
@@ -33,6 +34,7 @@ public class WeaponHolder : MonoBehaviour
         }
 
         if(w != null){
+            Player.Instance.isConsume = false;
             lvlNow = w.wLvl;
             txtWName.text = "Chủng loại: " + w.wName;
             txtWLvl.text = (w.wLvl <= 0) ? "Chưa mở khóa" : (w.wLvl <= 99) ?  "Lvl hiện tại: " + w.wLvl :  "Lvl hiện tại: 99" ;
@@ -56,18 +58,15 @@ public class WeaponHolder : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            HideWeaponInfo();
-        }
+    void OnCloseWeapon(){
+        HideWeaponInfo();
     }
 
     public void HideWeaponInfo(){
         w = null;
-        if(wInfoCanvas != null){
+        if(wInfoCanvas != null && Player.Instance != null){
             wInfoCanvas.gameObject.SetActive(false);
+            Player.Instance.isConsume = true;
         } 
     }
 
@@ -94,10 +93,11 @@ public class WeaponHolder : MonoBehaviour
                 if(playerData != null){
                     lvlNow ++;
                     w.UpdateStat(lvlNow);
-                    GameManager.Instance.ToSubTract(-200); // thực hiện trước nhé
+                    GameManager.Instance.ToSubTract(200); // thực hiện trước nhé
                     GameManager.Instance.UpdateWeaponLevel(w.wCode, lvlNow);
                     WorldWhisperManager.Instance.GetComponent<WorldSetting>().UpdateUIGem();
                     GameManager.Instance.SaveAndUpdatePlayerDataFireBase();
+                    Player.Instance.ExcuteToGameManager();
                     StartCoroutine(WaitForSecond(1.5f));
 
                 }

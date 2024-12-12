@@ -9,7 +9,7 @@ public class RewardUICtrller : MonoBehaviour
     public GameObject rewardPanel;
     public TextMeshProUGUI txtSvvTime, txtKillCount, txtRewardMG, txtRewardRG;
     public Button btnReplay, btnHome;
-    string survvTime = "00:00";
+    string survvTime;
     void Start()
     {
         btnReplay.onClick.AddListener(OnReplay); // tôi đặt điều kiện check null ở dưới cho chắc vì người chơi ấn nhiều lần
@@ -40,16 +40,13 @@ public class RewardUICtrller : MonoBehaviour
     }
     public void OnHome(){
         if(Player.Instance != null && GameManager.Instance != null){
-            rewardPanel.SetActive(false);
+            
             Player.Instance.Recovery();
             Player.Instance.transform.position = new Vector3(0, 0, 0);
-            Player.Instance.ResetInput();
-
             GameManager.Instance.UpdateMoonG();
             GameManager.Instance.UpdateRune();
             GameManager.Instance.UpdateTraningTime();
-            StartCoroutine(Wait(2f));
-
+            rewardPanel.SetActive(false);
             SceneLoader.Instance.LoadSceneBySceneName("NewBorn");
         }
     }
