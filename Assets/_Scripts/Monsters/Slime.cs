@@ -6,7 +6,7 @@ public class Slime : Monster
     public override void Start()
     {
         base.Start();
-        Initialize("Slime",5000,200,1f,0.3f,new List<string>{":))"," ?!"," @"},3);
+        Initialize("Slime",5000,500,1f,0.3f,new List<string>{":))"," ?!"," @"},3);
         //transform.localScale = new Vector3(size, size, size);
     }
 

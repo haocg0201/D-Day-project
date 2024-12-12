@@ -16,8 +16,9 @@ public class SceneLoader : MonoBehaviour
 
     void StopCounting()
     {
-        isCounting = false;
         Debug.Log($"Thời gian đếm được: {elapsedTime} giây");
+        elapsedTime = 0f;
+        isCounting = false;
     }
 
     void Start()
@@ -49,8 +50,8 @@ public class SceneLoader : MonoBehaviour
         }
         
         if(GameManager.Instance != null && GameManager.Instance.Health == 0){
-            StopCounting();
             GameManager.Instance.svvTime = elapsedTime;
+            StopCounting();
         }
         
     }
@@ -61,6 +62,7 @@ public class SceneLoader : MonoBehaviour
             EnemySpawner.Instance.ClearActiveEnemies();
         }
         if(scene.name == "SVV" || scene.name == "Campaign_Dark_Broken" || scene.name == "Campaign_Desert" || scene.name == "Campaign_Winter"){
+            GameManager.Instance.SetStat();
             StartCounting();
         }
     }
