@@ -25,8 +25,8 @@ public class ShinobiDesert : MonoBehaviour
             dialogueLines.Add("Nhìn vùng đất cằn cỗi này xem, nó mang đầy kỉ niệm đau thương và xưa cũ");
             dialogueLines.Add("Nhật dương quang chiếu sáng tới tận thiên thu chẳng bao giờ dừng lại, nó ban phát cho vùng đất này sự chết chóc");
             dialogueLines.Add("Cũng đã từ rất lâu rồi chưa có ai tới đây, tất cả chỉ còn là một nơi tàn tích đổ vỡ");
-            dialogueLines.Add("Cũng chỉ tạo lũ quái vật từ chiều không gian khác tới, chúng tàn phá và chiếm cứ nơi đây");
-            dialogueLines.Add("Hơi người du hành dũng cảm, cậu có sẵn sàng giúp ta một nhiệm vụ này không? Tất nhiên ta sẽ trả cho cậu 1 khoản thù lao xứng đáng");
+            dialogueLines.Add("Cũng chỉ tại lũ quái vật từ chiều không gian khác tới, chúng tàn phá và chiếm cứ nơi đây");
+            dialogueLines.Add("Hỡi người du hành dũng cảm, cậu có sẵn sàng giúp ta một nhiệm vụ này không? Tất nhiên ta sẽ trả cho cậu 1 khoản thù lao xứng đáng");
         }else if(!GameManager.Instance.isQuestDone && GameManager.Instance.isGetQuest){
             dialogueLines.Add("Hãy cẩn thận nhé");
             Debug.Log("ShinobiDeser, is get quest: " + GameManager.Instance.isGetQuest);

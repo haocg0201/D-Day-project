@@ -106,18 +106,19 @@ public class Weapon : MonoBehaviour
 
     public virtual void Update()
     {
-        if(isEquipped){
-            AttackRotateWeaponTowardsMouse(); 
-            fireRate -= Time.deltaTime;
-            if(Input.GetMouseButton(0) && fireRate < 0){
-                StartCoroutine(ThrowTheWeapon());      
-            }
+        if(Player.Instance != null && Player.Instance.isConsume){
+            if(isEquipped){
+                AttackRotateWeaponTowardsMouse(); 
+                fireRate -= Time.deltaTime;
+                if(Input.GetMouseButton(0) && fireRate < 0){
+                    StartCoroutine(ThrowTheWeapon());      
+                }
 
-            if(Input.GetMouseButtonUp(0)){
-                animator.SetBool("isShooting", false);
+                if(Input.GetMouseButtonUp(0)){
+                    animator.SetBool("isShooting", false);
+                }
             }
-        }
-        
+        }  
     }
 
     public int GetLvl(){

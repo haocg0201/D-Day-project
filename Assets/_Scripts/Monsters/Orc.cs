@@ -7,8 +7,8 @@ public class Orc : Monster
     {
         base.Start();
         Initialize(monsterName: "Orc",
-        health: 2000,
-        attackDamage: 100,
+        health: 20000,
+        attackDamage: 500,
         survivability: 1f,
         size: 2.0f,                         // 1 - 2.5f            
         dialogues: new List<string>

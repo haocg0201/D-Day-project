@@ -29615,9 +29615,12 @@ MonoBehaviour:
       yoyo: 0
   monsters: []
   killCount: 0
+  killCountBoss: 0
   svvTime: 0
   _mgCounter: 0
   _rgCounter: 0
+  isGetQuest: 0
+  isQuestDone: 0
 --- !u!4 &759754872
 Transform:
   m_ObjectHideFlags: 0
@@ -37507,6 +37510,10 @@ PrefabInstance:
     - target: {fileID: 4933622826988472434, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
       propertyPath: m_BodyType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746641271093620447, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6878928416105002230, guid: 16feeeb5c9ccc3d428ae4a9d9090614a, type: 3}
       propertyPath: m_Enabled
