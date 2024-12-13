@@ -8,7 +8,7 @@ public class CheckVarCkam : MonoBehaviour
     private Player player;
 
     void Start()
-    {
+    {   
         // Khởi tạo từ điển ánh xạ Tag -> Hành động
         tagActions = new Dictionary<string, Action<Collider2D>>()
         {
@@ -19,8 +19,7 @@ public class CheckVarCkam : MonoBehaviour
             { "SP", HandleSP },
             { "DP", HandleDP }
         }; // đăng ký vật phẩm va chạm ở đây ae
-        player = GetComponentInParent<Player>();
-        if(player == null){
+        if(Player.Instance != null){
             player = Player.Instance;
         }
     }
@@ -53,7 +52,8 @@ public class CheckVarCkam : MonoBehaviour
 
     private void HandleLP(Collider2D other)
     {
-        // life potion = mana tạo sau nhé
+        if(player == null) return;
+        player.GetManaBuff(10);
     }
 
     private void HandleSP(Collider2D other)

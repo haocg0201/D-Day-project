@@ -1,9 +1,11 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DesertSpawner : MonoBehaviour
 {
     public int[] enemyTypes = {2, 4, 7}; // Danh sách các loại quái cần spawn (zom, troll, skeleton)
+    private List<GameObject> monsters = new();
     public int maxEnemies = 50;
     public float spawnInterval = 0.5f;
     private float spawnTimer;
@@ -15,7 +17,7 @@ public class DesertSpawner : MonoBehaviour
         if(GameManager.Instance != null && GameManager.Instance.isGetQuest && !GameManager.Instance.isQuestDone){
             if (!playerInRange) return;
 
-            if (EnemySpawner.Instance.ActiveEnemies.Count >= maxEnemies) return;
+            if (monsters.Count >= maxEnemies) return;
 
             spawnTimer += Time.deltaTime;
             if (spawnTimer >= spawnInterval)
@@ -32,7 +34,8 @@ public class DesertSpawner : MonoBehaviour
         Vector2 centerPosition = transform.position;
         float spawnRange = 1f;
         Vector2 spawnPosition = centerPosition + Random.insideUnitCircle * spawnRange;
-        EnemySpawner.Instance.GetEnemy(enemyTypes[randomIndex], spawnPosition);
+        GameObject m = EnemySpawner.Instance.GetEnemy(enemyTypes[randomIndex], spawnPosition);
+        monsters.Add(m);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

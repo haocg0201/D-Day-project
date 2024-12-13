@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/NewBorn.unity
     guid: c25082439f021714ebe2fd7d0995a1a9
   - enabled: 1
-    path: Assets/Scenes/Campain_Desert.unity
+    path: Assets/Scenes/Campaign_Desert.unity
     guid: be44e8224e83dbe4584467f04c19bdf2
   - enabled: 1
     path: Assets/Scenes/Campaign_Dark_Broken.unity
@@ -29,6 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SSV.unity
     guid: 852dd78bbebffb1408e1ba0f6b76f481
+  - enabled: 1
+    path: Assets/Scenes/Campaign_Ice_Winter.unity
+    guid: de68f77c452da4e6a919c5821703b43e
+  - enabled: 1
+    path: Assets/Scenes/Campaign_Swamp.unity
+    guid: 7acb5c5885f93ce448158a76631cea34
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0

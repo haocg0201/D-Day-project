@@ -4,12 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
-    [SerializeField] private const int SVVMAP = 7; // ssv
-    [SerializeField] private const int CAMA = 5; // ds
-    [SerializeField] private const int CAMB = 6; // d br k
-    [SerializeField] private const int CAMC = -1; // 
-    [SerializeField] private const int CAMD = -1; //
-    [SerializeField] private const int DUNGEON = -1; //
+    [SerializeField] private const string SVVMAP = "SSV"; // ssv
+    [SerializeField] private const string CAMA = "Campaign_Desert"; // ds
+    [SerializeField] private const string CAMB = "Campaign_Dark_Broken"; // d br k
+    [SerializeField] private const string CAMC = "Campaign_Ice_Winter"; // 
+    [SerializeField] private const string CAMD = "Campaign_Swamp"; //
+    [SerializeField] private const string DUNGEON = "0"; //
     [SerializeField] private Transform spawnPointCampA; //
     [SerializeField] private Transform spawnPointCampB;
     [SerializeField] private Transform spawnPointCampC;
@@ -29,9 +29,9 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")){
-            int sceneIndex = GetSceneIndex(gameObject.tag);
+            string sceneIndex = GetScene(gameObject.tag);
             Vector3 spawnHere = SetSpawnPoint(gameObject.tag);
-            if (sceneIndex != -1){
+            if (sceneIndex != "0"){
                 StartCoroutine(LoadSceneAndSetPlayerSpawnPoint(sceneIndex, spawnHere));
             }else{
                 // Map chưa sẵn sàng
@@ -39,9 +39,9 @@ public class Portal : MonoBehaviour
         }
     }
 
-private IEnumerator LoadSceneAndSetPlayerSpawnPoint(int sceneIndex, Vector3 spawnHere)
+private IEnumerator LoadSceneAndSetPlayerSpawnPoint(string sceneName, Vector3 spawnHere)
 {
-    AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneIndex);
+    AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
     while (!asyncLoad.isDone)
     {
         yield return null; 
@@ -59,7 +59,7 @@ private IEnumerator LoadSceneAndSetPlayerSpawnPoint(int sceneIndex, Vector3 spaw
     }
 }
 
-    private int GetSceneIndex(string tag){
+    private string GetScene(string tag){
         return tag switch
         {
             "CampA" => CAMA,
@@ -68,7 +68,7 @@ private IEnumerator LoadSceneAndSetPlayerSpawnPoint(int sceneIndex, Vector3 spaw
             "CampD" => CAMD,
             "Dungeon" => DUNGEON,
             "Svv" => SVVMAP,
-            _ => -1
+            _ => "0"
         };
     } 
 
