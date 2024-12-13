@@ -1,8 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DarkBrokenSpawner : MonoBehaviour
 {
     public int[] enemyTypes = {5, 6, 7}; // Danh sách các loại quái cần spawn (zom, vam, werew)
+    private List<GameObject> monsters = new List<GameObject>();
     public int maxEnemies = 50;
     public float spawnInterval = 0.5f;
     private float spawnTimer;
@@ -14,7 +16,7 @@ public class DarkBrokenSpawner : MonoBehaviour
         if(GameManager.Instance != null && GameManager.Instance.isGetQuest && !GameManager.Instance.isQuestDone){
             if (!playerInRange) return;
 
-            if (EnemySpawner.Instance.ActiveEnemies.Count >= maxEnemies) return;
+            if (monsters.Count >= maxEnemies) return;
 
             spawnTimer += Time.deltaTime;
             if (spawnTimer >= spawnInterval)
@@ -31,7 +33,8 @@ public class DarkBrokenSpawner : MonoBehaviour
         Vector2 centerPosition = transform.position;
         float spawnRange = 1f;
         Vector2 spawnPosition = centerPosition + Random.insideUnitCircle * spawnRange;
-        EnemySpawner.Instance.GetEnemy(enemyTypes[randomIndex], spawnPosition);
+        GameObject m = EnemySpawner.Instance.GetEnemy(enemyTypes[randomIndex], spawnPosition);
+        monsters.Add(m);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

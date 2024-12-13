@@ -37,6 +37,14 @@ public class SceneLoader : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    private void OnEnable() {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable() {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
     void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
@@ -63,8 +71,19 @@ public class SceneLoader : MonoBehaviour
         }
         if(scene.name == "SVV" || scene.name == "Campaign_Dark_Broken" || scene.name == "Campaign_Desert" || scene.name == "Campaign_Winter"){
             GameManager.Instance.SetStat();
+            Player.Instance.PlayerIdle();
+            if (Player.Instance != null)
+            {
+                Player.Instance.transform.position = new Vector2(0, 0);
+                Debug.LogError("Player instance set location.");
+            }
+            else
+            {
+                Debug.LogError("Player instance not found after scene load.");
+            }
             StartCounting();
         }
+        Player.Instance.isConsume = true;
     }
 
     public void LoadSceneBySceneName(string sceneName){
@@ -84,7 +103,8 @@ public class SceneLoader : MonoBehaviour
 
     private IEnumerator LoadSceneAsync(string sceneName){
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
-        while(!operation.isDone){
+        while (!operation.isDone)
+        {
             yield return null;
         }
     }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int def;
     [SerializeField] private int dmg;
     [SerializeField] private float survivability;
+    [SerializeField] private int mana;
+    [SerializeField] private int maxMana;
 
     [SerializeField] private int healthFromWeapon = 0;
     [SerializeField] private int defFromWeapon = 0;
@@ -27,6 +30,7 @@ public class GameManager : MonoBehaviour
     public int _mgCounter = 0;
     public int _rgCounter = 0;
     public bool isGetQuest = false;
+    public bool isHalfQuest = false;
     public bool isQuestDone = false;
 
 
@@ -73,6 +77,7 @@ public class GameManager : MonoBehaviour
         int defaultDef = 10;
         int defaultDmg = 50;
         float defaultSurvivability = 2f;
+        mana = 100;
 
         if (playerData.stat.level <= 0)
         {
@@ -89,24 +94,25 @@ public class GameManager : MonoBehaviour
         }
         // phần nâng cấp vũ khí + chỉ số tính sau nhé
         this.maxHealth = health;
+        this.maxMana = (int)mana;
     }
 
     public void SetWeaponStat(List<Weapon> weapons)
     {   
-        int h = 0;
-        int d = 0;
+        float h = 0;
+        float d = 0;
         float s = 0;
         if(weapons != null && weapons.Count > 0){
             foreach(Weapon weapon in weapons){
                 Weapon w = weapon.GetComponent<Weapon>();
                 if(GameManager.Instance != null){
-                    h += (int)w.wHealth / 2;
-                    d += (int)w.wDef / 2;
-                    s += w.wSvvability / 2; 
+                    h += w.wHealth / 1.2f;
+                    d += w.wDef / 1.2f;
+                    s += w.wSvvability / 1.2f; 
                 }
             }
-            this.healthFromWeapon = h;
-            this.defFromWeapon = d;
+            this.healthFromWeapon = (int)h;
+            this.defFromWeapon = (int)d;
             this.dmgFromWeapon = 100;
             this.survivabilityFromWeapon = s;
 
@@ -126,6 +132,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("GameManager Start");
         InitPlayerData();
         LoadGameData();
+        StartCoroutine(RegenHealthAndMana());
     }
 
     private void Update()
@@ -150,6 +157,7 @@ public class GameManager : MonoBehaviour
         _mgCounter = 0;
         _rgCounter = 0;
         isGetQuest = false;
+        isHalfQuest = false;
         isQuestDone = false;
     }
 
@@ -297,6 +305,8 @@ public class GameManager : MonoBehaviour
     public int Def { get { return def; } set { def = value; } }
     public int Dmg { get { return dmg; } set { dmg = value; } }
     public float Survivability { get { return survivability; } set { survivability = value; } }
+    public int Mana { get { return mana; } set { mana = value; } }
+    public int MaxMana { get { return maxMana; } set { maxMana = value; } }
     public int HealthFromWeapon
     {
         get { return healthFromWeapon; }
@@ -319,6 +329,24 @@ public class GameManager : MonoBehaviour
     {
         get { return survivabilityFromWeapon; }
         set { survivabilityFromWeapon = value; }
+    }
+
+    private IEnumerator RegenHealthAndMana()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1.5f); // Chờ 
+
+            // Hồi 2% máu và mana
+            health += (int)(maxHealth * (2 / 100f));
+            mana += (int)(maxMana * (2 / 100f));
+
+            // Đảm bảo không vượt quá giới hạn
+            health = Mathf.Min(health, maxHealth);
+            mana = Mathf.Min(mana, maxMana);
+
+            //Debug.Log($"Health: {health}/{maxHealth}, Mana: {mana}/{maxMana}");
+        }
     }
 
 }

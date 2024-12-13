@@ -21,24 +21,36 @@ public class WorldWhisperManager : MonoBehaviour
     public TextMeshProUGUI txtText1Lan, txtTextBayLen, txtTextThongBao;
 
     public void ShowWhisper(String txt){
-        txtTextThongBao.enabled = true;
+        txtTextThongBao.gameObject.SetActive(true);
         txtTextThongBao.text = txt;
     }
 
     public void OffShowWhisper(){
-        txtTextThongBao.enabled = false;
+        txtTextThongBao.gameObject.SetActive(false);
     }
 
     public void ResetWhisper(){
         txtTextThongBao.text = "";
         txtText1Lan.text = "";
         txtTextBayLen.text = "";
+        txtTextThongBao.gameObject.SetActive(false);
+        txtTextBayLen.gameObject.SetActive(false);
+        txtText1Lan.gameObject.SetActive(false);
     }
 
-    public void ShowMoveUpWhisper(String txt, float duration){
-        txtText1Lan.text = txt;
+    // public void ShowMoveUpWhisper(String txt, float duration){
+    //     txtText1Lan.gameObject.SetActive(true);
+    //     txtText1Lan.text = txt;
 
+    // }
+
+    public void TextBayLen(string text){
+        txtTextBayLen.gameObject.SetActive(true);
+        txtTextBayLen.text = text;
+        StartCoroutine(FadeOutText(txtTextBayLen, 3f));
     }
+
+
 
     private IEnumerator FadeOutText(TextMeshProUGUI txt, float duration)
     {
@@ -47,13 +59,13 @@ public class WorldWhisperManager : MonoBehaviour
 
         while (elapsedTime < duration)
         {
-            txt.transform.position += Vector3.up * Time.deltaTime; // Text di chuyển lên nèee
+            txt.transform.position += Vector3.up * Time.deltaTime * 3f; // Text di chuyển lên nèee
             elapsedTime += Time.deltaTime;
             float alpha = Mathf.Lerp(1f, 0f, elapsedTime / duration);
             txt.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
             yield return null;
         }
-
-        txt.enabled = false;
+        txt.color = originalColor;
+        txt.gameObject.SetActive(false);
     }
 }

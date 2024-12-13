@@ -89,10 +89,24 @@ public class Player : MonoBehaviour
     void OnEnable()
     {
         var playerInput = GetComponent<PlayerInput>();
-        playerInput.SwitchCurrentControlScheme("Any");
+
+        if (playerInput.devices.Count > 0)
+        {
+            if (playerInput.currentControlScheme == null)
+            {
+                playerInput.SwitchCurrentControlScheme("Keyboard&Mouse", Keyboard.current, Mouse.current);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("No devices connected. Unable to switch control scheme.");
+            playerInput.SwitchCurrentControlScheme(playerInput.currentControlScheme);
+        }
+
         playerInput.enabled = false;
         playerInput.enabled = true;
     }
+
 
     public void EquipWeapon(GameObject newWeapon)
     {
@@ -262,6 +276,9 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void PlayerIdle(){
+        animator.Play("Idle");
+    }
     void StartWalking()
     {
         if (!isWalking)
@@ -369,6 +386,21 @@ public class Player : MonoBehaviour
 //        if (health > 0 && !isExhausted) BackToBattle();GameManager.Instance.Health = health; // logic sai, tạm thời chưa dùng @@
     }
 
+    void UpdateMana(int mn)
+    {
+        int mana = GameManager.Instance.Mana;
+        int maxMana = GameManager.Instance.MaxMana;
+        mana += mn;
+        if (mana > maxMana){
+           mana = maxMana; 
+        } 
+
+        if (mana <= 0){
+            mana = 0;
+        } 
+        GameManager.Instance.Mana = mana;
+    }
+
     void ShowDamage(int damageToPlayer)
     {
         damageText.color = Color.red;
@@ -401,6 +433,10 @@ public class Player : MonoBehaviour
 
 
         // phần nâng cấp vũ khí + chỉ số tính sau nhé
+    }
+
+    public void GetManaBuff(int mana){
+        UpdateMana(mana);
     }
 
     private IEnumerator FadeOutText(float duration)

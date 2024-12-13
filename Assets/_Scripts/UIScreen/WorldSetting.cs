@@ -30,6 +30,7 @@ public class WorldSetting : MonoBehaviour
         if (currentScene.name != "NewBorn")
         {
             SceneLoader.Instance.LoadSceneBySceneName("NewBorn");
+            panelSetting.SetActive(false);
         }
         else
         {

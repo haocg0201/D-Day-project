@@ -23,10 +23,11 @@ public class DialogueCtrler : MonoBehaviour
         "..."
     };
     private int dialogueIndex = 0;
-    public float typingSpeed = 0.05f;
+    public float typingSpeed;
 
     void Start()
     {
+        typingSpeed = 0.05f;
         if (PlayerPrefs.GetInt("level") <= 1)
         {
             mainCanvas.gameObject.SetActive(true); 

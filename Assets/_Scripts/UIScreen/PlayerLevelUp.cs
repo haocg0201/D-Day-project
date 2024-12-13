@@ -6,12 +6,33 @@ using UnityEngine.UI;
 public class PlayerLevelUp : MonoBehaviour
 {
     public TextMeshProUGUI txtDef, txtPDef, txtHealth, txtPHealth, txtAtk, txtPAtk, txtSvvability, txtPSvvability,txtBiography, txtLv;
-    public Button btnPlayerLevelUp;
+    public Button btnPlayerLevelUp, btnClose;
     public GameObject lvlPanel;
     void Start()
     {
         btnPlayerLevelUp.onClick.AddListener(OnPlayerLevelUp);
+        btnClose.onClick.AddListener(OnClose);
         SystemInfo();
+    }
+
+    private void Awake() {
+        SystemInfo();
+    }
+    void OnEnable()
+    {
+        if(Player.Instance != null){
+            Player.Instance.isConsume = false;
+        }
+    }
+
+    private void OnDisable() {
+        OnClose();
+    }
+
+    void OnClose(){
+        if(Player.Instance != null){
+            Player.Instance.isConsume = true;
+        }
     }
 
     void SystemInfo(){
@@ -25,7 +46,7 @@ public class PlayerLevelUp : MonoBehaviour
             txtSvvability.text = GameManager.Instance.Survivability + " ";
             txtPSvvability.text =  $"+ {GameManager.Instance.SurvivabilityFromWeapon}";
             txtLv.text = $"Level hiện tại: {GameManager.Instance.playerData.stat.level}";
-            txtBiography.text = $"Hành trình trở về của nhân viên văn phòng mạnh nhất hiện tại.\n \n \n \n Số rune cần để tăng level bằng 100 + {GameManager.Instance.playerData.stat.level * 10}";
+            txtBiography.text = $"Hành trình trở về của nhân viên văn phòng mạnh nhất hiện tại.\n \n \n \n \n Số rune cần để tăng level bằng 100 + {GameManager.Instance.playerData.stat.level * 10}";
         }
     }
 
@@ -34,15 +55,20 @@ public class PlayerLevelUp : MonoBehaviour
             int lvlCost = GameManager.Instance.LvlCost();
             if(GameManager.Instance.playerData.stat.rune > lvlCost){
                 GameManager.Instance.OnPlayerLevelUp(lvlCost);
-                StartCoroutine(Wait(1.5f));
+                StartCoroutine(Wait(1f));
+            }else{
+                WorldWhisperManager.Instance.TextBayLen("Bạn không đủ rune để tăng level");
             }           
+        }else{
+            Debug.Log("GameManager.Instance is null");
         }
     }
 
     private IEnumerator Wait(float time){
         lvlPanel.SetActive(false);
-        SystemInfo();
         yield return new WaitForSeconds(time);
+        WorldWhisperManager.Instance.TextBayLen("Nâng cấp độ nhân vật thành công");
         lvlPanel.SetActive(true);
+        SystemInfo();
     }
 }
