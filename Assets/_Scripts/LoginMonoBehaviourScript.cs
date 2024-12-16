@@ -9,8 +9,9 @@ public class LoginMonoBehaviourScript : MonoBehaviour
     [SerializeField] private TMP_InputField _username;
     [SerializeField] private TMP_InputField _password;
     [SerializeField] private TMP_Text _notifMes;
-    [SerializeField] private Button _login;
-    [SerializeField] private Button _signup;
+    // [SerializeField] private Button _login;
+    // [SerializeField] private Button _signup;
+    // [SerializeField] private Button _fgpw;
     private bool isFirebaseInitialized = false;
     void Start()
     {
@@ -23,10 +24,16 @@ public class LoginMonoBehaviourScript : MonoBehaviour
         {
             Debug.Log("Firebase is not initialized yet!");
         }
+        if(AudioManager.Instance != null){
+            AudioManager.Instance.PlayMusic(AudioManager.Instance.backgroundMusic);
+        }
     }
 
     public void OnLoginButtonClicked()
     {
+        if(AudioManager.Instance != null){
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClickSound);
+        }
         if (!isFirebaseInitialized)
         {
             _notifMes.text = "Vui lòng chờ Firebase được khởi tạo!";
@@ -49,7 +56,7 @@ public class LoginMonoBehaviourScript : MonoBehaviour
                 OpenNewBornFormBySceneIndex();
                 break;
             case 0:
-                _notifMes.text = "Lỗi mạng, không phản hồi";
+                _notifMes.text = "Tài khoản mật khẩu không chính xác.";
                 break;
             case -1:
                 _notifMes.text = "Tài khoản mật khẩu không chính xác.";
@@ -58,7 +65,7 @@ public class LoginMonoBehaviourScript : MonoBehaviour
             //    _notifMes.text = "Lỗi truy xuất dữ liệu.";
             //    break;
             default:
-                _notifMes.text = "Lỗi không xác định.";
+                _notifMes.text = "Mạng chậm, lấy dữ liệu thất bại";
                 break;
         }
     }
@@ -69,13 +76,21 @@ public class LoginMonoBehaviourScript : MonoBehaviour
         LoadSignupFormBySceneIndex(2); // Signup Scene Index = 2
     }
 
-        public void OpenNewBornFormBySceneIndex()
+    public void OpenNewBornFormBySceneIndex()
     {
-        LoadSignupFormBySceneIndex(4); // NewBorn Scene Index = 3
+        LoadSignupFormBySceneIndex(4); // NewBorn Scene Index = 4
+    }
+
+    public void OpenFgPwFormBySceneIndex()
+    {
+        LoadSignupFormBySceneIndex(3); 
     }
 
     private void LoadSignupFormBySceneIndex(int index)
     {
+        if(AudioManager.Instance != null){
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClickSound);
+        }
         StartCoroutine(LoadSignupSceneAsync(index));
     }
 

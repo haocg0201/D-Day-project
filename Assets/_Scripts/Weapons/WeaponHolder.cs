@@ -47,7 +47,7 @@ public class WeaponHolder : MonoBehaviour
             }
             wInfoCanvas.gameObject.SetActive(true);
         }else{
-            Debug.Log("Ủa không tìm thấy vũ khí :v");
+            //Debug.Log("Ủa không tìm thấy vũ khí :v");
         }
     }
 
@@ -59,6 +59,7 @@ public class WeaponHolder : MonoBehaviour
     }
 
     void OnCloseWeapon(){
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         HideWeaponInfo();
     }
 
@@ -72,11 +73,14 @@ public class WeaponHolder : MonoBehaviour
 
     public void OnWeaponEquipment()
     {
+        if(AudioManager.Instance != null){
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClickSound);
+        }
         if (w != null && player != null)
         {
             GameObject weaponInstance = Instantiate(wType);
             player.EquipWeapon(weaponInstance);
-            Debug.Log("Đã trang bị vũ khí");
+            //Debug.Log("Đã trang bị vũ khí");
             Destroy(weaponInstance);
         }
         else
@@ -87,6 +91,13 @@ public class WeaponHolder : MonoBehaviour
     }
 
     public void OnEnhanceWeapon() {
+        if(AudioManager.Instance != null){
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClickSound);
+        }
+        if(GameManager.Instance != null && GameManager.Instance.playerData.stat.gem < 200){
+            WorldWhisperManager.Instance.TextBayLen("Bạn không đủ 200 nguyệt ngọc để nâng cấp");
+            return;
+        }
         if(w != null){
             if(lvlNow < 99){ 
                 PlayerData playerData = GameManager.Instance.GetPlayerData();
@@ -99,7 +110,6 @@ public class WeaponHolder : MonoBehaviour
                     GameManager.Instance.SaveAndUpdatePlayerDataFireBase();
                     Player.Instance.ExcuteToGameManager();
                     StartCoroutine(WaitForSecond(1.5f));
-
                 }
             }else{
                 // không nâng cấp được nữa (cap level)
@@ -111,7 +121,9 @@ public class WeaponHolder : MonoBehaviour
         
     }
 
-    private IEnumerator WaitForSecond(float duration){
+    private IEnumerator WaitForSecond(float duration)
+    {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.playerUpgradeSound);
         if(enhance != null){
             enhance.transform.position = w.transform.position;
             enhance.SetActive(true);

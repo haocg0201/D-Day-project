@@ -30,8 +30,10 @@ public class WelcomeScript : MonoBehaviour
         { 
             yield return null;
         }
+        if(AudioManager.Instance != null){
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.itemPickupSound);
+        }
         yield return new WaitForSeconds(2.5f);
-        SceneManager.LoadScene(1); // Login scene index = 1
-
+        SceneManager.LoadScene(1); 
     }
 }

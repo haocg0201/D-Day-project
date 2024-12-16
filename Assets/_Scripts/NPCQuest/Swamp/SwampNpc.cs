@@ -15,6 +15,9 @@ public class SwampNpc : MonoBehaviour
         npcSprite = GetComponent<SpriteRenderer>().sprite;
         SetDialogs();
         Debug.Log("ShinobiDesert Start");
+        // if(AudioManager.Instance != null){
+        //     AudioManager.Instance.PlaySFX(AudioManager.Instance.campD);
+        // }
     }
 
     void SetDialogs(){

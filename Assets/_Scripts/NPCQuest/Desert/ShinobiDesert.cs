@@ -16,6 +16,9 @@ public class ShinobiDesert : MonoBehaviour
         npcSprite = GetComponent<SpriteRenderer>().sprite;
         SetDialogs();
         Debug.Log("ShinobiDesert Start");
+        // if(AudioManager.Instance != null){
+        //     AudioManager.Instance.PlaySFX(AudioManager.Instance.campC);
+        // }
     }
 
     void SetDialogs(){

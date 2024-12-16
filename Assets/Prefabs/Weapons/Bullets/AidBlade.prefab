@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6478498652990874509}
   - component: {fileID: 6592510504007751772}
   - component: {fileID: 7265930465303648700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AidBlade
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -188,4 +188,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61aa64933ecb9d0478fcc4d400b0ee97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 1.5
+  lifeTime: 0.5

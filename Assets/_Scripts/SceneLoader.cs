@@ -8,13 +8,13 @@ public class SceneLoader : MonoBehaviour
     private float elapsedTime = 0f;
     private bool isCounting = false;
 
-    void StartCounting()
+    public void StartCounting()
     {
         elapsedTime = 0f;
         isCounting = true;
     }
 
-    void StopCounting()
+    public void StopCounting()
     {
         Debug.Log($"Thời gian đếm được: {elapsedTime} giây");
         elapsedTime = 0f;
@@ -43,6 +43,7 @@ public class SceneLoader : MonoBehaviour
 
     private void OnDisable() {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        StopCounting();
     }
 
     void OnDestroy()
@@ -55,35 +56,64 @@ public class SceneLoader : MonoBehaviour
         if (isCounting)
         {
             elapsedTime += Time.deltaTime;
+            //Debug.Log($"Elapsed Time: {elapsedTime} seconds");
         }
         
-        if(GameManager.Instance != null && GameManager.Instance.Health == 0){
-            GameManager.Instance.svvTime = elapsedTime;
-            StopCounting();
+        if(GameManager.Instance != null && GameManager.Instance.Health <= 0){
+            SetElapsedTime();
         }
         
+    }
+
+    public void SetElapsedTime(){
+        GameManager.Instance.svvTime = elapsedTime;
+        Debug.Log($"Time: {GameManager.Instance.svvTime}");
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode){
         Debug.Log($"Scene Loaded:{scene.name}");
         if(scene.name == "NewBorn"){
             EnemySpawner.Instance.ClearActiveEnemies();
+
         }
-        if(scene.name == "SVV" || scene.name == "Campaign_Dark_Broken" || scene.name == "Campaign_Desert" || scene.name == "Campaign_Winter"){
+        if(scene.name == "SVV" || scene.name == "Campaign_Dark_Broken" || scene.name == "Campaign_Desert" || scene.name == "Campaign_Winter" || scene.name == "Campaign_Swamp"){
             GameManager.Instance.SetStat();
             Player.Instance.PlayerIdle();
-            if (Player.Instance != null)
-            {
-                Player.Instance.transform.position = new Vector2(0, 0);
-                Debug.LogError("Player instance set location.");
-            }
-            else
-            {
-                Debug.LogError("Player instance not found after scene load.");
-            }
-            StartCounting();
         }
         Player.Instance.isConsume = true;
+        //Debug.Log($"Scene Loaded: {scene.name}");
+
+        switch (scene.name)
+        {
+            case "NewBorn":
+                AudioManager.Instance.PlayMusic(AudioManager.Instance.backgroundMusic);
+                break;
+
+            case "BossFight":
+                AudioManager.Instance.PlayMusic(AudioManager.Instance.bossFightMusic);
+                break;
+
+            case "SVV":
+                AudioManager.Instance.PlayMusic(AudioManager.Instance.svv);
+                StartCounting();
+                break;
+            case "Campaign_Dark_Broken":
+                AudioManager.Instance.PlayMusic(AudioManager.Instance.campA);
+                break;
+            case "Campaign_Desert":
+                AudioManager.Instance.PlayMusic(AudioManager.Instance.campB);
+                break;
+            case "Campaign_Winter":
+                AudioManager.Instance.PlayMusic(AudioManager.Instance.campC);
+                break;
+            case "Campaign_Swamp": 
+                AudioManager.Instance.PlayMusic(AudioManager.Instance.campD);
+                break;
+
+            default:
+                AudioManager.Instance.PlayMusic(AudioManager.Instance.backgroundMusic);
+                break;
+        }
     }
 
     public void LoadSceneBySceneName(string sceneName){

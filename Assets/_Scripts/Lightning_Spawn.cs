@@ -10,24 +10,40 @@ public class Lightning_Spawn : MonoBehaviour
     private GameObject[] instances = new GameObject[3]; // luu tru 3 gameobjects
 
     private bool isCooldown = false;
-    
+
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.B) && !isCooldown)
+
+        if (Input.GetKeyDown(KeyCode.E) && !isCooldown)
         {
-            StartCoroutine(CreateObjects());
-            
+            if (GameManager.Instance != null && GameManager.Instance.playerData.skill.skillB)
+            {
+                if (GameManager.Instance.Mana < 20)
+                {
+                    WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
+                    return;
+                }
+
+                Player.Instance.UpdateMana(-20);
+                StartCoroutine(CreateObjects());
+                for (int i = 0; i < instances.Length; i++)
+                {
+                    if (instances[i] != null)
+                        instances[i].transform.position = player.transform.position + positions[i];
+                }
+            }
+            else
+            {
+                WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
+            }
+
+
         }
 
-        for (int i = 0; i < instances.Length; i++)
-        {
-            if (instances[i] != null)
-                instances[i].transform.position = player.transform.position + positions[i];
-        }
     }
-    
+
 
     private IEnumerator CreateObjects()
     {
@@ -39,13 +55,13 @@ public class Lightning_Spawn : MonoBehaviour
                 instances[i] = Instantiate(Effect_Lightning, spawnPosition, Quaternion.identity);
                 Debug.Log("Lightning Ball active in 15 seconds!");
                 StartCoroutine(DestroyAfterTime(instances[i], 5f));
-                
+
             }
         }
         isCooldown = true;
         yield return new WaitForSeconds(10f);
         Debug.Log("Cooldown in 10 seconds!");
-        isCooldown = false ;
+        isCooldown = false;
     }
     private IEnumerator DestroyAfterTime(GameObject obj, float time)
     {

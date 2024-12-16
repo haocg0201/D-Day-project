@@ -54,16 +54,13 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rb;
     Animator animator;
-
-    bool isRunning;
     bool isWalking;
     bool isExhausted;
     bool isDisarmer = true;
     private float textHeight;
     private Weapon weapon;
     public bool isConsume = false;
-    
-    // public string playerName;
+    public bool isPlayerFoot = true;
      public PlayerData playerdata = new ();
     
 
@@ -158,7 +155,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator WaitingForGameManagerInit(){
         while (GameManager.Instance == null && GameManager.Instance.playerData == null){
-            Debug.Log("Waiting for GameManager and PlayerData are init-in...");
+            //Debug.Log("Waiting for GameManager and PlayerData are init-in...");
             yield return null;
         }
         //Debug.Log("PlayerData loaded successfully.");
@@ -191,7 +188,6 @@ public class Player : MonoBehaviour
         }
         // weapons.Add(new GameObject());
         isExhausted = false;
-        isRunning = false;
         playerdata = GameManager.Instance.GetPlayerData();
         isTakeDamage = true;
         isConsume = true;
@@ -200,6 +196,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         SByS();
+        Shoot();
     }
 
     void SByS(){
@@ -269,7 +266,7 @@ public class Player : MonoBehaviour
     // Skill_Ready to fight
     private void Shoot()
     {
-        if (Input.GetKeyDown(KeyCode.J) && timeSincelastshoot >= cooldownshoot)
+        if (Input.GetKeyDown(KeyCode.Y) && timeSincelastshoot >= cooldownshoot)
         {
             Instantiate(bullet, bulletPos.position, Quaternion.identity, transform);
             timeSincelastshoot = 0f;
@@ -295,7 +292,6 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         isWalking = false;
-        isRunning = true;
         animator.SetBool("isWalking", false);
         animator.SetBool("isRunning", true);
     }
@@ -330,6 +326,7 @@ public class Player : MonoBehaviour
     void OnMove(InputValue movementValue)
     {
         if(isConsume){
+            AudioManager.Instance?.PlaySFX(AudioManager.Instance.playerStepSound);
             movementInput = movementValue.Get<Vector2>();
         }else{
             movementInput = Vector2.zero;
@@ -342,10 +339,11 @@ public class Player : MonoBehaviour
         {
             float def = GameManager.Instance.Def;
             float health = GameManager.Instance.Health;
+            float maxHealth = GameManager.Instance.MaxHealth;
 
             float damageToPlayer = Mathf.Floor(damage - (damage * (def / 100f)));
 
-            float minDamage = health * 0.03f;
+            float minDamage = maxHealth * 0.03f;
 
             if (damageToPlayer < minDamage)
             {
@@ -355,15 +353,15 @@ public class Player : MonoBehaviour
             Debug.Log($"{playerData.username} take {damageToPlayer} damage while def = {def} and dmg input = {damage}");
 
             if (isExhausted) return;
-
             UpdateHealth((int)damageToPlayer);
-            ShowDamage((int)damageToPlayer);
+            ShowDamage("-" + damageToPlayer,Color.red);
         }
     }
 
     public void Recovery(){
         GameManager.Instance.Health = GameManager.Instance.MaxHealth;
         isExhausted = false;
+        isTakeDamage = true;
         animator.ResetTrigger("Exhausted");
     }
 
@@ -386,7 +384,7 @@ public class Player : MonoBehaviour
 //        if (health > 0 && !isExhausted) BackToBattle();GameManager.Instance.Health = health; // logic sai, tạm thời chưa dùng @@
     }
 
-    void UpdateMana(int mn)
+    public void UpdateMana(int mn)
     {
         int mana = GameManager.Instance.Mana;
         int maxMana = GameManager.Instance.MaxMana;
@@ -401,17 +399,19 @@ public class Player : MonoBehaviour
         GameManager.Instance.Mana = mana;
     }
 
-    void ShowDamage(int damageToPlayer)
+    void ShowDamage(string damageToPlayer,Color color)
     {
-        damageText.color = Color.red;
+        damageText.color = color;
         damageText.enabled = true;
-        damageText.text = "-" + damageToPlayer.ToString();
+        damageText.text = "-" + damageToPlayer;
         StartCoroutine(FadeOutText(2f));
     }
 
     private void Die()
     {
         animator.SetTrigger("Exhausted");
+        isTakeDamage = false;
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.playerExhaustedSound);
         isExhausted = true;
         RewardUICtrller rewardUICtrller = WorldWhisperManager.Instance.GetComponent<RewardUICtrller>();
         rewardUICtrller.rewardPanel.SetActive(true);
@@ -425,6 +425,7 @@ public class Player : MonoBehaviour
 
     public void GetHealBuff(int heal){
         UpdateHealth(-heal);
+        ShowDamage("+" + heal,Color.red);
         //if (isGospel)
         //{
         //    survivability += 1f;
@@ -437,6 +438,7 @@ public class Player : MonoBehaviour
 
     public void GetManaBuff(int mana){
         UpdateMana(mana);
+        ShowDamage("+" + mana,Color.blue);
     }
 
     private IEnumerator FadeOutText(float duration)
@@ -461,14 +463,31 @@ public class Player : MonoBehaviour
             if(isDisarmer){
                 UnEquipWeapon();
                 
-                StartCoroutine(HandleDisarmer());
+                StartCoroutine(HandleDisarmer(2f));
             }
         } 
+
+        if(other.CompareTag("Explore")) {
+            TakeDamage((int)GameManager.Instance.MaxHealth * 5/100);
+        }
     }
 
-    private IEnumerator HandleDisarmer() {
+    private IEnumerator HandleDisarmer(float time) {
         isDisarmer = false;
-        yield return new WaitForSeconds(2f); 
+        yield return new WaitForSeconds(time); 
         isDisarmer = true;
+    }
+
+    private IEnumerator FootOk(float time) {
+        isPlayerFoot = false;
+        yield return new WaitForSeconds(time); 
+        isPlayerFoot = true;
+    }
+
+    public void PlayFootSound(){
+        if(isPlayerFoot){
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.playerStepSound);
+        }
+        StartCoroutine(FootOk(1f));
     }
 }

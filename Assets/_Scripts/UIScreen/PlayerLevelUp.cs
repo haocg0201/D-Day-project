@@ -26,13 +26,13 @@ public class PlayerLevelUp : MonoBehaviour
     }
 
     private void OnDisable() {
-        OnClose();
-    }
-
-    void OnClose(){
         if(Player.Instance != null){
             Player.Instance.isConsume = true;
         }
+    }
+
+    void OnClose(){
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
     }
 
     void SystemInfo(){
@@ -51,6 +51,7 @@ public class PlayerLevelUp : MonoBehaviour
     }
 
     void OnPlayerLevelUp(){
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         if(GameManager.Instance != null){
             int lvlCost = GameManager.Instance.LvlCost();
             if(GameManager.Instance.playerData.stat.rune > lvlCost){
@@ -65,6 +66,7 @@ public class PlayerLevelUp : MonoBehaviour
     }
 
     private IEnumerator Wait(float time){
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.playerUpgradeSound);
         lvlPanel.SetActive(false);
         yield return new WaitForSeconds(time);
         WorldWhisperManager.Instance.TextBayLen("Nâng cấp độ nhân vật thành công");

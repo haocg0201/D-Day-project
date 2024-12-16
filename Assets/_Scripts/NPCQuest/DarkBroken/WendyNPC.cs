@@ -15,6 +15,9 @@ public class WendyNPC : MonoBehaviour
         npcSprite = GetComponent<SpriteRenderer>().sprite;
         SetDialogs();
         Debug.Log("ShinobiDesert Start");
+        // if(AudioManager.Instance != null){
+        //     AudioManager.Instance.PlaySFX(AudioManager.Instance.campA);
+        // }
     }
 
     void SetDialogs(){
@@ -29,7 +32,7 @@ public class WendyNPC : MonoBehaviour
         }else if(!GameManager.Instance.isQuestDone && GameManager.Instance.isGetQuest){
             dialogueLines.Add("Hãy cẩn thận nhé Onii~");
             Debug.Log("ShinobiDeser, is get quest: " + GameManager.Instance.isGetQuest);
-        }else if(GameManager.Instance.isQuestDone){
+        }else if(GameManager.Instance.isHalfQuest && GameManager.Instance.isQuestDone){
             dialogueLines.Add("Au mai gaa, Onii~ giỏi quá đi mất");
             dialogueLines.Add("Hi vọng tương lai gần, nơi đây sẽ khôi phục lại được vẻ đẹp vốn có của nó");
             dialogueLines.Add("Phải rồi, đây là thù lao dành cho Onii nhà ngươi");

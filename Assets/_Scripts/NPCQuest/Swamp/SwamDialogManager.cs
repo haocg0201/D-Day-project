@@ -67,12 +67,14 @@ public class SwamDialogManager : MonoBehaviour
 
     void OnBackLater()
     {
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         EndDialogue();
         return;
     }
 
     void OK()
     {   
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         GameManager.Instance.isGetQuest = true;
         questUI.SetActive(true);
         EndDialogue();  
@@ -80,6 +82,7 @@ public class SwamDialogManager : MonoBehaviour
 
     void Award(){
         // nhận thưởng
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         if(GameManager.Instance.isQuestDone){
             GameManager.Instance._mgCounter = 200;
             GameManager.Instance._rgCounter = 200;
@@ -92,11 +95,13 @@ public class SwamDialogManager : MonoBehaviour
     }
 
     void Close(){
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         EndDialogue();
     }
 
     public void DisplayNextSentence()
     {
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         if (sentences.Count == 0)
         {
             nextButton.gameObject.SetActive(false);

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpawnPoint : MonoBehaviour
 {
-        void Start()
+    void Start()
     {
         if(Player.Instance != null)
         {
