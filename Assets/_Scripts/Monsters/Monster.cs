@@ -189,23 +189,16 @@ public class Monster : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
             isTakeDame = true;
-            if (isTakeDame)
-            {
-                int dmg = GameManager.Instance.Dmg;
-                TakeDamage(dmg, Color.red);
+            if (isTakeDame){
+                int bulletLayer = other.gameObject.layer;
+                int baseDamage = GameManager.Instance.Dmg;
+
+                int finalDamage = CalculateDamage(baseDamage, bulletLayer);
+                
+                Debug.Log($"Monster Type {this.typeIndex} nhận {finalDamage} damage.");
+                TakeDamage(finalDamage, Color.red);
                 StartCoroutine(WaitForSecondsToTakeDame(0.3f));
-            }
-
-        }
-
-        if (other.CompareTag("Bullet"))
-        {
-            int bulletLayer = other.gameObject.layer;
-            int baseDamage = GameManager.Instance.Dmg;
-
-            int finalDamage = CalculateDamage(baseDamage, bulletLayer);
-            this.health -= finalDamage;
-            Debug.Log($"Monster Type {this.typeIndex} nhận {finalDamage} damage. HP còn lại: {health}");
+            }  
         }
 
         if (other.CompareTag("Player"))
