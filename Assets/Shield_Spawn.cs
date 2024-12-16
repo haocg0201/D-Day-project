@@ -10,16 +10,31 @@ public class Shield_Spawn : MonoBehaviour
 
 
     private bool isCooldown = false;
-    
+
 
 
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Q) && !isCooldown)
         {
-            StartCoroutine(CreateObjects());
-            
+            if (GameManager.Instance != null && GameManager.Instance.playerData.skill.skillA)
+            {
+                if (GameManager.Instance.Mana < 20)
+                {
+                    WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
+                    return;
+                }
+
+                Player.Instance.UpdateMana(-20);
+                StartCoroutine(CreateObjects());
+
+            }
+            else
+            {
+                WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
+            }
         }
     }
 

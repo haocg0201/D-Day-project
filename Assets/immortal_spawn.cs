@@ -20,20 +20,35 @@ public class immortal_spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !isCooldown)
+
+        if (Input.GetKeyDown(KeyCode.T) && !isCooldown)
         {
-            if (!isImmune)
+            if (GameManager.Instance != null && GameManager.Instance.playerData.skill.skillE)
             {
-                StartCoroutine(ActivateImmunity());
+                if (GameManager.Instance.Mana < 20)
+                {
+                    WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
+                    return;
+                }
+
+                Player.Instance.UpdateMana(-20);
+                if (!isImmune)
+                {
+                    StartCoroutine(ActivateImmunity());
+                }
+                if (isImmune)
+                {
+                    player.isTakeDamage = false;
+                    Debug.Log("Player is immune, no damage taken!");
+                    return;
+                }
             }
-            if (isImmune)
+            else
             {
-                player.isTakeDamage = false;
-                Debug.Log("Player is immune, no damage taken!");
-                return;
+                WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
             }
-            
         }
+
     }
     private IEnumerator ActivateImmunity()
     {
@@ -59,6 +74,6 @@ public class immortal_spawn : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Debug.Log("done");
         isCooldown = false;
-        
+
     }
 }

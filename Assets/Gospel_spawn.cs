@@ -17,13 +17,24 @@ public class Gospel_spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G) && !isCooldown)
+        
+        if (Input.GetKeyDown(KeyCode.R) && !isCooldown)
         {
-            if (!isGospel)
-            {
-                StartCoroutine(ActivateGospel());
+            if(GameManager.Instance != null && GameManager.Instance.playerData.skill.skillD){
+            if(GameManager.Instance.Mana < 20){
+                WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
+                return;
+            }
+                Player.Instance.UpdateMana(-20);
+                if (!isGospel)
+                {
+                    StartCoroutine(ActivateGospel());
+                }
+            }else{
+                WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
             }
         }
+        
     }
 
     private IEnumerator ActivateGospel()

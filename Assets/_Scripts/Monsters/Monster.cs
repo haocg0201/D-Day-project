@@ -13,23 +13,29 @@ public class Monster : MonoBehaviour
     public int attackDamage;
     public float survivability;
     public float size;
-    public List<string> dialogues; 
+    public List<string> dialogues;
     public int typeIndex; // phân loại quái, phân biệt
     public Animator animator;
 
     public bool isRunning;
     public bool isExhausted = false;
-    [SerializeField]private float attackRange;
+    [SerializeField] private float attackRange;
     private bool isOnCooldown;
     private bool isDead = false;
     private bool isAttacking;
     public float time;
+    private bool isTakeDame = false;
 
     Transform playerTransform;
     public TextMeshProUGUI damageText;
     Transform damageTextTransform;
     private float textHeight;
     public Image healthBar;
+
+    [Header("Tỉ lệ tăng/giảm damage")]
+    public float fireMultiplier = 1f;
+    public float waterMultiplier = 1f;
+    public float earthMultiplier = 1f;
 
     public virtual void Initialize(string monsterName, int health, int attackDamage, float survivability, float size, List<string> dialogues, int typeIndex)
     {
@@ -45,15 +51,16 @@ public class Monster : MonoBehaviour
 
     public virtual void Start()
     {
-        Initialize("Nowhere", 10000, 1000, 1f, 1.5f, new List<string>{"?","!!","$*&"},0);
-        if(Player.Instance != null){
+        Initialize("Nowhere", 10000, 1000, 1f, 1.5f, new List<string> { "?", "!!", "$*&" }, 0);
+        if (Player.Instance != null)
+        {
             playerTransform = Player.Instance.transform;
         }
-        
+
         animator = GetComponent<Animator>();
         transform.localScale = new Vector3(size, size, size);
         damageText = GetComponentInChildren<TextMeshProUGUI>();
-        if(damageText != null)
+        if (damageText != null)
         {
             damageTextTransform = damageText.transform;
         }
@@ -87,7 +94,7 @@ public class Monster : MonoBehaviour
                 isRunning = true;
                 animator.SetBool("isRunning", isRunning);
             }
-            MonsterStarePlayer();     
+            MonsterStarePlayer();
         }
         else
         {
@@ -96,12 +103,13 @@ public class Monster : MonoBehaviour
                 isRunning = false;
                 animator.SetBool("isRunning", isRunning);
             }
-
+            AudioManager.Instance?.PlaySFX(AudioManager.Instance.enemyAttackSound);
             AttackPlayer();
         }
     }
 
-    private void MonsterStarePlayer(){
+    private void MonsterStarePlayer()
+    {
         FacePlayer();
         transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, survivability * Time.deltaTime);
     }
@@ -114,8 +122,9 @@ public class Monster : MonoBehaviour
         {
             transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             damageTextTransform.localScale = new Vector3(-Mathf.Abs(damageTextTransform.localScale.x), damageTextTransform.localScale.y, damageTextTransform.localScale.z);
-            
-            if (hpChild != null){
+
+            if (hpChild != null)
+            {
                 hpChild.transform.localScale = new Vector3(-Mathf.Abs(hpChild.transform.localScale.x), hpChild.transform.localScale.y, hpChild.transform.localScale.z);
             }
         }
@@ -124,7 +133,8 @@ public class Monster : MonoBehaviour
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             damageTextTransform.localScale = new Vector3(Mathf.Abs(damageTextTransform.localScale.x), damageTextTransform.localScale.y, damageTextTransform.localScale.z);
 
-            if (hpChild != null){
+            if (hpChild != null)
+            {
                 hpChild.transform.localScale = new Vector3(Mathf.Abs(hpChild.transform.localScale.x), hpChild.transform.localScale.y, hpChild.transform.localScale.z);
             }
         }
@@ -135,14 +145,15 @@ public class Monster : MonoBehaviour
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
             animator.SetTrigger("Attack");
-            if(isAttacking){
+            if (isAttacking)
+            {
                 Player.Instance.TakeDamage(attackDamage);
             }
-            
+
             StartCoroutine(AttackCooldown());
         }
 
-        
+
     }
 
 
@@ -175,13 +186,30 @@ public class Monster : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Bullet")){
-            int dmg = GameManager.Instance.Dmg;
-            TakeDamage(dmg, Color.red);
-            StartCoroutine(WaitForSecondsToTakeDame(0.5f));
+        if (other.CompareTag("Bullet"))
+        {
+            isTakeDame = true;
+            if (isTakeDame)
+            {
+                int dmg = GameManager.Instance.Dmg;
+                TakeDamage(dmg, Color.red);
+                StartCoroutine(WaitForSecondsToTakeDame(0.3f));
+            }
+
         }
 
-        if(other.CompareTag("Player")){
+        if (other.CompareTag("Bullet"))
+        {
+            int bulletLayer = other.gameObject.layer;
+            int baseDamage = GameManager.Instance.Dmg;
+
+            int finalDamage = CalculateDamage(baseDamage, bulletLayer);
+            this.health -= finalDamage;
+            Debug.Log($"Monster Type {this.typeIndex} nhận {finalDamage} damage. HP còn lại: {health}");
+        }
+
+        if (other.CompareTag("Player"))
+        {
             isAttacking = true;
         }
     }
@@ -189,20 +217,28 @@ public class Monster : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         isAttacking = false;
+        if (other.CompareTag("Bullet"))
+        {
+            isTakeDame = false;
+        }
+
     }
 
-    IEnumerator WaitForSecondsToTakeDame(float time){
+    IEnumerator WaitForSecondsToTakeDame(float time)
+    {
         yield return new WaitForSeconds(time);
     }
 
     public void Die()
     {
         isDead = true; // Đánh dấu quái đã chết
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.enemyDeathSound);
         animator.SetTrigger("Exhausted");
-        StartCoroutine(WaitThenDie(1.5f)); 
+        StartCoroutine(WaitThenDie(1.5f));
     }
 
-    IEnumerator WaitThenDie(float time){
+    IEnumerator WaitThenDie(float time)
+    {
         yield return new WaitForSeconds(time);
         EnemySpawner.Instance.ReturnEnemy(typeIndex, gameObject);
     }
@@ -270,5 +306,99 @@ public class Monster : MonoBehaviour
         health = maxHealth;
         healthBar.fillAmount = health / maxHealth;
         transform.rotation = Quaternion.identity;
+    }
+
+    int CalculateDamage(int baseDamage, int bulletLayer)
+    {
+        float multiplier = 1f;
+
+        // typeIndex: golem = 0, orc = 1, skeleton = 2, slime = 3, troll = 4, vampire = 5, werewolf = 6, zombie = 7
+        switch (this.typeIndex)
+        {
+            case 0:
+                if (bulletLayer == LayerMask.NameToLayer("Fire"))
+                    multiplier = fireMultiplier * 1.2f;
+                else if (bulletLayer == LayerMask.NameToLayer("Water"))
+                    multiplier = waterMultiplier * 1.5f;
+                else if (bulletLayer == LayerMask.NameToLayer("Earth"))
+                    multiplier = earthMultiplier;
+                break;
+
+            case 1:
+                if (bulletLayer == LayerMask.NameToLayer("Fire"))
+                    multiplier = fireMultiplier * 0.9f;
+                else if (bulletLayer == LayerMask.NameToLayer("Water"))
+                    multiplier = waterMultiplier * 1.1f;
+                else if (bulletLayer == LayerMask.NameToLayer("Earth"))
+                    multiplier = earthMultiplier * 1.2f;
+                break;
+
+            case 2:
+                if (bulletLayer == LayerMask.NameToLayer("Fire"))
+                    multiplier = fireMultiplier * 1.2f;
+                else if (bulletLayer == LayerMask.NameToLayer("Water"))
+                    multiplier = waterMultiplier * 0.8f;
+                else if (bulletLayer == LayerMask.NameToLayer("Earth"))
+                    multiplier = earthMultiplier;
+                break;
+            case 3:
+                if (bulletLayer == LayerMask.NameToLayer("Fire"))
+                    multiplier = fireMultiplier * 1.2f;
+                else if (bulletLayer == LayerMask.NameToLayer("Water"))
+                    multiplier = waterMultiplier * 0.8f;
+                else if (bulletLayer == LayerMask.NameToLayer("Earth"))
+                    multiplier = earthMultiplier;
+                break;
+            case 4:
+                if (bulletLayer == LayerMask.NameToLayer("Fire"))
+                    multiplier = fireMultiplier * 1.2f;
+                else if (bulletLayer == LayerMask.NameToLayer("Water"))
+                    multiplier = waterMultiplier * 0.8f;
+                else if (bulletLayer == LayerMask.NameToLayer("Earth"))
+                    multiplier = earthMultiplier;
+                break;
+            case 5:
+                if (bulletLayer == LayerMask.NameToLayer("Fire"))
+                    multiplier = fireMultiplier * 1.2f;
+                else if (bulletLayer == LayerMask.NameToLayer("Water"))
+                    multiplier = waterMultiplier * 0.8f;
+                else if (bulletLayer == LayerMask.NameToLayer("Earth"))
+                    multiplier = earthMultiplier;
+                break;
+            case 6:
+                if (bulletLayer == LayerMask.NameToLayer("Fire"))
+                    multiplier = fireMultiplier * 1.2f;
+                else if (bulletLayer == LayerMask.NameToLayer("Water"))
+                    multiplier = waterMultiplier * 0.8f;
+                else if (bulletLayer == LayerMask.NameToLayer("Earth"))
+                    multiplier = earthMultiplier;
+                break;
+            case 7:
+                if (bulletLayer == LayerMask.NameToLayer("Fire"))
+                    multiplier = fireMultiplier * 1.2f;
+                else if (bulletLayer == LayerMask.NameToLayer("Water"))
+                    multiplier = waterMultiplier * 0.8f;
+                else if (bulletLayer == LayerMask.NameToLayer("Earth"))
+                    multiplier = earthMultiplier;
+                break;
+            case 8:
+                if (bulletLayer == LayerMask.NameToLayer("Fire"))
+                    multiplier = fireMultiplier * 1.2f;
+                else if (bulletLayer == LayerMask.NameToLayer("Water"))
+                    multiplier = waterMultiplier * 0.8f;
+                else if (bulletLayer == LayerMask.NameToLayer("Earth"))
+                    multiplier = earthMultiplier;
+                break;
+
+            default:
+                multiplier = 1f;
+                break;
+        }
+
+        // Tính damage với multiplier và ngẫu nhiên +/- 20
+        int randomVariance = Random.Range(-20, 21);
+        int finalDamage = Mathf.RoundToInt(baseDamage * multiplier) + randomVariance;
+
+        return Mathf.Max(finalDamage, 0); // Đảm bảo damage không âm
     }
 }

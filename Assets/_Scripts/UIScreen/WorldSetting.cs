@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class WorldSetting : MonoBehaviour
 {
-    public Button btnPause, btnClose, btnSound, btnControl, btnLogout, btnExit, btnSaveToFireBase, btnHome;
-    public GameObject panelSetting, panelSound, panelControl;
+    public Button btnPause, btnClose, btnSound, btnControl, btnLogout, btnExit, btnSaveToFireBase, btnHome, btnAboutUs;
+    public GameObject panelSetting, panelSound, panelControl, panelAboutUs;
     public TextMeshProUGUI txtMoonG, txtRuneG;
 //    public GameObject[] tabs;
 
@@ -21,11 +21,28 @@ public class WorldSetting : MonoBehaviour
         btnExit.onClick.AddListener(OnExit);
         btnSaveToFireBase.onClick.AddListener(OnSaveToFireBase);
         btnHome.onClick.AddListener(OnHomeClick);
+        btnAboutUs.onClick.AddListener(OnAboutUs);
         UpdateUIGem();
+    }
+
+    private void OnEnable() {
+        Player.Instance.isConsume = false;
+    }
+    void OnDisable()
+    {
+        Player.Instance.isConsume = true;
+    }
+
+    public void OnAboutUs(){
+        SoundEffect();
+        panelAboutUs.SetActive(true);
+        panelSound.SetActive(false);
+        panelControl.SetActive(false);
     }
 
     public void OnHomeClick(){
         UnityEngine.SceneManagement.Scene currentScene = SceneManager.GetActiveScene();
+        SoundEffect();
 
         if (currentScene.name != "NewBorn")
         {
@@ -45,32 +62,45 @@ public class WorldSetting : MonoBehaviour
     }
 
     public void OnPause(){
+        SoundEffect();
         GameManager.Instance.PauseGame(true);
         panelSetting.SetActive(true);
         panelSound.SetActive(true);
     }
 
     public void OnClose(){
+        SoundEffect();
         GameManager.Instance.PauseGame(false);
         panelSetting.SetActive(false);
     }
     public void OnControl(){
+        SoundEffect();
         panelSound.SetActive(false);
         panelControl.SetActive(true);
+        panelAboutUs.SetActive(false);
     }
 
     public void OnSound(){
+        SoundEffect();
         panelSound.SetActive(true);
         panelControl.SetActive(false);
+        panelAboutUs.SetActive(false);
     }
 
     public void OnLogout(){
-
+        SoundEffect();
+        
     }
     public void OnExit(){
+        SoundEffect();
         SceneLoader.Instance.QuitGame();
     }
     public void OnSaveToFireBase(){
+        SoundEffect();
         GameManager.Instance.SaveAndUpdatePlayerDataFireBase();
+    }
+
+    private void SoundEffect(){
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClickSound);
     }
 }

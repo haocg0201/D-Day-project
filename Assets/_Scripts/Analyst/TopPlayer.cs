@@ -72,6 +72,7 @@ public class TopLevelPlayer : MonoBehaviour
     }
 
     void OnClose(){
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         Player.Instance.isConsume = true;
         panelTop.SetActive(false);
     }
@@ -103,6 +104,7 @@ public class TopLevelPlayer : MonoBehaviour
     // Hàm hiển thị người chơi theo category
     private void DisplayPlayersBy(string category)
     {
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         // Xóa các item cũ
         foreach (Transform child in content)
         {

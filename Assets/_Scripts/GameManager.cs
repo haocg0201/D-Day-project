@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         if (playerData != null)
         {
             SetStat();
-            Debug.Log($"un: {playerData.username}, lvl: {playerData.stat.level} khi khởi tạo");
+//            Debug.Log($"un: {playerData.username}, lvl: {playerData.stat.level} khi khởi tạo");
         }
         else
         {
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log($"un: {playerData.username}, lvl: {playerData.stat.level} khi player đã tồn tại");
+//           Debug.Log($"un: {playerData.username}, lvl: {playerData.stat.level} khi player đã tồn tại");
         }
 
     }
@@ -211,7 +211,9 @@ public class GameManager : MonoBehaviour
         PlayerPrefsManager.SavePlayerDataToPlayerPrefsWithoutPlayerId(data);
         InitPlayerData();
         SetStat();
+        SaveAndUpdatePlayerDataFireBase();
         Debug.Log("Dữ liệu người chơi đã được lưu thành công.");
+        
     }
 
 
@@ -223,12 +225,70 @@ public class GameManager : MonoBehaviour
         {
             await FirebaseManager.Instance.UpdatePlayerData(playerId, playerData);
         }
+        GetPlayerData();
     }
 
     public PlayerData GetPlayerData()
     {
         return playerData;
     }
+
+    public bool IsTenPercentChance()
+    {
+        int randomNumber = Random.Range(1, 101); 
+        return randomNumber <= 10;
+    }
+
+    public void SkillAward(string campaign)
+    {
+        string checkvar = "...";
+        if (IsTenPercentChance())
+        {
+            switch (campaign)
+            {
+                case "mapA":
+                    if (!playerData.skill.skillB)
+                    {
+                        playerData.skill.skillB = true;
+                        checkvar = "Bạn vừa mở khóa 1 kỹ năng mạnh mẽ: Lighting ball";
+                    }
+                    break;
+
+                case "mapB":
+                    if (!playerData.skill.skillC)
+                    {
+                        playerData.skill.skillC = true;
+                        checkvar = "Bạn vừa mở khóa 1 kỹ năng mạnh mẽ: Iron will";
+                    }
+                    break;
+
+                case "mapC":
+                    if (!playerData.skill.skillD)
+                    {
+                        playerData.skill.skillD = true;
+                        checkvar = "Bạn vừa mở khóa 1 kỹ năng mạnh mẽ: Gospel";
+                    }
+                    break;
+
+                case "mapD":
+                    if (!playerData.skill.skillE)
+                    {
+                        playerData.skill.skillE = true;
+                        checkvar = "Bạn vừa mở khóa 1 kỹ năng mạnh mẽ: Immortal curse";
+                    }
+                    break;
+
+                default:
+                    checkvar = "Kỹ năng này tới từ nowhere";
+                    break;
+            }
+        }else{
+            checkvar = "Chúc bạn lần tới may mắn";
+        }
+        WorldWhisperManager.Instance.TextBayLen(checkvar);
+
+    }
+
 
     public void UpdateMoonG()
     {
@@ -239,19 +299,26 @@ public class GameManager : MonoBehaviour
     public void ToSubTract(int quanlity)
     {
         this.playerData.stat.gem -= quanlity;
+        if (this.playerData.stat.gem < 0){
+            this.playerData.stat.gem = 0;
+        }
         SaveAndUpdatePlayerData(playerData);
     }
-
-
 
     public void UpdateRune()
     {
         this.playerData.stat.rune += _rgCounter;
+        if (this.playerData.stat.rune < 0){
+            this.playerData.stat.rune = 0;
+        }
         SaveAndUpdatePlayerData(playerData);
     }    
     
     public void OnPlayerLevelUp(int quantity){
         this.playerData.stat.rune -= quantity;
+        if (this.playerData.stat.rune < 0){
+            this.playerData.stat.rune = 0;
+        }
         this.playerData.stat.level += 1;
         SaveAndUpdatePlayerData(playerData);
     }
@@ -267,6 +334,16 @@ public class GameManager : MonoBehaviour
         int remainingSeconds = seconds % 60;  // đoạn trên thấy thừa thãi quá, thôi kệ vậy @@
         string survvTime = minutes.ToString("00") + ":" + remainingSeconds.ToString("00");
         GetHigherSvvTime(survvTime, playerData.survival);
+        SaveAndUpdatePlayerData(playerData);
+    }
+
+    public void TraningTime(string campaign)
+    {
+        int seconds = (int)svvTime;
+        int minutes = seconds / 60;
+        int remainingSeconds = seconds % 60;  // đoạn trên thấy thừa thãi quá, thôi kệ vậy @@
+        string survvTime = minutes.ToString("00") + ":" + remainingSeconds.ToString("00");
+        GetCampaignTime(survvTime, playerData.survival);
         SaveAndUpdatePlayerData(playerData);
     }
 
@@ -297,6 +374,66 @@ public class GameManager : MonoBehaviour
         {
             playerData.survival = time1;
         }
+    }
+
+    public void GetCampaignTime(string time1, string campaign)
+    {
+        string time = "";
+        time = campaign switch
+        {
+            "mapA" => playerData.campaign.mapA,
+            "mapB" => playerData.campaign.mapB,
+            "mapC" => playerData.campaign.mapC,
+            "mapD" => playerData.campaign.mapD,
+            _ => "00:00",
+        };
+        int ConvertToSeconds(string time)
+        {
+            var parts = time.Split(':');
+            int minutes = int.Parse(parts[0]);
+            int seconds = int.Parse(parts[1]);
+            return minutes * 60 + seconds;
+        }
+
+        // So sánh hai thời gian
+        int seconds1 = ConvertToSeconds(time1);
+        int seconds2 = ConvertToSeconds(time);
+
+    if (seconds1 < seconds2)
+    {
+        switch(campaign)
+        {
+            case "mapA": playerData.campaign.mapA = time1; break;
+            case "mapB": playerData.campaign.mapB = time1; break;
+            case "mapC": playerData.campaign.mapC = time1; break;
+            case "mapD": playerData.campaign.mapD = time1; break;
+            default: break;
+        }
+    }
+    // Cập nhật lại time nếu time1 nhỏ hơn
+    else if (seconds1 > seconds2)
+    {
+        switch(campaign)
+        {
+            case "mapA": playerData.campaign.mapA = time; break;
+            case "mapB": playerData.campaign.mapB = time; break;
+            case "mapC": playerData.campaign.mapC = time; break;
+            case "mapD": playerData.campaign.mapD = time; break;
+            default: break;
+        }
+    }
+    else
+    {
+        // Nếu thời gian bằng nhau, giữ nguyên hoặc chọn time1
+        switch(campaign)
+        {
+            case "mapA": playerData.campaign.mapA = time1; break;
+            case "mapB": playerData.campaign.mapB = time1; break;
+            case "mapC": playerData.campaign.mapC = time1; break;
+            case "mapD": playerData.campaign.mapD = time1; break;
+            default: break;
+        }
+    }
     }
 
     public string PlayerId { get { return playerId; } set { playerId = value; } }

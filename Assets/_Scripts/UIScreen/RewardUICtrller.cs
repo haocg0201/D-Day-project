@@ -31,14 +31,16 @@ public class RewardUICtrller : MonoBehaviour
     }
 
     public void OnReplay(){
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         if(Player.Instance != null && GameManager.Instance != null){
-            rewardPanel.SetActive(false);
             GameManager.Instance.PauseGame(false);
             EnemySpawner.Instance.ClearActiveEnemies();
             Player.Instance.Recovery();
+            rewardPanel.SetActive(false);
         }  
     }
     public void OnHome(){
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         if(Player.Instance != null && GameManager.Instance != null){
             
             Player.Instance.Recovery();
@@ -46,6 +48,7 @@ public class RewardUICtrller : MonoBehaviour
             GameManager.Instance.UpdateMoonG();
             GameManager.Instance.UpdateRune();
             GameManager.Instance.UpdateTraningTime();
+            GameManager.Instance.SaveAndUpdatePlayerDataFireBase();
             rewardPanel.SetActive(false);
             SceneLoader.Instance.LoadSceneBySceneName("NewBorn");
         }

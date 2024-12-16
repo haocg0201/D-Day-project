@@ -11,12 +11,14 @@ public class DarkBrokenDialogQuestManager : MonoBehaviour
     public Image npcImage, playerImage;
     public TextMeshProUGUI dialogueText;
     public Button nextButton, btnClose, btnBackLater, btnOK, btnAward;
+    public Transform pA, pB, pC;
+    public GameObject cookie;
+    GameObject cookieNow;
 
     private Queue<string> sentences;
 
     void Start()
     {
-        
         sentences = new Queue<string>();
         nextButton.onClick.AddListener(DisplayNextSentence);
         btnBackLater.onClick.AddListener(OnBackLater);
@@ -68,36 +70,58 @@ public class DarkBrokenDialogQuestManager : MonoBehaviour
 
     void OnBackLater()
     {
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
+
         EndDialogue();
         return;
     }
 
     void OK()
     {   
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClickSound);
         GameManager.Instance.isGetQuest = true;
         questUI.SetActive(true);
+        if(cookieNow == null){
+            SpawnRandomCookie();
+        }
+        SceneLoader.Instance.StartCounting();
         EndDialogue();  
     }
 
     void Award(){
         // nhận thưởng
-        if(GameManager.Instance.isQuestDone){
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
+        if(GameManager.Instance.isHalfQuest && GameManager.Instance.isQuestDone){
+            SceneLoader.Instance.SetElapsedTime();
+            GameManager.Instance.TraningTime("mapB");
+            SceneLoader.Instance.StopCounting();
+            GameManager.Instance.SkillAward("mapB");
             GameManager.Instance._mgCounter = 200;
             GameManager.Instance._rgCounter = 200;
             GameManager.Instance.UpdateMoonG();
             GameManager.Instance.UpdateRune();
             GameManager.Instance.ResetTheCounter();
-        }
-        nextButton.gameObject.SetActive(false);
-        EndDialogue();
+            
+            ResetCookie();
+            questUI.SetActive(false);
+            nextButton.gameObject.SetActive(false);
+            EndDialogue();
+        } 
     }
 
     void Close(){
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         EndDialogue();
+    }
+
+    void ResetCookie(){
+        Destroy(cookieNow);
+        cookieNow = null;
     }
 
     public void DisplayNextSentence()
     {
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         if (sentences.Count == 0)
         {
             nextButton.gameObject.SetActive(false);
@@ -123,5 +147,12 @@ public class DarkBrokenDialogQuestManager : MonoBehaviour
         ResetButton();
         Player.Instance.isConsume = true;
         dialogueUI.SetActive(false);
+    }
+
+    public void SpawnRandomCookie()
+    {
+        Transform[] positions = { pA, pB, pC };
+        Transform randomPosition = positions[Random.Range(0, positions.Length)];
+        cookieNow = Instantiate(cookie, randomPosition.position, Quaternion.identity);
     }
 }

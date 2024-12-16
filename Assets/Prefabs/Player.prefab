@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 8413811757744329778}
   - component: {fileID: 6589659913722060779}
   - component: {fileID: 3831670775048998818}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -615,6 +615,7 @@ MonoBehaviour:
   posLeft: {fileID: 5346725698713968777}
   posTopMid: {fileID: 5018413514613737530}
   posRight: {fileID: 6435215148853494281}
+  isConsume: 0
   playerdata:
     username: 
     password: 

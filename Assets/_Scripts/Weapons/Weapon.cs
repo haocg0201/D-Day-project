@@ -115,6 +115,13 @@ public class Weapon : MonoBehaviour
                 }
 
                 if(Input.GetMouseButtonUp(0)){
+                    if(Player.Instance.isConsume){
+                        if(wCode == "akm" || wCode == "pistol"){
+                        AudioManager.Instance?.PlaySFX(AudioManager.Instance.bulletSound);
+                        }else{
+                            AudioManager.Instance?.PlaySFX(AudioManager.Instance.weaponShootSound);
+                        }
+                    }
                     animator.SetBool("isShooting", false);
                 }
             }

@@ -114,7 +114,7 @@ public class FirebaseManager : MonoBehaviour
             Debug.LogError("Lỗi khi truy xuất dữ liệu: " + ex);
             return 0; // khai ra là timeout cho đỡ lộ dùng free firebase realtime XD
         }
-        Debug.LogError("Lỗi khi truy xuất dữ liệu: ???");
+        Debug.Log("Lỗi khi truy xuất dữ liệu: ???");
         return 0;
     }
 
@@ -138,7 +138,7 @@ public class FirebaseManager : MonoBehaviour
                 stat = new PlayerStat { level = 1, gem = 10000, rune = 10000 },
                 skill = new PlayerSkill
                 {
-                    skillA = false,
+                    skillA = true,
                     skillB = false,
                     skillC = false,
                     skillD = false,

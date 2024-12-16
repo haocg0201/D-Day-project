@@ -21,6 +21,7 @@ public class DisplayTopPlayer : MonoBehaviour
     }
 
     void OnClose(){
+        AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         Player.Instance.isConsume = true;
         panelTopPlayer.SetActive(false);
     }

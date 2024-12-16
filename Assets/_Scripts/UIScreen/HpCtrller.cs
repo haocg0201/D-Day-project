@@ -24,6 +24,6 @@ public class HpCtrller : MonoBehaviour
         manaBar.fillAmount = (float)currentManaValue / maxManaValue;
         manaText.text = currentManaValue.ToString() + "/" + maxManaValue.ToString();
 
-        lvText.text = "Lv: " + GameManager.Instance.playerData.stat.level.ToString();
+        lvText.text = "Lv:   " + GameManager.Instance.playerData.stat.level.ToString();
     }
 }
