@@ -18,13 +18,17 @@ public class KingEclipseNPC : MonoBehaviour
     public bool isFlipped = false;
 
     public bool isWalking = false;
+    public bool isTakeDame = true;
     public bool isAttack = false;
     public bool isExhausted = false;
     private bool isDead = false;
     public bool isEnrage = false;
     public Vector3 attackOffset;
-    public float attackRange = 11f;
+    public float attackRange = 3.5f;
     public LayerMask attackMask;
+    public GameObject panelHp;
+    public int dmgEnrage;
+    King_HP king_HP;
 
     Transform player;
     KingWeaponAttack kingWeapon;
@@ -55,6 +59,8 @@ public class KingEclipseNPC : MonoBehaviour
         attackMask = LayerMask.GetMask("Player");
         attackOffset = new Vector3(3f, -1f, 0);
         kingWeapon = GetComponent<KingWeaponAttack>();
+        king_HP = panelHp.GetComponent<King_HP>();
+        dmgEnrage = Mathf.RoundToInt(attackDamage * 1.5f);
     }
 
     public void FacePlayer()
@@ -146,14 +152,6 @@ public class KingEclipseNPC : MonoBehaviour
     }
 
 
-    // private IEnumerator AttackCooldown()
-    // {
-    //     isOnCooldown = true;
-    //     yield return new WaitForSeconds(1f);
-    //     isOnCooldown = false;
-
-    // }
-
     // public void TakeDamage(int damage, Color color)
     // {
     //     damageText.color = color;
@@ -173,27 +171,27 @@ public class KingEclipseNPC : MonoBehaviour
     //     healthBar.fillAmount = (float)health / maxHealth;
     // }
 
-    // void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if(other.CompareTag("Bullet")){
-    //         int dmg = GameManager.Instance.Dmg;
-    //         TakeDamage(dmg, Color.red);
-    //         StartCoroutine(WaitForSecondsToTakeDame(0.5f));
-    //     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(isTakeDame){
+            if(other.CompareTag("Bullet")){
+                int dmg = GameManager.Instance.Dmg + Random.Range(-20,20);
+                king_HP.TakeDamage(dmg);
+                StartCoroutine(WaitForSecondsToTakeDame(0.9f));
+            }
+        }      
+    }
 
-    //     if(other.CompareTag("Player")){
-    //         isAttacking = true;
-    //     }
-    // }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        //isTakeDame = false;
+    }
 
-    // void OnTriggerExit2D(Collider2D other)
-    // {
-    //     isAttacking = false;
-    // }
-
-    // IEnumerator WaitForSecondsToTakeDame(float time){
-    //     yield return new WaitForSeconds(time);
-    // }
+    IEnumerator WaitForSecondsToTakeDame(float time){
+        isTakeDame = false;
+        yield return new WaitForSeconds(time);
+        isTakeDame = true;
+    }
 
     // public void Die()
     // {
@@ -246,17 +244,21 @@ public class KingEclipseNPC : MonoBehaviour
     // {
     //     float elapsedTime = 0f;
     //     Color originalColor = damageText.color;
+    //     Vector3 startPosition = damageText.transform.position;
+    //     Vector3 endPosition = startPosition + Vector3.up * 1f; 
 
     //     while (elapsedTime < duration)
     //     {
-    //         damageTextTransform.position += Vector3.up * Time.deltaTime; // Text di chuyển lên nèee
-    //         elapsedTime += Time.deltaTime;
+    //         damageText.transform.position = Vector3.Lerp(startPosition, endPosition, elapsedTime / duration);
     //         float alpha = Mathf.Lerp(1f, 0f, elapsedTime / duration);
     //         damageText.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+
+    //         elapsedTime += Time.deltaTime;
     //         yield return null;
     //     }
 
     //     damageText.enabled = false;
+    //     damageText.transform.position = startPosition;
     // }
 
     // public void ResetMonster()

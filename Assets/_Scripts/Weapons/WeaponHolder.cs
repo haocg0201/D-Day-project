@@ -131,7 +131,7 @@ public class WeaponHolder : MonoBehaviour
         } 
         yield return new WaitForSeconds(duration);
         enhance.SetActive(false);
-        //Debug.Log("Đã nâng cấp thành công");
         ShowWeaponInfo();
+        WorldWhisperManager.Instance.TextBayLen("Nâng cấp thành công");
     }
 }

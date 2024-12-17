@@ -7,6 +7,8 @@ public class SceneLoader : MonoBehaviour
     public static SceneLoader Instance { get; private set;}
     private float elapsedTime = 0f;
     private bool isCounting = false;
+    // private int atFirstDmg;
+    // private float atFirstSvvability;
 
     public void StartCounting()
     {
@@ -17,13 +19,8 @@ public class SceneLoader : MonoBehaviour
     public void StopCounting()
     {
         Debug.Log($"Thời gian đếm được: {elapsedTime} giây");
-        elapsedTime = 0f;
+        GameManager.Instance.svvTime = elapsedTime;
         isCounting = false;
-    }
-
-    void Start()
-    {
-        elapsedTime = 0f;
     }
 
     void Awake()
@@ -35,15 +32,29 @@ public class SceneLoader : MonoBehaviour
             Destroy(gameObject);    
         }
         SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded; 
+        
+    }
+
+    
+
+    public static void DestroyInstance()
+    {
+        if (Instance != null)
+        {
+            Destroy(Instance.gameObject);
+            Instance = null;
+        }
     }
 
     private void OnEnable() {
         SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded; 
     }
 
     private void OnDisable() {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-        StopCounting();
+        SceneManager.sceneUnloaded -= OnSceneUnloaded; 
     }
 
     void OnDestroy()
@@ -56,10 +67,12 @@ public class SceneLoader : MonoBehaviour
         if (isCounting)
         {
             elapsedTime += Time.deltaTime;
-            //Debug.Log($"Elapsed Time: {elapsedTime} seconds");
+            //Debug.Log("Elapsed Time: " + elapsedTime);
+        }else{
+
         }
         
-        if(GameManager.Instance != null && GameManager.Instance.Health <= 0){
+        if(GameManager.Instance.Health <= 0 && !isCounting){
             SetElapsedTime();
         }
         
@@ -67,18 +80,22 @@ public class SceneLoader : MonoBehaviour
 
     public void SetElapsedTime(){
         GameManager.Instance.svvTime = elapsedTime;
-        Debug.Log($"Time: {GameManager.Instance.svvTime}");
+        //Debug.Log($"Time: {GameManager.Instance.svvTime}");
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+        // int atFirstDmg = GameManager.Instance.Dmg;
+        // float atFirstSvvability = GameManager.Instance.Survivability;
+    
         Debug.Log($"Scene Loaded:{scene.name}");
         if(scene.name == "NewBorn"){
             EnemySpawner.Instance.ClearActiveEnemies();
 
         }
-        if(scene.name == "SVV" || scene.name == "Campaign_Dark_Broken" || scene.name == "Campaign_Desert" || scene.name == "Campaign_Winter" || scene.name == "Campaign_Swamp"){
+        if(scene.name == "SSV" || scene.name == "Campaign_Dark_Broken" || scene.name == "Campaign_Desert" || scene.name == "Campaign_Winter" || scene.name == "Campaign_Swamp"){
             GameManager.Instance.SetStat();
             Player.Instance.PlayerIdle();
+            StartCounting();
         }
         Player.Instance.isConsume = true;
         //Debug.Log($"Scene Loaded: {scene.name}");
@@ -87,6 +104,8 @@ public class SceneLoader : MonoBehaviour
         {
             case "NewBorn":
                 AudioManager.Instance.PlayMusic(AudioManager.Instance.backgroundMusic);
+                // atFirstDmg = GameManager.Instance.Dmg;
+                // atFirstSvvability = GameManager.Instance.Survivability;
                 break;
 
             case "BossFight":
@@ -95,16 +114,18 @@ public class SceneLoader : MonoBehaviour
 
             case "SVV":
                 AudioManager.Instance.PlayMusic(AudioManager.Instance.svv);
-                StartCounting();
                 break;
             case "Campaign_Dark_Broken":
                 AudioManager.Instance.PlayMusic(AudioManager.Instance.campA);
+                int dmgRD = Mathf.RoundToInt(GameManager.Instance.Dmg * 0.2f);
+                GameManager.Instance.Dmg -= dmgRD;
                 break;
             case "Campaign_Desert":
                 AudioManager.Instance.PlayMusic(AudioManager.Instance.campB);
                 break;
             case "Campaign_Winter":
                 AudioManager.Instance.PlayMusic(AudioManager.Instance.campC);
+                GameManager.Instance.Survivability -= 1.5f;
                 break;
             case "Campaign_Swamp": 
                 AudioManager.Instance.PlayMusic(AudioManager.Instance.campD);
@@ -115,6 +136,18 @@ public class SceneLoader : MonoBehaviour
                 break;
         }
     }
+
+    void OnSceneUnloaded(Scene scene) {
+    
+        // if (scene.name == "Campaign_Dark_Broken") {
+        //     GameManager.Instance.Dmg = atFirstDmg;
+        // }
+
+        // if (scene.name == "Campaign_Winter") {
+        // GameManager.Instance.Survivability = atFirstSvvability;
+        // }
+}
+
 
     public void LoadSceneBySceneName(string sceneName){
         if(GameManager.Instance != null){

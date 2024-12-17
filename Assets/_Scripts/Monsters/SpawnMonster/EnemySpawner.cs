@@ -28,9 +28,13 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
-    void DestroyEnemySpawner(){
-        if(Instance != null){
-            Destroy(gameObject);
+
+    public static void DestroyInstance()
+    {
+        if (Instance != null)
+        {
+            Destroy(Instance.gameObject);
+            Instance = null;
         }
     }
 
@@ -63,7 +67,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if (ActiveEnemies == null || ActiveEnemies.Count == 0)
         {
-            Debug.Log("No active enemies to clear.");
+            // Debug.Log("No active enemies to clear.");
             return;
         }
 
@@ -79,12 +83,12 @@ public class EnemySpawner : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Enemy missing Monster component.");
+                    // Debug.Log("Enemy missing Monster component.");
                 }
             }
             else
             {
-                Debug.Log("ActiveEnemies contains a null reference.");
+                // Debug.Log("ActiveEnemies contains a null reference.");
             }
         }
 

@@ -12,10 +12,11 @@ public class SwamDialogManager : MonoBehaviour
     public Button nextButton, btnClose, btnBackLater, btnOK, btnAward;
 
     private Queue<string> sentences;
+    public GameObject king;
 
     void Start()
     {
-        
+        king = GameObject.FindGameObjectWithTag("King");
         sentences = new Queue<string>();
         nextButton.onClick.AddListener(DisplayNextSentence);
         btnBackLater.onClick.AddListener(OnBackLater);
@@ -23,6 +24,7 @@ public class SwamDialogManager : MonoBehaviour
         btnAward.onClick.AddListener(Award);
         btnClose.onClick.AddListener(Close);
         ResetButton(); 
+        king.SetActive(false);
     }
 
     void OnEnable()
@@ -77,19 +79,31 @@ public class SwamDialogManager : MonoBehaviour
         AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         GameManager.Instance.isGetQuest = true;
         questUI.SetActive(true);
+        king.SetActive(true);
         EndDialogue();  
     }
 
     void Award(){
         // nhận thưởng
         AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
-        if(GameManager.Instance.isQuestDone){
+        if(GameManager.Instance.isHalfQuest && GameManager.Instance.isQuestDone){
+            
+            SceneLoader.Instance.SetElapsedTime();
+            GameManager.Instance.TraningTime("mapC");
+            SceneLoader.Instance.StopCounting();
+            GameManager.Instance.SkillAward("mapC");
             GameManager.Instance._mgCounter = 200;
             GameManager.Instance._rgCounter = 200;
             GameManager.Instance.UpdateMoonG();
             GameManager.Instance.UpdateRune();
-            GameManager.Instance.ResetTheCounter();
+            ResetInfo();
         }
+    }
+
+    void ResetInfo(){
+        GameManager.Instance.ResetTheCounter();
+        king.SetActive(false);
+        questUI.SetActive(false);
         nextButton.gameObject.SetActive(false);
         EndDialogue();
     }

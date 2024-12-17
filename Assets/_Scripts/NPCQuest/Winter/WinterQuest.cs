@@ -10,38 +10,75 @@ public class WinterQuest : MonoBehaviour
         questText2.color = Color.black;
     }
 
+    void OnDisable()
+    {
+        questText1.color = Color.black;
+        questText2.color = Color.black;
+        txtResult.text = "";
+    }
+
     // Update is called once per frame
     void Update()
     {
         if(GameManager.Instance != null){
-            int i = GameManager.Instance.killCount;
-            int ii = GameManager.Instance.killCountBoss;
-            
-            if(i > 50){
-                i = 50;
-                if(ii > 1){
-                    ii = 1;
-                }
-                SetResult(i,ii);
+            int ii = GameManager.Instance.killCount;
+            int playerExhausted = 0;
+            if(GameManager.Instance.Health == 0){
+                playerExhausted = GameManager.Instance.killCountBoss = 1;
+
             }
-            SetResult(i,ii);
-            if(i == 50){
+            
+            if(playerExhausted > 0){
+                WorldWhisperManager.Instance.TextBayLen("Nhiệm vụ thất bại");
+                return;
+            }
+            if(ii > 111){
+                ii = 111;
+            }
+
+            if(ii == 111){
+                SetResult2(111,true);
+                SetResult1(true);
                 GameManager.Instance.isHalfQuest = true;
-                SetResult(50,ii);
-                if(ii == 1){
-                    SetResult(50,1);
-                    txtResult.text = "Hoàn thành nhiệm vụ";
-                    Color color = Color.yellow;
-                    txtResult.color = color;
-                    GameManager.Instance.isQuestDone = true;
-                }
+            }else{
+                SetResult2(ii,false);
+                SetResult1(false);
+            }
+            if(ii == 111){
+                Color color = Color.red;
+                txtResult.color = color;
+                txtResult.text = "Hoàn thành nhiệm vụ";
+                GameManager.Instance.isQuestDone = true;
+            }else{
+                txtResult.text = "";
             }
         }
     }
+   void SetResult1(bool isColor){
+        Color defaultColor;
+        if (isColor)
+        {
+            defaultColor = Color.red;
+        }
+        else
+        {
+            defaultColor = questText1.color;
+        }
+        questText1.color = defaultColor;
+        questText1.text = $"Sống sót sau quái triều"; 
+    }
 
-    void SetResult(int i, int ii){
-        questText1.text = $"Đánh bại {i}/50 quái vật";
-        questText2.text = $"Đánh bại {ii}/1 ???";
-        txtResult.text = "";
+    void SetResult2(int quantity,bool isColor){
+        Color defaultColor;
+        if (isColor)
+        {
+            defaultColor = Color.red;
+        }
+        else
+        {
+            defaultColor = questText2.color;
+        }
+        questText2.color = defaultColor;
+        questText2.text = $"Tiêu diệt {quantity}/111 quái vật";
     }
 }

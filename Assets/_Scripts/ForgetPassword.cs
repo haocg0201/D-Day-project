@@ -11,13 +11,13 @@ public class ForgetPassword : MonoBehaviour
     [SerializeField] private TMP_Text _notifMes;
     public Button _btnGetPW;
     public Button _btnBackLogin;
-    private bool isFirebaseInitialized = false;
+    // private bool isFirebaseInitialized = false;
     void Start()
     {
         if (FirebaseManager.Instance != null)
         {
-            isFirebaseInitialized = true;
-            //Debug.Log("Firebase is ready to use!");
+            // isFirebaseInitialized = true;
+            // //Debug.Log("Firebase is ready to use!");
         }
         else
         {

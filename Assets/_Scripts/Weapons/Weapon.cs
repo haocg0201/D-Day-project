@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
     Transform firePoint;
     Animator animator;
-    public float fireRate ; // thời lượng giữ mỗi phát bắn
+    public float fireRate; // thời lượng giữ mỗi phát bắn
     public float fireRateAllTheTime;
 
     protected virtual void Initialize(string wCode, string wName, float baseHealth, float baseDef, float baseSvvability, string baseDescribe, float fireRate)
@@ -37,7 +37,8 @@ public class Weapon : MonoBehaviour
         this.fireRate = fireRate;
 
         wLvl = GetWeaponLevelFromWCode(wCode);
-        if(wLvl >= 0){
+        if (wLvl >= 0)
+        {
             CalculateStats(baseHealth, baseDef, baseSvvability);
             describe = string.IsNullOrEmpty(baseDescribe) ? "This weapon comes from nowhere" : baseDescribe;
         }
@@ -49,22 +50,24 @@ public class Weapon : MonoBehaviour
 
     public void UpdateStat(int lvl)
     {
-        this.wLvl = lvl; 
-        CalculateStats(baseHealth, baseDef, baseSvvability); 
-        
+        this.wLvl = lvl;
+        CalculateStats(baseHealth, baseDef, baseSvvability);
+
     }
 
     private void CalculateStats(float baseHealth, float baseDef, float baseSvvability)
     {
         wHealth = baseHealth * wLvl * baseLvlUp;
         wDef = baseDef * wLvl * baseLvlUp;
-        wSvvability = wLvl == 0? 0 : baseSvvability;
-        if(wLvl >= 5){
+        wSvvability = wLvl == 0 ? 0 : baseSvvability;
+        if (wLvl >= 5)
+        {
             wHealth += 25;
             wDef += 25;
         }
 
-        if(wLvl == 5){
+        if (wLvl == 5)
+        {
             wHealth += 50;
             wDef += 50;
         }
@@ -96,9 +99,9 @@ public class Weapon : MonoBehaviour
         describe = "No data available";
     }
     public virtual void Start()
-    {   
+    {
         playerData = PlayerPrefsManager.LoadPlayerDataFromPlayerPrefs();
-        Initialize("Unknown", "Unknown", 0, 0, 0,"",1f);// Debug.Log("Weapon: " + wName + " Health: " + wHealth + " Def: " + wDef + " Svvability: " + wSvvability);
+        Initialize("Unknown", "Unknown", 0, 0, 0, "", 1f);// Debug.Log("Weapon: " + wName + " Health: " + wHealth + " Def: " + wDef + " Svvability: " + wSvvability);
         firePoint = GetComponentInChildren<Transform>();
         animator = GetComponent<Animator>();
         fireRateAllTheTime = fireRate;
@@ -106,43 +109,57 @@ public class Weapon : MonoBehaviour
 
     public virtual void Update()
     {
-        if(Player.Instance != null && Player.Instance.isConsume){
-            if(isEquipped){
-                AttackRotateWeaponTowardsMouse(); 
+        if (Player.Instance != null && Player.Instance.isConsume)
+        {
+            if (isEquipped)
+            {
+                AttackRotateWeaponTowardsMouse();
                 fireRate -= Time.deltaTime;
-                if(Input.GetMouseButton(0) && fireRate < 0){
-                    StartCoroutine(ThrowTheWeapon());      
+                if (Input.GetMouseButton(0) && fireRate < 0)
+                {
+                    if (wCode == "akm" || wCode == "pistol")
+                    {
+                        AudioManager.Instance?.PlaySFX(AudioManager.Instance.bulletSound);
+                    }
+                    else
+                    {
+                        AudioManager.Instance?.PlaySFX(AudioManager.Instance.weaponShootSound);
+                    }
+                    StartCoroutine(ThrowTheWeapon());
                 }
 
-                if(Input.GetMouseButtonUp(0)){
-                    if(Player.Instance.isConsume){
-                        if(wCode == "akm" || wCode == "pistol"){
-                        AudioManager.Instance?.PlaySFX(AudioManager.Instance.bulletSound);
-                        }else{
-                            AudioManager.Instance?.PlaySFX(AudioManager.Instance.weaponShootSound);
-                        }
+                if (Input.GetMouseButtonUp(0))
+                {
+                    if (Player.Instance.isConsume)
+                    {
+
                     }
                     animator.SetBool("isShooting", false);
                 }
             }
-        }  
+        }
     }
 
-    public int GetLvl(){
+    public int GetLvl()
+    {
         return this.wLvl;
     }
 
-    protected virtual void AttackRotateWeaponTowardsMouse(){
+    protected virtual void AttackRotateWeaponTowardsMouse()
+    {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 lockDirection = mousePos - transform.position;
         float angle = Mathf.Atan2(lockDirection.y, lockDirection.x) * Mathf.Rad2Deg;
 
-        Quaternion quaternion = Quaternion.Euler(new Vector3(0,0,angle)); // quay truc z thoi nhe
+        Quaternion quaternion = Quaternion.Euler(new Vector3(0, 0, angle)); // quay truc z thoi nhe
         transform.rotation = quaternion;
 
-        if (transform.eulerAngles.z < 270 && transform.eulerAngles.z > 90){
-            transform.localScale = new Vector3(1,-1, 0);
-        }else{
+        if (transform.eulerAngles.z < 270 && transform.eulerAngles.z > 90)
+        {
+            transform.localScale = new Vector3(1, -1, 0);
+        }
+        else
+        {
             transform.localScale = new Vector3(1, 1, 0);
         }
 
@@ -163,9 +180,6 @@ public class Weapon : MonoBehaviour
 
         // Spawn ra viên đạn
         SpawnBullet(direction);
-
-        
-
     }
 
     protected virtual void SpawnBullet(Vector3 direction)
@@ -174,7 +188,8 @@ public class Weapon : MonoBehaviour
         FireBullet();
     }
 
-    void FireBullet(){
+    void FireBullet()
+    {
         fireRate = fireRateAllTheTime;
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         bullet.transform.rotation = transform.rotation;
@@ -184,11 +199,13 @@ public class Weapon : MonoBehaviour
             rb.AddForce(transform.right * bulletSpeed, ForceMode2D.Impulse);
         }
     }
-    public void Equip(){
+    public void Equip()
+    {
         isEquipped = true;
     }
 
-    public void UnEquip(){
+    public void UnEquip()
+    {
         isEquipped = false;
     }
 
@@ -237,7 +254,8 @@ public class Weapon : MonoBehaviour
     //     transform.rotation = Quaternion.Euler(new Vector3(0,0, Mathf.Atan2(originalPos.y, originalPos.x) * Mathf.Rad2Deg));
     // }
 
-    private void WeaponBehaivours(){
+    private void WeaponBehaivours()
+    {
         // bỏ
     }
 

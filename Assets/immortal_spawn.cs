@@ -21,34 +21,41 @@ public class immortal_spawn : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.T) && !isCooldown)
+        if (Input.GetKeyDown(KeyCode.T))
         {
-            if (GameManager.Instance != null && GameManager.Instance.playerData.skill.skillE)
+            if (isCooldown)
             {
-                if (GameManager.Instance.Mana < 20)
-                {
-                    WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
-                    return;
-                }
-
-                Player.Instance.UpdateMana(-20);
-                if (!isImmune)
-                {
-                    StartCoroutine(ActivateImmunity());
-                }
-                if (isImmune)
-                {
-                    player.isTakeDamage = false;
-                    Debug.Log("Player is immune, no damage taken!");
-                    return;
-                }
+                WorldWhisperManager.Instance.TextBayLen("Kỹ năng đang hồi");
             }
             else
             {
-                WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
-            }
-        }
+                if (GameManager.Instance != null && GameManager.Instance.playerData.skill.skillD)
+                {
+                    if (GameManager.Instance.Mana < 20)
+                    {
+                        WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
+                        return;
+                    }
 
+                    Player.Instance.UpdateMana(-20);
+                    if (!isImmune)
+                    {
+                        StartCoroutine(ActivateImmunity());
+                    }
+                    if (isImmune)
+                    {
+                        player.isTakeDamage = false;
+                        Debug.Log("Player is immune, no damage taken!");
+                        return;
+                    }
+                }
+                else
+                {
+                    WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
+                }
+            }
+
+        }
     }
     private IEnumerator ActivateImmunity()
     {

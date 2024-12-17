@@ -11,36 +11,51 @@ public class Gospel_spawn : MonoBehaviour
     private bool isCooldown = false;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.R) && !isCooldown)
+
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            if(GameManager.Instance != null && GameManager.Instance.playerData.skill.skillD){
-            if(GameManager.Instance.Mana < 20){
-                WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
-                return;
+            if (isCooldown)
+            {
+                WorldWhisperManager.Instance.TextBayLen("Kỹ năng đang hồi");
             }
-                Player.Instance.UpdateMana(-20);
-                if (!isGospel)
+            else
+            {
+                if (GameManager.Instance != null && GameManager.Instance.playerData.skill.skillC)
                 {
-                    StartCoroutine(ActivateGospel());
+                    if (GameManager.Instance.Mana < 20)
+                    {
+                        WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
+                        return;
+                    }
+                    Player.Instance.UpdateMana(-20);
+                    if (!isGospel)
+                    {
+                        StartCoroutine(ActivateGospel());
+                    }
                 }
-            }else{
-                WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
+                else
+                {
+                    WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
+                }
             }
+
         }
-        
+
     }
 
     private IEnumerator ActivateGospel()
     {
         isGospel = true; // Bật phúc âm
-        GameManager.Instance.Survivability += 1f;
+        float svvability = GameManager.Instance.Survivability;
+        float atFirst = svvability;
+        svvability += 2f;
+        GameManager.Instance.Survivability = svvability;
         if (Effect_Gospel != null && attactPoint != null)
         {
             instantiatedObject = Instantiate(Effect_Gospel, attactPoint.position, Quaternion.identity);
@@ -48,15 +63,15 @@ public class Gospel_spawn : MonoBehaviour
 
             instantiatedObject.transform.position = attactPoint.position;
         }
-        Debug.Log("Survivability +1 for 30 seconds!");
+        Debug.Log("Survivability +2 for 30 seconds!");
 
         // Đợi trong 30 giây
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(30f);
 
         Debug.Log("Gospel expires.Cooldown in 10 seconds!");
         isGospel = false; // Tắt phúc âm sau 30 giây
         isCooldown = true;
-        GameManager.Instance.Survivability -= 1f;
+        GameManager.Instance.Survivability = atFirst;
         Destroy(instantiatedObject);
         yield return new WaitForSeconds(10f);
         isCooldown = false;

@@ -78,7 +78,7 @@ public class InfiniteMapGenerator : MonoBehaviour
         // Instantiate và gắn vào Grid cha
         GameObject newChunk = Instantiate(randomChunk, worldPosition, Quaternion.identity, gridTransform);
         spawnedChunks.Add(chunkPos, newChunk);
-        Debug.Log($"Spawned chunk at: {worldPosition}");
+        //Debug.Log($"Spawned chunk at: {worldPosition}");
     }
 }
 

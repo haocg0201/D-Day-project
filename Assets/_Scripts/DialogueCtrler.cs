@@ -28,15 +28,14 @@ public class DialogueCtrler : MonoBehaviour
     void Start()
     {
         typingSpeed = 0.02f;
-        if (PlayerPrefs.GetInt("level") < 1)
+        if (PlayerPrefs.GetInt("level") <= 1)
         {
             mainCanvas.gameObject.SetActive(true); 
             StartCoroutine(StartDialogue());
             if(GameManager.Instance != null){
-                GameManager.Instance.playerData.stat.level = 1;
-                GameManager.Instance.SaveAndUpdatePlayerDataFireBase();
-                GameManager.Instance.SetStat();
+                GameManager.Instance.playerData.stat.level = 2;
                 PlayerPrefs.SetInt("level", 2);
+                GameManager.Instance.SetStat();
             }
         }
         else
