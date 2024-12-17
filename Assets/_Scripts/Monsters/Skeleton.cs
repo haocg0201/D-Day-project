@@ -7,8 +7,8 @@ public class Skeleton : Monster
     {
         base.Start();
         Initialize(monsterName: "Skeleton",
-        health: 500,         
-        attackDamage: 200,
+        health: 5000,         
+        attackDamage: 800,
         survivability: 1.5f,
         size: 1.5f,
         dialogues: new List<string>
@@ -16,7 +16,7 @@ public class Skeleton : Monster
             "Hm Ghuuu ..!",
             " ?!",
             "Crak crakk"
-        });
+        },2);
         transform.localScale = new Vector3(size, size,size);
 
     }

@@ -9,16 +9,40 @@ TagManager:
   - Vampire
   - Monster
   - EnemySpawner
+  - Sword
+  - Knife
+  - Weapon
+  - Enhance
+  - CampA
+  - CampB
+  - CampC
+  - CampD
+  - Dungeon
+  - Svv
+  - Bullet
+  - Disarmer
+  - Shield
+  - MXtal
+  - RXtal
+  - HP
+  - LP
+  - SP
+  - DP
+  - Explore
+  - Owner
+  - DesertMP
+  - PaperScroll
+  - King
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Fire
+  - Water
+  - Earth
   - 
   - 
   - 
