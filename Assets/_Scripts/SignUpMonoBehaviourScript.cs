@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -28,15 +29,19 @@ public class SignUpMonoBehaviourScript : MonoBehaviour
 
     public void OnSignupButtonCliked()
     {
+        if(AudioManager.Instance != null){
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClickSound);
+        }
         if (!isFirebaseInitialized)
         {
             _notifMes.text = "Vui lòng chờ firebase được khởi tạo";
         }
         string username = _username.text;
         string password = _password.text;
-        int scode = int.Parse(_scode.text);
+        string scode = _scode.text;
 
-        Register(username, password, scode);
+        ValidateAccount(username, password, scode);
+        //Register(username, password, );
     }
 
     public async void Register(string username, string password, int scode)
@@ -61,6 +66,46 @@ public class SignUpMonoBehaviourScript : MonoBehaviour
        
     }
 
+    public void ValidateAccount(string username, string password, string scode)
+    {
+        // Kiểm tra tài khoản có rỗng hoặc chứa khoảng trắng không
+        if (string.IsNullOrWhiteSpace(username))
+        {
+            _notifMes.text = "Tài khoản không được để trống hoặc chứa khoảng trắng.";
+            return;
+        }
+
+        // Kiểm tra tài khoản có ký tự đặc biệt không
+        if (!Regex.IsMatch(username, @"^[a-zA-Z0-9]{5,16}$"))
+        {
+            _notifMes.text = "Tài khoản chỉ được chứa chữ cái và số, từ 5 đến 16 ký tự.";
+            return;
+        }
+
+        // Kiểm tra mật khẩu có rỗng không
+        if (string.IsNullOrWhiteSpace(password))
+        {
+            _notifMes.text = "Mật khẩu không được để trống.";
+            return;
+        }
+
+        // Kiểm tra độ dài của mật khẩu
+        if (password.Length < 5 || password.Length > 16)
+        {
+            _notifMes.text = "Mật khẩu phải từ 5 đến 16 ký tự.";
+            return;
+        }
+
+        string pin = _scode.text;
+        if (pin.Length != 4)
+        {
+            _notifMes.text = "PIN không hợp lệ. Vui lòng nhập 4 số.";
+            return;
+        }
+
+        Register(username, password, int.Parse(pin));
+    }
+
     public void BackToLoginFormBySceneIndex()
     {
         LoadLoginFormBySceneIndex(1); // Signup Scene Index = 2
@@ -68,6 +113,9 @@ public class SignUpMonoBehaviourScript : MonoBehaviour
 
     private void LoadLoginFormBySceneIndex(int index)
     {
+        if(AudioManager.Instance != null){
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClickSound);
+        }
         StartCoroutine(LoadLoginSceneAsync(index));
     }
 

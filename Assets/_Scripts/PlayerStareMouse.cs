@@ -2,10 +2,19 @@ using UnityEngine;
 
 public class PlayerRotation : MonoBehaviour
 {
-    // Update is called once per frame
+    
+    // private SpriteRenderer spriteRenderer;
+
+    // void Start()
+    // {
+    //     spriteRenderer = GetComponent<SpriteRenderer>();
+    // }
     void Update()
     {
-        PStareM();
+        if(Player.Instance.isConsume){
+            PStareM();
+        }
+        
     }
 
     void PStareM(){

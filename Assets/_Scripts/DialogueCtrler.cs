@@ -23,14 +23,21 @@ public class DialogueCtrler : MonoBehaviour
         "..."
     };
     private int dialogueIndex = 0;
-    public float typingSpeed = 0.05f;
+    public float typingSpeed;
 
     void Start()
     {
-        if (PlayerPrefs.GetInt("level") == 1)
+        typingSpeed = 0.02f;
+        if (PlayerPrefs.GetInt("level") < 1)
         {
             mainCanvas.gameObject.SetActive(true); 
             StartCoroutine(StartDialogue());
+            if(GameManager.Instance != null){
+                GameManager.Instance.playerData.stat.level = 1;
+                GameManager.Instance.SaveAndUpdatePlayerDataFireBase();
+                GameManager.Instance.SetStat();
+                PlayerPrefs.SetInt("level", 2);
+            }
         }
         else
         {
@@ -40,7 +47,7 @@ public class DialogueCtrler : MonoBehaviour
 
     IEnumerator StartDialogue()
     {
-        yield return new WaitForSeconds(1f);  // 
+        yield return new WaitForSeconds(0.5f);  // 
         while (dialogueIndex < dialogueLines.Length)
         {
             yield return TypeDialogue(dialogueLines[dialogueIndex]);
@@ -48,9 +55,8 @@ public class DialogueCtrler : MonoBehaviour
             yield return new WaitForSeconds(0.5f);  // Dừng tí
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         StartCoroutine(FadeOutPanel());
-    
     }
 
     IEnumerator TypeDialogue(string line)
