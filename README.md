@@ -13,7 +13,7 @@
 1. Clone the repository: git clone [[URL](https://github.com/haocg0201/D-Day-project/)]
 2. Open the project in Unity.
 3. Compile and run the game using Unity.
-Note: The game can be released or built for a new version on PC only.
+- Note: The game can be released or built for a new version on PC only.
 
 # Contributions
 - Feel free to submit issues and enhancement requests. Pull requests are welcome.
