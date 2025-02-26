@@ -195,7 +195,7 @@ public class Monster : MonoBehaviour
 
                 int finalDamage = CalculateDamage(baseDamage, bulletLayer);
                 
-                Debug.Log($"Monster Type {this.typeIndex} nhận {finalDamage} damage.");
+                //Debug.Log($"Monster Type {this.typeIndex} nhận {finalDamage} damage.");
                 TakeDamage(finalDamage, Color.red);
                 StartCoroutine(WaitForSecondsToTakeDame(0.3f));
             }  
@@ -275,18 +275,23 @@ public class Monster : MonoBehaviour
     {
         float elapsedTime = 0f;
         Color originalColor = damageText.color;
+        Vector3 startPosition = damageText.transform.position;
+        Vector3 endPosition = startPosition + Vector3.up * 1f; 
 
         while (elapsedTime < duration)
         {
-            damageTextTransform.position += Vector3.up * Time.deltaTime; // Text di chuyển lên nèee
-            elapsedTime += Time.deltaTime;
+            damageText.transform.position = Vector3.Lerp(startPosition, endPosition, elapsedTime / duration);
             float alpha = Mathf.Lerp(1f, 0f, elapsedTime / duration);
             damageText.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+
+            elapsedTime += Time.deltaTime;
             yield return null;
         }
 
         damageText.enabled = false;
+        damageText.transform.position = startPosition;
     }
+
 
     public void ResetMonster()
     {
@@ -319,34 +324,34 @@ public class Monster : MonoBehaviour
 
             case 1:
                 if (bulletLayer == LayerMask.NameToLayer("Fire"))
-                    multiplier = fireMultiplier * 0.9f;
+                    multiplier = fireMultiplier * 1.5f;
                 else if (bulletLayer == LayerMask.NameToLayer("Water"))
-                    multiplier = waterMultiplier * 1.1f;
+                    multiplier = waterMultiplier;
                 else if (bulletLayer == LayerMask.NameToLayer("Earth"))
-                    multiplier = earthMultiplier * 1.2f;
+                    multiplier = earthMultiplier;
                 break;
 
             case 2:
                 if (bulletLayer == LayerMask.NameToLayer("Fire"))
                     multiplier = fireMultiplier * 1.2f;
                 else if (bulletLayer == LayerMask.NameToLayer("Water"))
-                    multiplier = waterMultiplier * 0.8f;
+                    multiplier = waterMultiplier * 1.2f;
                 else if (bulletLayer == LayerMask.NameToLayer("Earth"))
                     multiplier = earthMultiplier;
                 break;
             case 3:
                 if (bulletLayer == LayerMask.NameToLayer("Fire"))
-                    multiplier = fireMultiplier * 1.2f;
+                    multiplier = fireMultiplier;
                 else if (bulletLayer == LayerMask.NameToLayer("Water"))
-                    multiplier = waterMultiplier * 0.8f;
+                    multiplier = waterMultiplier;
                 else if (bulletLayer == LayerMask.NameToLayer("Earth"))
                     multiplier = earthMultiplier;
                 break;
             case 4:
                 if (bulletLayer == LayerMask.NameToLayer("Fire"))
-                    multiplier = fireMultiplier * 1.2f;
+                    multiplier = fireMultiplier;
                 else if (bulletLayer == LayerMask.NameToLayer("Water"))
-                    multiplier = waterMultiplier * 0.8f;
+                    multiplier = waterMultiplier * 1.5f;
                 else if (bulletLayer == LayerMask.NameToLayer("Earth"))
                     multiplier = earthMultiplier;
                 break;
@@ -354,7 +359,7 @@ public class Monster : MonoBehaviour
                 if (bulletLayer == LayerMask.NameToLayer("Fire"))
                     multiplier = fireMultiplier * 1.2f;
                 else if (bulletLayer == LayerMask.NameToLayer("Water"))
-                    multiplier = waterMultiplier * 0.8f;
+                    multiplier = waterMultiplier * 0.9f;
                 else if (bulletLayer == LayerMask.NameToLayer("Earth"))
                     multiplier = earthMultiplier;
                 break;
@@ -362,36 +367,25 @@ public class Monster : MonoBehaviour
                 if (bulletLayer == LayerMask.NameToLayer("Fire"))
                     multiplier = fireMultiplier * 1.2f;
                 else if (bulletLayer == LayerMask.NameToLayer("Water"))
-                    multiplier = waterMultiplier * 0.8f;
+                    multiplier = waterMultiplier * 0.9f;
                 else if (bulletLayer == LayerMask.NameToLayer("Earth"))
-                    multiplier = earthMultiplier;
+                    multiplier = earthMultiplier * 0.9f;
                 break;
             case 7:
                 if (bulletLayer == LayerMask.NameToLayer("Fire"))
                     multiplier = fireMultiplier * 1.2f;
                 else if (bulletLayer == LayerMask.NameToLayer("Water"))
-                    multiplier = waterMultiplier * 0.8f;
+                    multiplier = waterMultiplier * 1.2f;
                 else if (bulletLayer == LayerMask.NameToLayer("Earth"))
-                    multiplier = earthMultiplier;
+                    multiplier = earthMultiplier * 1.2f;
                 break;
-            case 8:
-                if (bulletLayer == LayerMask.NameToLayer("Fire"))
-                    multiplier = fireMultiplier * 1.2f;
-                else if (bulletLayer == LayerMask.NameToLayer("Water"))
-                    multiplier = waterMultiplier * 0.8f;
-                else if (bulletLayer == LayerMask.NameToLayer("Earth"))
-                    multiplier = earthMultiplier;
-                break;
-
             default:
                 multiplier = 1f;
                 break;
         }
-
-        // Tính damage với multiplier và ngẫu nhiên +/- 20
         int randomVariance = Random.Range(-20, 21);
         int finalDamage = Mathf.RoundToInt(baseDamage * multiplier) + randomVariance;
 
-        return Mathf.Max(finalDamage, 0); // Đảm bảo damage không âm
+        return Mathf.Max(finalDamage, 0);
     }
 }

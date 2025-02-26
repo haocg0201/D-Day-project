@@ -9,8 +9,10 @@ public class WinterDialogManager : MonoBehaviour
     public Image npcImage, playerImage;
     public TextMeshProUGUI dialogueText;
     public Button nextButton, btnClose, btnBackLater, btnOK, btnAward;
+    public bool deathFlag = false;
 
     private Queue<string> sentences;
+    public GameObject winterGate;
 
     void Start()
     {
@@ -22,6 +24,19 @@ public class WinterDialogManager : MonoBehaviour
         btnAward.onClick.AddListener(Award);
         btnClose.onClick.AddListener(Close);
         ResetButton(); 
+        winterGate.SetActive(false);
+    }
+
+    void Update()
+    {
+        if(deathFlag) return;
+        if(GameManager.Instance.Health == 0 || GameManager.Instance.killCountBoss == 1){
+            GameManager.Instance.ResetTheCounter();
+            questUI.SetActive(false);
+            winterGate.SetActive(false);
+            deathFlag = true;
+        } 
+        
     }
 
     void OnEnable()
@@ -73,30 +88,45 @@ public class WinterDialogManager : MonoBehaviour
 
     void OK()
     {   
+        deathFlag = false;
         AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         GameManager.Instance.isGetQuest = true;
         questUI.SetActive(true);
+        winterGate.SetActive(true);
         EndDialogue();  
+        WorldWhisperManager.Instance.TextBayLen("Cảnh báo, quái triều đang đổ bộ !!!");
     }
 
     void Award(){
         // nhận thưởng
         AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
-        if(GameManager.Instance.isQuestDone){
+        if(GameManager.Instance.isHalfQuest && GameManager.Instance.isQuestDone){
+            SceneLoader.Instance.SetElapsedTime();
+            GameManager.Instance.TraningTime("mapC");
+            SceneLoader.Instance.StopCounting();
+            GameManager.Instance.SkillAward("mapC");
             GameManager.Instance._mgCounter = 200;
             GameManager.Instance._rgCounter = 200;
             GameManager.Instance.UpdateMoonG();
             GameManager.Instance.UpdateRune();
             GameManager.Instance.ResetTheCounter();
+            
+            ResetInfo();
+            questUI.SetActive(false);
+            nextButton.gameObject.SetActive(false);
+            EndDialogue();
         }
-        nextButton.gameObject.SetActive(false);
-        EndDialogue();
     }
 
     void Close(){
         AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         EndDialogue();
     }
+
+    void ResetInfo(){
+        winterGate.SetActive(false);
+    }
+
 
     public void DisplayNextSentence()
     {

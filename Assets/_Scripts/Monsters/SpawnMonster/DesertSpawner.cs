@@ -28,6 +28,11 @@ public class DesertSpawner : MonoBehaviour
         }
     }
 
+    void OnDisable()
+    {
+        monsters.Clear();
+    }
+
     private void SpawnEnemy()
     {
         int randomIndex = Random.Range(0, enemyTypes.Length);

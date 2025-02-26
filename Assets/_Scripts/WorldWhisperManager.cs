@@ -18,11 +18,19 @@ public class WorldWhisperManager : MonoBehaviour
         }
     }
 
+    
+    public static void DestroyInstance()
+    {
+        Instance = null;
+        Debug.Log("Singleton instance destroyed.");
+    }
+
     public TextMeshProUGUI txtText1Lan, txtTextBayLen, txtTextThongBao;
 
     public void ShowWhisper(String txt){
         txtTextThongBao.gameObject.SetActive(true);
         txtTextThongBao.text = txt;
+        txtTextThongBao.color = Color.red;
     }
 
     public void OffShowWhisper(){
@@ -47,7 +55,8 @@ public class WorldWhisperManager : MonoBehaviour
     public void TextBayLen(string text){
         txtTextBayLen.gameObject.SetActive(true);
         txtTextBayLen.text = text;
-        StartCoroutine(FadeOutText(txtTextBayLen, 0.5f));
+        txtTextBayLen.color = Color.red;
+        StartCoroutine(FadeOutText(txtTextBayLen, 1.5f));
     }
 
 
@@ -56,10 +65,11 @@ public class WorldWhisperManager : MonoBehaviour
     {
         float elapsedTime = 0f;
         Color originalColor = txt.color;
+        Vector3 defaultPos = txt.gameObject.transform.position;
 
         while (elapsedTime < duration)
         {
-            txt.transform.position += Vector3.up * Time.deltaTime * 10f; // Text di chuyển lên nèee
+            txt.transform.position += Vector3.up * Time.deltaTime * 1.5f; // Text di chuyển lên nèee
             elapsedTime += Time.deltaTime;
             float alpha = Mathf.Lerp(1f, 0f, elapsedTime / duration);
             txt.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
@@ -67,5 +77,7 @@ public class WorldWhisperManager : MonoBehaviour
         }
         txt.color = originalColor;
         txt.gameObject.SetActive(false);
+        txt.gameObject.transform.position = defaultPos;
+        yield return new WaitForSeconds(0.5f);
     }
 }

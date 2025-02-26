@@ -6,7 +6,7 @@ public class King_Walk : StateMachineBehaviour
     Rigidbody2D rb;
     KingEclipseNPC king;
     public float speed = 0;
-    public float attackRange = 1.5f;
+    public float attackRange = 3.5f;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

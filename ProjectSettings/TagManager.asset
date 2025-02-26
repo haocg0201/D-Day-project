@@ -30,6 +30,9 @@ TagManager:
   - DP
   - Explore
   - Owner
+  - DesertMP
+  - PaperScroll
+  - King
   layers:
   - Default
   - TransparentFX

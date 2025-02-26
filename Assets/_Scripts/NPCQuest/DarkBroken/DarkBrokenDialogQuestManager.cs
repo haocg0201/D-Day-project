@@ -13,6 +13,7 @@ public class DarkBrokenDialogQuestManager : MonoBehaviour
     public Button nextButton, btnClose, btnBackLater, btnOK, btnAward;
     public Transform pA, pB, pC;
     public GameObject cookie;
+    public GameObject monsterGate;
     GameObject cookieNow;
 
     private Queue<string> sentences;
@@ -25,7 +26,7 @@ public class DarkBrokenDialogQuestManager : MonoBehaviour
         btnOK.onClick.AddListener(OK);
         btnAward.onClick.AddListener(Award);
         btnClose.onClick.AddListener(Close);
-        ResetButton(); 
+        ResetButton(); monsterGate.SetActive(false);
     }
 
     void OnEnable()
@@ -35,6 +36,7 @@ public class DarkBrokenDialogQuestManager : MonoBehaviour
             nextButton.gameObject.SetActive(true);
         }
         btnClose.gameObject.SetActive(true);
+        
     }
 
     public void StartDialogue(Sprite npcSprite, List<string> dialogue)
@@ -71,7 +73,6 @@ public class DarkBrokenDialogQuestManager : MonoBehaviour
     void OnBackLater()
     {
         AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
-
         EndDialogue();
         return;
     }
@@ -83,7 +84,10 @@ public class DarkBrokenDialogQuestManager : MonoBehaviour
         questUI.SetActive(true);
         if(cookieNow == null){
             SpawnRandomCookie();
+            monsterGate.SetActive(true);
+            monsterGate.transform.position = SpawnRandomMSP();
         }
+
         SceneLoader.Instance.StartCounting();
         EndDialogue();  
     }
@@ -117,6 +121,7 @@ public class DarkBrokenDialogQuestManager : MonoBehaviour
     void ResetCookie(){
         Destroy(cookieNow);
         cookieNow = null;
+        monsterGate.SetActive(false);
     }
 
     public void DisplayNextSentence()
@@ -154,5 +159,15 @@ public class DarkBrokenDialogQuestManager : MonoBehaviour
         Transform[] positions = { pA, pB, pC };
         Transform randomPosition = positions[Random.Range(0, positions.Length)];
         cookieNow = Instantiate(cookie, randomPosition.position, Quaternion.identity);
+    }
+
+    public Vector3 SpawnRandomMSP()
+    {
+        Vector3 p1 = new(62f, 3.7f,0);
+        Vector3 p2 = new(46.5f, -11f,0);
+        Vector3 p3 = new(75f,-19f,0);
+        Vector3[] positions = { p1, p2, p3 };
+        Vector3 randomPosition = positions[Random.Range(0, positions.Length)];
+        return randomPosition;
     }
 }

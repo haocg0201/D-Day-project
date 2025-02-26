@@ -18,8 +18,9 @@ public class Ontriger : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Monster"))
         {
-            Destroy(collision.gameObject);
-
+            Monster monster = collision.gameObject.GetComponent<Monster>();
+            monster.TakeDamage(1000, Color.red);
+            //Destroy(collision.gameObject);
         }
     }
 }

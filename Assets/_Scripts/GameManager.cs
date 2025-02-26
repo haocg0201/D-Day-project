@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     public bool isGetQuest = false;
     public bool isHalfQuest = false;
     public bool isQuestDone = false;
+    private int dmgFlg = 0;
+    public int dropRate = 20;
 
 
     private void Awake()
@@ -46,6 +48,15 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
             Debug.Log("Mới xóa kìa");
+        }
+    }
+
+    public static void DestroyInstance()
+    {
+        if (Instance != null)
+        {
+            Destroy(Instance.gameObject);
+            Instance = null;
         }
     }
 
@@ -68,8 +79,18 @@ public class GameManager : MonoBehaviour
         {
 //           Debug.Log($"un: {playerData.username}, lvl: {playerData.stat.level} khi player đã tồn tại");
         }
-
     }
+
+
+    public void OnLogout(){
+        Player.DestroyInstance();
+        SceneLoader.DestroyInstance();
+        EnemySpawner.DestroyInstance();
+        WorldWhisperManager.Instance.gameObject.SetActive(false);
+        WorldWhisperManager.DestroyInstance();
+        DestroyInstance();
+    }
+
 
     public void SetStat()
     {
@@ -236,7 +257,7 @@ public class GameManager : MonoBehaviour
     public bool IsTenPercentChance()
     {
         int randomNumber = Random.Range(1, 101); 
-        return randomNumber <= 10;
+        return randomNumber <= dropRate;
     }
 
     public void SkillAward(string campaign)
@@ -312,7 +333,16 @@ public class GameManager : MonoBehaviour
             this.playerData.stat.rune = 0;
         }
         SaveAndUpdatePlayerData(playerData);
-    }    
+    }   
+
+    public void TenPercentRDDmg(){
+        dmgFlg = dmg;
+        dmg = Mathf.RoundToInt(dmg * 0.9f);
+    } 
+
+    public void SetRealDame(){
+        dmg = dmgFlg;
+    }
     
     public void OnPlayerLevelUp(int quantity){
         this.playerData.stat.rune -= quantity;
@@ -475,7 +505,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1.5f); // Chờ 
 
             // Hồi 2% máu và mana
-            health += (int)(maxHealth * (2 / 100f));
+            health += (int)(maxHealth * (1 / 100f));
             mana += (int)(maxMana * (2 / 100f));
 
             // Đảm bảo không vượt quá giới hạn

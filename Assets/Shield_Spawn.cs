@@ -17,24 +17,32 @@ public class Shield_Spawn : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Q) && !isCooldown)
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (GameManager.Instance != null && GameManager.Instance.playerData.skill.skillA)
+            if (isCooldown)
             {
-                if (GameManager.Instance.Mana < 20)
-                {
-                    WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
-                    return;
-                }
-
-                Player.Instance.UpdateMana(-20);
-                StartCoroutine(CreateObjects());
-
+                WorldWhisperManager.Instance.TextBayLen("Kỹ năng đang hồi");
             }
             else
             {
-                WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
+                if (GameManager.Instance != null && GameManager.Instance.playerData.skill.skillA)
+                {
+                    if (GameManager.Instance.Mana < 20)
+                    {
+                        WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
+                        return;
+                    }
+
+                    Player.Instance.UpdateMana(-20);
+                    StartCoroutine(CreateObjects());
+
+                }
+                else
+                {
+                    WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
+                }
             }
+
         }
     }
 
@@ -46,13 +54,15 @@ public class Shield_Spawn : MonoBehaviour
         protectionArea.transform.position = player.transform.position;
 
         Debug.Log("Shield active in 5 seconds!");
+        int def = GameManager.Instance.Def;
+        GameManager.Instance.Def += 1000;
         StartCoroutine(DestroyAfterTime(protectionArea, 5f));
-
+        GameManager.Instance.Def = def;
 
         Debug.Log("Shield expires,Cooldown in 10 seconds!");
 
         isCooldown = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(10f);
         isCooldown = false;
     }
     private IEnumerator DestroyAfterTime(GameObject obj, float time)

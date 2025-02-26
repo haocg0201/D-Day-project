@@ -11,37 +11,46 @@ public class Lightning_Spawn : MonoBehaviour
 
     private bool isCooldown = false;
 
+    private void Start()
+    {
+        player = Player.Instance.gameObject;
+    }
+
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E) && !isCooldown)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if (GameManager.Instance != null && GameManager.Instance.playerData.skill.skillB)
+            if (isCooldown)
             {
-                if (GameManager.Instance.Mana < 20)
-                {
-                    WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
-                    return;
-                }
-
-                Player.Instance.UpdateMana(-20);
-                StartCoroutine(CreateObjects());
-                for (int i = 0; i < instances.Length; i++)
-                {
-                    if (instances[i] != null)
-                        instances[i].transform.position = player.transform.position + positions[i];
-                }
+                WorldWhisperManager.Instance.TextBayLen("Kỹ năng đang hồi");
             }
             else
             {
-                WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
+                if (GameManager.Instance != null && GameManager.Instance.playerData.skill.skillB)
+                {
+                    if (GameManager.Instance.Mana < 20)
+                    {
+                        WorldWhisperManager.Instance.TextBayLen("Bạn không đủ mana");
+                        return;
+                    }
+
+                    Player.Instance.UpdateMana(-20);
+                    StartCoroutine(CreateObjects());
+                    for (int i = 0; i < instances.Length; i++)
+                    {
+                        if (instances[i] != null)
+                            instances[i].transform.position = player.transform.position + positions[i];
+                    }
+                }
+                else
+                {
+                    WorldWhisperManager.Instance.TextBayLen("Kĩ năng này chưa mở khóa");
+                }
             }
-
-
         }
-
     }
 
 

@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEditor.SearchService;
 using UnityEngine;
@@ -89,7 +90,7 @@ public class WorldSetting : MonoBehaviour
 
     public void OnLogout(){
         SoundEffect();
-        
+        StartCoroutine(LoadSceneAsync("Login"));
     }
     public void OnExit(){
         SoundEffect();
@@ -102,5 +103,15 @@ public class WorldSetting : MonoBehaviour
 
     private void SoundEffect(){
         AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClickSound);
+    }
+
+        private IEnumerator LoadSceneAsync(string sceneName){
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+        while (!operation.isDone)
+        {
+            yield return null;
+        }
+        OnClose();
+        GameManager.Instance.OnLogout();
     }
 }

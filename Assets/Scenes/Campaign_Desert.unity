@@ -10298,6 +10298,8 @@ MonoBehaviour:
   btnBackLater: {fileID: 738003463}
   btnOK: {fileID: 253558873}
   btnAward: {fileID: 877902999}
+  missedItem: {fileID: 5832661175257178039, guid: 3b8eec7f19a754e44b5c44b2839e52e4, type: 3}
+  desertMGate: {fileID: 1687956850}
 --- !u!4 &1104055092
 Transform:
   m_ObjectHideFlags: 0
@@ -19616,7 +19618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1687956851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19641,7 +19643,7 @@ Transform:
   m_GameObject: {fileID: 1687956850}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.6, y: -12.3, z: -0.014371768}
+  m_LocalPosition: {x: 51.52, y: 0.8, z: -0.014371768}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

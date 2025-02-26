@@ -3,11 +3,13 @@ using UnityEngine;
 public class PlayerTouchCatchRange : MonoBehaviour
 {
     private KingEclipseNPC king;
+    public GameObject panelBossHp;
 
     void Start()
     {
         // Lấy tham chiếu tới script BossController từ GameObject cha
         king = GetComponentInParent<KingEclipseNPC>();
+        panelBossHp.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -15,6 +17,8 @@ public class PlayerTouchCatchRange : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             king.isWalking = true;
+            panelBossHp.SetActive(true);
+
         }
     }
 
@@ -23,6 +27,7 @@ public class PlayerTouchCatchRange : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             king.isWalking = false;
+            panelBossHp.SetActive(false);
         }
     }
 }

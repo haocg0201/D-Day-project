@@ -11,6 +11,10 @@ public class DarkBrokenSpawner : MonoBehaviour
 
     private bool playerInRange = false;
 
+    private void OnDisable() {
+        ClearEnemies();
+    }
+
     private void Update()
     {
         if(GameManager.Instance != null && GameManager.Instance.isGetQuest && !GameManager.Instance.isQuestDone){
@@ -51,5 +55,9 @@ public class DarkBrokenSpawner : MonoBehaviour
         {
             playerInRange = false;
         }
+    }
+
+    public void ClearEnemies(){
+        monsters.Clear();
     }
 }

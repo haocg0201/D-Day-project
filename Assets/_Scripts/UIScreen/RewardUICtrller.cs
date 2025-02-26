@@ -9,21 +9,24 @@ public class RewardUICtrller : MonoBehaviour
     public GameObject rewardPanel;
     public TextMeshProUGUI txtSvvTime, txtKillCount, txtRewardMG, txtRewardRG;
     public Button btnReplay, btnHome;
-    string survvTime;
+   // string survvTime;
     void Start()
     {
         btnReplay.onClick.AddListener(OnReplay); // tôi đặt điều kiện check null ở dưới cho chắc vì người chơi ấn nhiều lần
         btnHome.onClick.AddListener(OnHome);
         SetInf();
     }
+    void OnEnable()
+    {
+        if(SceneLoader.Instance != null){
+            SceneLoader.Instance.StopCounting();
+        }
+        
+    }
 
     void SetInf(){
         if(GameManager.Instance != null){
-            int seconds = (int)GameManager.Instance.svvTime; 
-            int minutes = seconds / 60; 
-            int remainingSeconds = seconds % 60; 
-            string survvTime = minutes.ToString("00") + ":" + remainingSeconds.ToString("00");
-            txtSvvTime.text = "Thời gian sinh tồn: " + survvTime;
+            txtSvvTime.text = "Thời gian sinh tồn: " + GameManager.Instance.svvTime + "s";
             txtKillCount.text = "Số lượng quái vật bị tiêu diệt: " + GameManager.Instance.killCount;
             txtRewardMG.text = "Lượng nguyệt thạch thu thập được: " + GameManager.Instance._mgCounter;
             txtRewardRG.text = "Lượng rune thu thập được: " + GameManager.Instance._rgCounter;
@@ -34,8 +37,10 @@ public class RewardUICtrller : MonoBehaviour
         AudioManager.Instance?.PlaySFX(AudioManager.Instance.buttonClickSound);
         if(Player.Instance != null && GameManager.Instance != null){
             GameManager.Instance.PauseGame(false);
+            GameManager.Instance.ResetTheCounter();
             EnemySpawner.Instance.ClearActiveEnemies();
             Player.Instance.Recovery();
+            SceneLoader.Instance.StartCounting();
             rewardPanel.SetActive(false);
         }  
     }
@@ -49,6 +54,7 @@ public class RewardUICtrller : MonoBehaviour
             GameManager.Instance.UpdateRune();
             GameManager.Instance.UpdateTraningTime();
             GameManager.Instance.SaveAndUpdatePlayerDataFireBase();
+            GameManager.Instance.ResetTheCounter();
             rewardPanel.SetActive(false);
             SceneLoader.Instance.LoadSceneBySceneName("NewBorn");
         }
